@@ -13,16 +13,18 @@ Mobile-first dark dashboard and a **paper-only** trading experiment, maintained 
 
 ## Website
 
-Expected GitHub Pages address: https://axx-plays.github.io/paper-trading-lab/
+Dashboard address: https://axx-paper-trading-lab.wiggly-maple-3307.chatgpt.site/
 
 On a phone, use the browser's **Add to Home Screen** option. This is a responsive web application, not a native app or guaranteed offline app. It loads saved snapshots every minute while open; the underlying cloud job checks approximately every 15 minutes.
 
-The hosted app reads its public data snapshots from this repository's raw GitHub endpoint. Scheduled jobs commit new observations but do not redeploy the website. GitHub Pages publishes the static shell directly from `main` → `/docs`, independently of the paper workflow. A slow Pages deployment therefore does not block displaying a later committed depot snapshot. The local preview reads local JSON. Request failures are visible and retain the last loaded snapshot with its original timestamp.
+The hosted app reads its public data snapshots from this repository's raw GitHub endpoint. Scheduled jobs commit new observations but do not redeploy the website. Sites hosts the static shell independently of the paper workflow. The local HTTP preview reads local JSON; hosted HTTPS versions read GitHub snapshots. Request failures are visible and retain the last loaded snapshot with its original timestamp.
+
+GitHub Pages was replaced after its deployment service kept reporting an already-cancelled deployment as in progress, including after a Pages reset. Pages is set to workflow mode without an active deployment job, preventing repeated failed automatic publications. The paper workflow remains enabled. Sites project: `appgprj_6aece79ee4788191b06713fe499fa23a`. Its source mirror contains the small export from `node scripts/build.mjs` as `dist/`, plus the Sites hosting manifest. Future interface changes require publishing a new Sites version; data updates do not. Reuse this project rather than creating another Site.
 
 ## Setup
 
 1. In GitHub Settings → Secrets and variables → Actions, create `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` from an **Alpaca Paper Trading** account. Keys stay in the Actions runtime. We read prices and the paper market clock; no Alpaca order is placed. The separate $100,000 Alpaca balance is not this application's €1,000 ledger.
-2. Enable GitHub Pages with **Deploy from a branch**, branch **main**, folder **/docs**. The `.nojekyll` file makes this a plain static site.
+2. The existing Sites dashboard is independent of the bot. To host another copy, export `docs/` with `node scripts/build.mjs` and serve the resulting static files over HTTPS; retain the public GitHub data URLs in `app.js`.
 3. Run **Paper Trading Lab** under Actions. Verify the log and the dashboard's data timestamp. The first valid US-session run starts the experiment automatically.
 4. To pause: Actions → Paper Trading Lab → Disable workflow. To resume the same unexpired test, re-enable it. The 14-day end time does not move.
 5. To start an entirely new experiment, export the old ledger first, reset `docs/data/portfolio.json` to the waiting state, and explicitly enable/run the workflow. Do not reset during the test merely because performance is poor.
