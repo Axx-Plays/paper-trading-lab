@@ -1,6 +1,6 @@
 import {readFile,writeFile,mkdir,rename} from 'node:fs/promises';
 import {cryptoAsset,cryptoUniverse,stockAssets,fxRate} from './providers.mjs';
-import {modelStudy,newPortfolio,portfolioStep,DAY} from '../docs/core.js';
+import {modelStudy,newPortfolio,portfolioStep,rankUniverse,DAY} from '../docs/core.js';
 const config=JSON.parse(await readFile(new URL('../config.json',import.meta.url),'utf8'));
 const dir=new URL('../docs/data/',import.meta.url);await mkdir(dir,{recursive:true});
 async function read(name,fallback){try{return JSON.parse(await readFile(new URL(name,dir),'utf8'));}catch(e){if(e.code==='ENOENT')return fallback;throw e;}}
@@ -27,7 +27,7 @@ for(const a of assets){if(a.bars?.length>=180 && !studies.studies[a.symbol]){try
 await save('research.json',studies);
 const startRequested=process.env.START_PAPER_RUN==='true';
 const fxReady=fx.usdPerEUR>0 && Date.parse(now)-Date.parse(fx.fxAt)<4*DAY;
-if(!p?.startedAt && startRequested && stock.ready && fxReady && assets.filter(a=>a.kind==='crypto'&&a.status==='ok').length>=2)p=newPortfolio(config,now);
+if(!p?.startedAt && startRequested && stock.ready && fxReady && rankUniverse(assets).length===10)p=newPortfolio(config,now);
 if(p?.startedAt){
   try{p=portfolioStep(p,market,config,now);}catch(e){errors.push(e.message);}
 }else p={version:1,status:'waiting',initialCapitalEUR:config.initialCapitalEUR,cashEUR:config.initialCapitalEUR,equityEUR:config.initialCapitalEUR,positions:[],trades:[],decisions:[],history:[],message:startRequested?'Wartet auf vollständige Aktienkurse während der US-Handelszeit. Dann beginnt der 14-Tage-Test.':'Bereit zur Einrichtung. Cloud-Workflow startet erst mit vollständigen Kursdaten.'};

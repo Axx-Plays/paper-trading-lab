@@ -21,7 +21,7 @@ export function indicators(bars) {
   return {last,m20,m60,volatility,atr,sma20:average(c.slice(-20)),sma50:average(c.slice(-50)),score:(m20*0.4+m60*0.6)/Math.max(volatility,0.005)};
 }
 export function rankUniverse(assets) {
-  const usable=assets.filter(a=>a.metrics && a.quote && a.status==='ok');
+  const usable=assets.filter(a=>a.metrics && a.quote && a.status==='ok' && a.entryEligible!==false && (a.quote.ask-a.quote.bid)/a.quote.bid <= (a.kind==='crypto'?0.01:0.005));
   const stocks=usable.filter(a=>a.kind==='stock').sort((a,b)=>a.metrics.volatility-b.metrics.volatility || a.symbol.localeCompare(b.symbol));
   const middle=Math.floor(stocks.length/2);
   const pick=(a,n,bucket)=>a.sort((x,y)=>y.metrics.score-x.metrics.score || x.symbol.localeCompare(y.symbol)).slice(0,n).map(x=>({...x,bucket}));

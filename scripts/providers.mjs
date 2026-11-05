@@ -19,10 +19,10 @@ export async function cryptoUniverse(config, held=[]) {
     const [base,quote]=(p.wsname??'').split('/');const t=tickers.result[id]??tickers.result[p.altname];
     if(quote!=='USD'||!t||p.status!=='online'||excluded.has(base)||/[.]/.test(base)||base.endsWith('x'))return [];
     const volume=Number(t.v[1])*Number(t.p[1]),symbol=(base==='XBT'?'BTC':base)+'/USD';
-    if(!Number.isFinite(volume)||volume<config.minCryptoDailyVolumeUSD)return [];
-    return [{pair:p.altname,symbol,volume,ticker:t}];
+    if(!Number.isFinite(volume)||(volume<config.minCryptoDailyVolumeUSD&&!held.includes(symbol)))return [];
+    return [{pair:p.altname,symbol,volume,ticker:t,entryEligible:volume>=config.minCryptoDailyVolumeUSD}];
   }).sort((a,b)=>b.volume-a.volume);
-  const selected=defs.slice(0,config.maxCryptoCandidates);
+  const selected=defs.filter(d=>d.entryEligible).slice(0,config.maxCryptoCandidates);
   // Continue valuing held assets even if they leave the daily liquidity shortlist.
   for(const symbol of held){if(!selected.some(d=>d.symbol===symbol)){const d=defs.find(d=>d.symbol===symbol);if(d)selected.push(d);}}
   return selected;
@@ -39,7 +39,7 @@ export async function cryptoAsset(def,previous) {
     bars=validateBars(rows.slice(0,-1).map(r=>({time:r[0]*1000,open:r[1],high:r[2],low:r[3],close:r[4],volume:r[6]})));
   }
   const t=def.ticker;
-  return {symbol:def.symbol,kind:'crypto',source:'Kraken Public API',status:bars.length>=180?'ok':'insufficient',dailyVolumeUSD:def.volume,bars,metrics:indicators(bars),quote:{bid:Number(t.b[0]),ask:Number(t.a[0]),last:Number(t.c[0]),at:new Date().toISOString()}};
+  return {symbol:def.symbol,kind:'crypto',source:'Kraken Public API',status:bars.length>=180?'ok':'insufficient',entryEligible:def.entryEligible,dailyVolumeUSD:def.volume,bars,metrics:indicators(bars),quote:{bid:Number(t.b[0]),ask:Number(t.a[0]),last:Number(t.c[0]),at:new Date().toISOString()}};
 }
 export async function stockAssets(symbols) {
   const key=process.env.ALPACA_API_KEY,secret=process.env.ALPACA_SECRET_KEY;
