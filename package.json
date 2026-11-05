@@ -1,0 +1,5 @@
+{
+  "name": "paper-trading-lab", "version": "1.0.0", "private": true, "type": "module",
+  "scripts": { "test": "node --test test/*.test.mjs", "update": "node scripts/update.mjs", "start": "node scripts/serve.mjs" },
+  "engines": { "node": ">=22" }
+}

@@ -1,0 +1,80 @@
+name: Paper Trading Lab
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/data/**']
+  workflow_dispatch:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: write
+concurrency:
+  group: paper-trading-lab
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      stop: ${{ steps.state.outputs.stop }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Test accounting, stops and model isolation
+        run: npm test
+      - name: Fetch data and simulate paper decisions
+        id: update
+        continue-on-error: true
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          START_PAPER_RUN: 'true'
+        run: node scripts/update.mjs
+      - name: Save durable paper state
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update paper observations and portfolio'
+            git push
+          fi
+      - name: Prepare small website artifact
+        run: node scripts/build.mjs
+      - name: Detect end of experiment
+        id: state
+        run: node scripts/run-state.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .local/site
+      - name: Report degraded data
+        if: steps.update.outcome == 'failure'
+        run: echo '::warning::Data update reported errors. See dashboard status. No fabricated replacement prices are used.'
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
+  stop-schedule:
+    needs: [update, deploy]
+    if: always() && needs.update.outputs.stop == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Disable this workflow after test completion
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow disable paper-lab.yml --repo "$GITHUB_REPOSITORY"

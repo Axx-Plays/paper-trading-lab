@@ -1,0 +1,1071 @@
+{
+  "generatedAt": "2026-11-05T20:00:02.100Z",
+  "usdPerEUR": 1.1224,
+  "fxAt": "2026-11-05T00:00:00Z",
+  "stocksReady": false,
+  "stockMessage": "Alpaca-Paper-Schlüssel fehlen. Aktiencharts sind separat verfügbar.",
+  "assets": [
+    {
+      "symbol": "BTC/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 377492492.6332905,
+      "metrics": {
+        "last": 80440.8,
+        "m20": -0.020611515127164526,
+        "m60": 0.007671455271557548,
+        "volatility": 0.017085562332755388,
+        "atr": 2190.1714285714293,
+        "sma20": 80206.40000000001,
+        "sma50": 81992.552,
+        "score": -0.2131467971030475
+      },
+      "quote": {
+        "bid": 76246.5,
+        "ask": 76246.6,
+        "last": 76246.5,
+        "at": "2026-11-05T20:00:02.327Z"
+      }
+    },
+    {
+      "symbol": "ETH/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 110230895.42756706,
+      "metrics": {
+        "last": 2423.16,
+        "m20": -0.006653302669929806,
+        "m60": -0.023163563947722787,
+        "volatility": 0.021309202062462423,
+        "atr": 86.5592857142857,
+        "sma20": 2349.4130000000005,
+        "sma50": 2506.4525999999996,
+        "score": -0.7771036845052112
+      },
+      "quote": {
+        "bid": 2258.48,
+        "ask": 2258.49,
+        "last": 2258.08,
+        "at": "2026-11-05T20:00:02.414Z"
+      }
+    },
+    {
+      "symbol": "ZEC/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 45647839.07984084,
+      "metrics": {
+        "last": 1294.86,
+        "m20": 0.06108233905860749,
+        "m60": 0.26337665378761255,
+        "volatility": 0.04926806317875894,
+        "atr": 112.41714285714284,
+        "sma20": 1220.29,
+        "sma50": 1319.7597999999998,
+        "score": 3.7033915304118246
+      },
+      "quote": {
+        "bid": 1245.45,
+        "ask": 1246.55,
+        "last": 1245.55,
+        "at": "2026-11-05T20:00:02.519Z"
+      }
+    },
+    {
+      "symbol": "XRP/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 43913990.744725265,
+      "metrics": {
+        "last": 1.30409,
+        "m20": -0.02196673116440928,
+        "m60": -0.07667200045313582,
+        "volatility": 0.0222526060274024,
+        "atr": 0.05065500000000002,
+        "sma20": 1.2940059999999998,
+        "sma50": 1.3856454000000002,
+        "score": -2.4621787070770766
+      },
+      "quote": {
+        "bid": 1.243,
+        "ask": 1.24301,
+        "last": 1.243,
+        "at": "2026-11-05T20:00:02.565Z"
+      }
+    },
+    {
+      "symbol": "SOL/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 31900563.398038737,
+      "metrics": {
+        "last": 95.53,
+        "m20": -0.09286867344031902,
+        "m60": -0.07405253465154604,
+        "volatility": 0.019981788267891303,
+        "atr": 4.232142857142857,
+        "sma20": 100.2665,
+        "sma50": 108.5718,
+        "score": -4.082667130356113
+      },
+      "quote": {
+        "bid": 89.98,
+        "ask": 89.99,
+        "last": 89.99,
+        "at": "2026-11-05T20:00:02.606Z"
+      }
+    },
+    {
+      "symbol": "HYPE/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 19212395.178705063,
+      "metrics": {
+        "last": 83.73,
+        "m20": 0.024972456849063684,
+        "m60": -0.0197845937719503,
+        "volatility": 0.030219926726413524,
+        "atr": 5.402857142857143,
+        "sma20": 81.579,
+        "sma50": 85.7692,
+        "score": -0.06226929471341015
+      },
+      "quote": {
+        "bid": 78.05,
+        "ask": 78.07,
+        "last": 78.06,
+        "at": "2026-11-05T20:00:02.645Z"
+      }
+    },
+    {
+      "symbol": "NEAR/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 17485617.134310737,
+      "metrics": {
+        "last": 4.0061,
+        "m20": -0.23786241534129826,
+        "m60": 0.8273502714044612,
+        "volatility": 0.05244955577594651,
+        "atr": 0.4090428571428571,
+        "sma20": 4.56527,
+        "sma50": 4.646954,
+        "score": 7.6504975260472765
+      },
+      "quote": {
+        "bid": 3.7046,
+        "ask": 3.7067,
+        "last": 3.7087,
+        "at": "2026-11-05T20:00:02.700Z"
+      }
+    },
+    {
+      "symbol": "SUI/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 9724287.90372803,
+      "metrics": {
+        "last": 0.9283,
+        "m20": -0.10369798204113168,
+        "m60": 0.16811375361771752,
+        "volatility": 0.03065139004482762,
+        "atr": 0.05437857142857142,
+        "sma20": 0.944335,
+        "sma50": 1.0154299999999998,
+        "score": 1.93756496091438
+      },
+      "quote": {
+        "bid": 0.859,
+        "ask": 0.8591,
+        "last": 0.8594,
+        "at": "2026-11-05T20:00:02.744Z"
+      }
+    },
+    {
+      "symbol": "UNI/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 7734210.314392274,
+      "metrics": {
+        "last": 7.6205,
+        "m20": 0.026966201282949687,
+        "m60": 0.08136680336592339,
+        "volatility": 0.04103487517136922,
+        "atr": 0.5721999999999999,
+        "sma20": 7.1391800000000005,
+        "sma50": 7.944090000000001,
+        "score": 1.4525830110072442
+      },
+      "quote": {
+        "bid": 6.8364,
+        "ask": 6.841,
+        "last": 6.8418,
+        "at": "2026-11-05T20:00:02.811Z"
+      }
+    },
+    {
+      "symbol": "XDG/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 7398740.650559583,
+      "metrics": {
+        "last": 0.0770138,
+        "m20": -0.04981178540451647,
+        "m60": -0.1413239081715708,
+        "volatility": 0.019689337160589442,
+        "atr": 0.003407285714285716,
+        "sma20": 0.07794177,
+        "sma50": 0.08544397999999997,
+        "score": -5.3185670096785564
+      },
+      "quote": {
+        "bid": 0.0724751,
+        "ask": 0.0724756,
+        "last": 0.0724954,
+        "at": "2026-11-05T20:00:02.855Z"
+      }
+    },
+    {
+      "symbol": "XMR/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 6914485.237516254,
+      "metrics": {
+        "last": 641.4,
+        "m20": 0.16898738791280898,
+        "m60": 0.15125733670777008,
+        "volatility": 0.02623094532194113,
+        "atr": 36.540714285714266,
+        "sma20": 600.2470000000001,
+        "sma50": 568.3684,
+        "score": 6.036738487550153
+      },
+      "quote": {
+        "bid": 608.38,
+        "ask": 608.67,
+        "last": 608.33,
+        "at": "2026-11-05T20:00:02.900Z"
+      }
+    },
+    {
+      "symbol": "LINK/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 6441338.074824837,
+      "metrics": {
+        "last": 11.43323,
+        "m20": -0.08148973535418136,
+        "m60": -0.051051930891609865,
+        "volatility": 0.0347059261374448,
+        "atr": 0.693797857142857,
+        "sma20": 11.667116499999999,
+        "sma50": 12.622581800000003,
+        "score": -1.8217941347031725
+      },
+      "quote": {
+        "bid": 10.83693,
+        "ask": 10.84065,
+        "last": 10.83792,
+        "at": "2026-11-05T20:00:02.958Z"
+      }
+    },
+    {
+      "symbol": "HBAR/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 6434080.7649919065,
+      "metrics": {
+        "last": 0.07263,
+        "m20": -0.14663376806485728,
+        "m60": -0.09450193242737814,
+        "volatility": 0.02855126095712015,
+        "atr": 0.004665000000000001,
+        "sma20": 0.07710049999999999,
+        "sma50": 0.08689139999999998,
+        "score": -4.040265221757307
+      },
+      "quote": {
+        "bid": 0.06834,
+        "ask": 0.06835,
+        "last": 0.06835,
+        "at": "2026-11-05T20:00:03.002Z"
+      }
+    },
+    {
+      "symbol": "ADA/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 6214363.489631266,
+      "metrics": {
+        "last": 0.19716,
+        "m20": -0.14171535039222682,
+        "m60": -0.09700467161308057,
+        "volatility": 0.026268089938020628,
+        "atr": 0.010746714285714288,
+        "sma20": 0.20653139999999998,
+        "sma50": 0.22785239999999995,
+        "score": -4.373707543860963
+      },
+      "quote": {
+        "bid": 0.185125,
+        "ask": 0.185163,
+        "last": 0.185187,
+        "at": "2026-11-05T20:00:03.042Z"
+      }
+    },
+    {
+      "symbol": "AVAX/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 6190555.763112391,
+      "metrics": {
+        "last": 8.73,
+        "m20": -0.12969793639716876,
+        "m60": 0.14868421052631597,
+        "volatility": 0.02589454962433288,
+        "atr": 0.4867857142857143,
+        "sma20": 9.054449999999997,
+        "sma50": 9.8831,
+        "score": 1.441668316248379
+      },
+      "quote": {
+        "bid": 8.39,
+        "ask": 8.391,
+        "last": 8.392,
+        "at": "2026-11-05T20:00:03.082Z"
+      }
+    },
+    {
+      "symbol": "QNT/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 5964775.609435035,
+      "metrics": {
+        "last": 203.66,
+        "m20": -0.003181439968675037,
+        "m60": 2.138058551617873,
+        "volatility": 0.045438457395489525,
+        "atr": 17.94571428571429,
+        "sma20": 194.48199999999997,
+        "sma50": 188.33399999999997,
+        "score": 28.20435878420619
+      },
+      "quote": {
+        "bid": 192.03,
+        "ask": 192.15,
+        "last": 192.17,
+        "at": "2026-11-05T20:00:03.233Z"
+      }
+    },
+    {
+      "symbol": "TAO/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 5399816.4175893925,
+      "metrics": {
+        "last": 234.1991,
+        "m20": -0.15949760588684114,
+        "m60": -0.007930654848768204,
+        "volatility": 0.028603658905495623,
+        "atr": 14.201042857142856,
+        "sma20": 251.67242500000003,
+        "sma50": 273.675488,
+        "score": -2.396806488656087
+      },
+      "quote": {
+        "bid": 220.3758,
+        "ask": 220.4561,
+        "last": 220.3867,
+        "at": "2026-11-05T20:00:03.278Z"
+      }
+    },
+    {
+      "symbol": "PEPE/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 4448172.710979904,
+      "metrics": {
+        "last": 0.000004962,
+        "m20": 0.21617647058823541,
+        "m60": 0.3745152354570638,
+        "volatility": 0.049384707032829114,
+        "atr": 5.820714285714286e-7,
+        "sma20": 0.00000453745,
+        "sma50": 0.000004331499999999999,
+        "score": 6.301135477075357
+      },
+      "quote": {
+        "bid": 0.000004818,
+        "ask": 0.000004821,
+        "last": 0.000004822,
+        "at": "2026-11-05T20:00:03.317Z"
+      }
+    },
+    {
+      "symbol": "LTC/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 4184457.5259639206,
+      "metrics": {
+        "last": 56.22,
+        "m20": -0.07805837979665464,
+        "m60": 0.027600073112776347,
+        "volatility": 0.026443639517287523,
+        "atr": 2.7471428571428556,
+        "sma20": 57.453500000000005,
+        "sma50": 61.797599999999996,
+        "score": -0.5545117207262608
+      },
+      "quote": {
+        "bid": 52.57,
+        "ask": 52.59,
+        "last": 52.6,
+        "at": "2026-11-05T20:00:03.357Z"
+      }
+    },
+    {
+      "symbol": "INJ/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 4057171.839450085,
+      "metrics": {
+        "last": 7.94,
+        "m20": -0.06938584153774019,
+        "m60": 0.6043645180844617,
+        "volatility": 0.04177900779144311,
+        "atr": 0.6265,
+        "sma20": 7.9318,
+        "sma50": 7.681019999999998,
+        "score": 8.0151346797701
+      },
+      "quote": {
+        "bid": 8.195,
+        "ask": 8.203,
+        "last": 8.188,
+        "at": "2026-11-05T20:00:03.402Z"
+      }
+    },
+    {
+      "symbol": "ENA/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 3622049.2441549357,
+      "metrics": {
+        "last": 0.1806,
+        "m20": -0.11730205278592376,
+        "m60": 0.05183459522422851,
+        "volatility": 0.05597373191790755,
+        "atr": 0.020121428571428568,
+        "sma20": 0.19293999999999997,
+        "sma50": 0.21116799999999997,
+        "score": -0.28263371831334205
+      },
+      "quote": {
+        "bid": 0.1647,
+        "ask": 0.1649,
+        "last": 0.1648,
+        "at": "2026-11-05T20:00:03.453Z"
+      }
+    },
+    {
+      "symbol": "XLM/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 3603978.630710669,
+      "metrics": {
+        "last": 0.167816,
+        "m20": -0.08214008335429956,
+        "m60": -0.08726204720983355,
+        "volatility": 0.025371799578665446,
+        "atr": 0.007948285714285713,
+        "sma20": 0.17204735,
+        "sma50": 0.19225982000000005,
+        "score": -3.358581696320579
+      },
+      "quote": {
+        "bid": 0.154835,
+        "ask": 0.154883,
+        "last": 0.154915,
+        "at": "2026-11-05T20:00:03.497Z"
+      }
+    },
+    {
+      "symbol": "BCH/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 3581999.0576897254,
+      "metrics": {
+        "last": 282.11,
+        "m20": 0.014966720633207586,
+        "m60": 0.0975334578275755,
+        "volatility": 0.02969462091606255,
+        "atr": 16.450000000000006,
+        "sma20": 281.2055,
+        "sma50": 289.04200000000003,
+        "score": 2.172338321212077
+      },
+      "quote": {
+        "bid": 276.59,
+        "ask": 276.74,
+        "last": 276.53,
+        "at": "2026-11-05T20:00:03.578Z"
+      }
+    },
+    {
+      "symbol": "PUMP/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 3136617.268049953,
+      "metrics": {
+        "last": 0.004242,
+        "m20": -0.06440229378032636,
+        "m60": 0.1041124414367518,
+        "volatility": 0.058963727927552854,
+        "atr": 0.0004362142857142856,
+        "sma20": 0.0043538,
+        "sma50": 0.004779360000000002,
+        "score": 0.6225275884018201
+      },
+      "quote": {
+        "bid": 0.003997,
+        "ask": 0.003999,
+        "last": 0.003996,
+        "at": "2026-11-05T20:00:03.627Z"
+      }
+    },
+    {
+      "symbol": "VVV/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 2768157.492763372,
+      "metrics": {
+        "last": 21.564,
+        "m20": -0.12890325186830942,
+        "m60": 0.24878387769284216,
+        "volatility": 0.048393460475673535,
+        "atr": 2.178071428571429,
+        "sma20": 23.848300000000002,
+        "sma50": 25.701619999999988,
+        "score": 2.019054328993439
+      },
+      "quote": {
+        "bid": 21.639,
+        "ask": 21.652,
+        "last": 21.674,
+        "at": "2026-11-05T20:00:03.668Z"
+      }
+    },
+    {
+      "symbol": "TRUMP/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 2671290.7207583175,
+      "metrics": {
+        "last": 1.269,
+        "m20": -0.32643312101910826,
+        "m60": -0.46500843170320405,
+        "volatility": 0.05728733114538964,
+        "atr": 0.1355714285714286,
+        "sma20": 1.6708500000000002,
+        "sma50": 1.8750200000000001,
+        "score": -7.149544222789783
+      },
+      "quote": {
+        "bid": 1.212,
+        "ask": 1.213,
+        "last": 1.213,
+        "at": "2026-11-05T20:00:03.727Z"
+      }
+    },
+    {
+      "symbol": "AAVE/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 2393539.787785152,
+      "metrics": {
+        "last": 131.7,
+        "m20": -0.16311876469466868,
+        "m60": -0.020307966971658264,
+        "volatility": 0.04008103566916381,
+        "atr": 9.652857142857144,
+        "sma20": 139.31099999999998,
+        "sma50": 150.41559999999998,
+        "score": -1.9318933447728912
+      },
+      "quote": {
+        "bid": 130.97,
+        "ask": 131,
+        "last": 131.03,
+        "at": "2026-11-05T20:00:03.775Z"
+      }
+    },
+    {
+      "symbol": "LIGHTER/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "insufficient",
+      "dailyVolumeUSD": 2284267.7670728574,
+      "metrics": {
+        "last": 3.312,
+        "m20": 0.09415262636273525,
+        "m60": -0.3049317943336831,
+        "volatility": 0.06265189527108127,
+        "atr": 0.3725,
+        "sma20": 3.1548,
+        "sma50": 3.7468400000000015,
+        "score": -2.319132173519132
+      },
+      "quote": {
+        "bid": 3.5,
+        "ask": 3.511,
+        "last": 3.498,
+        "at": "2026-11-05T20:00:03.824Z"
+      }
+    },
+    {
+      "symbol": "ZRO/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 2239067.0974329505,
+      "metrics": {
+        "last": 1.823,
+        "m20": -0.12481997119539134,
+        "m60": 0.7198113207547168,
+        "volatility": 0.06059737702219299,
+        "atr": 0.18314285714285708,
+        "sma20": 1.7990499999999998,
+        "sma50": 1.7392599999999998,
+        "score": 6.303223385969101
+      },
+      "quote": {
+        "bid": 1.646,
+        "ask": 1.648,
+        "last": 1.649,
+        "at": "2026-11-05T20:00:03.868Z"
+      }
+    },
+    {
+      "symbol": "KOR/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "insufficient",
+      "dailyVolumeUSD": 1996809.1899190547,
+      "metrics": null,
+      "quote": {
+        "bid": 0.00577,
+        "ask": 0.005775,
+        "last": 0.005768,
+        "at": "2026-11-05T20:00:03.920Z"
+      }
+    },
+    {
+      "symbol": "ONDO/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 1894457.9351650486,
+      "metrics": {
+        "last": 0.40792,
+        "m20": -0.1292319515006617,
+        "m60": 0.10153380859796934,
+        "volatility": 0.040495546789874444,
+        "atr": 0.028851428571428573,
+        "sma20": 0.419381,
+        "sma50": 0.4532240000000002,
+        "score": 0.2278646737725784
+      },
+      "quote": {
+        "bid": 0.372,
+        "ask": 0.37201,
+        "last": 0.372,
+        "at": "2026-11-05T20:00:03.964Z"
+      }
+    },
+    {
+      "symbol": "BNB/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 1859069.902536468,
+      "metrics": {
+        "last": 719.27,
+        "m20": -0.013238764199088981,
+        "m60": -0.06165446884009762,
+        "volatility": 0.022428748958487826,
+        "atr": 26.241428571428553,
+        "sma20": 724.8995,
+        "sma50": 747.5461999999998,
+        "score": -1.8854456421962325
+      },
+      "quote": {
+        "bid": 692.19,
+        "ask": 692.33,
+        "last": 692.14,
+        "at": "2026-11-05T20:00:04.007Z"
+      }
+    },
+    {
+      "symbol": "WLD/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 1825628.0381306305,
+      "metrics": {
+        "last": 0.3745,
+        "m20": -0.25856266085923574,
+        "m60": -0.0564373897707231,
+        "volatility": 0.05507795325427682,
+        "atr": 0.03900714285714286,
+        "sma20": 0.45859999999999984,
+        "sma50": 0.48134800000000005,
+        "score": -2.492603484597855
+      },
+      "quote": {
+        "bid": 0.3439,
+        "ask": 0.3443,
+        "last": 0.3442,
+        "at": "2026-11-05T20:00:04.066Z"
+      }
+    },
+    {
+      "symbol": "TRX/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 1598306.359033516,
+      "metrics": {
+        "last": 0.319668,
+        "m20": -0.03784301154884562,
+        "m60": -0.04231951443105619,
+        "volatility": 0.03459519894843235,
+        "atr": 0.013278857142857148,
+        "sma20": 0.32858955,
+        "sma50": 0.33272219999999997,
+        "score": -1.1715184334850746
+      },
+      "quote": {
+        "bid": 0.317149,
+        "ask": 0.317173,
+        "last": 0.317173,
+        "at": "2026-11-05T20:00:04.109Z"
+      }
+    },
+    {
+      "symbol": "NIGHT/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 1588412.3372831824,
+      "metrics": {
+        "last": 0.04338,
+        "m20": 0.023354564755838858,
+        "m60": 0.9331550802139037,
+        "volatility": 0.046816451772344225,
+        "atr": 0.003466428571428571,
+        "sma20": 0.0401755,
+        "sma50": 0.03768259999999999,
+        "score": 12.15886408476049
+      },
+      "quote": {
+        "bid": 0.03929,
+        "ask": 0.03932,
+        "last": 0.03939,
+        "at": "2026-11-05T20:00:04.158Z"
+      }
+    },
+    {
+      "symbol": "USELESS/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 1476842.3438865223,
+      "metrics": {
+        "last": 0.14129,
+        "m20": -0.17787734202257655,
+        "m60": -0.45127966134607167,
+        "volatility": 0.08710636117440156,
+        "atr": 0.020918571428571422,
+        "sma20": 0.148479,
+        "sma50": 0.2017586,
+        "score": -3.9253015394833786
+      },
+      "quote": {
+        "bid": 0.13204,
+        "ask": 0.13227,
+        "last": 0.13193,
+        "at": "2026-11-05T20:00:04.218Z"
+      }
+    },
+    {
+      "symbol": "PENGU/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 1475525.5064037563,
+      "metrics": {
+        "last": 0.007281,
+        "m20": -0.042855264887603495,
+        "m60": -0.15602179204822064,
+        "volatility": 0.03659403057896582,
+        "atr": 0.0005369999999999999,
+        "sma20": 0.00752815,
+        "sma50": 0.008285939999999997,
+        "score": -3.0265914804048846
+      },
+      "quote": {
+        "bid": 0.006564,
+        "ask": 0.006566,
+        "last": 0.006562,
+        "at": "2026-11-05T20:00:04.268Z"
+      }
+    },
+    {
+      "symbol": "RENDER/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 1471728.387218972,
+      "metrics": {
+        "last": 1.601,
+        "m20": -0.18149284253578735,
+        "m60": 0.09283276450511946,
+        "volatility": 0.03921574371699618,
+        "atr": 0.10714285714285716,
+        "sma20": 1.7039000000000002,
+        "sma50": 1.810279999999999,
+        "score": -0.4308850657834105
+      },
+      "quote": {
+        "bid": 1.548,
+        "ask": 1.55,
+        "last": 1.55,
+        "at": "2026-11-05T20:00:04.329Z"
+      }
+    },
+    {
+      "symbol": "CAP/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "insufficient",
+      "dailyVolumeUSD": 1467235.5768514508,
+      "metrics": {
+        "last": 0.0963,
+        "m20": 0.2263766491773216,
+        "m60": 1.1533026251062117,
+        "volatility": 0.13655014632182247,
+        "atr": 0.017212142857142856,
+        "sma20": 0.07830210000000001,
+        "sma50": 0.07123256,
+        "score": 5.730731572343962
+      },
+      "quote": {
+        "bid": 0.108446,
+        "ask": 0.108681,
+        "last": 0.10868,
+        "at": "2026-11-05T20:00:04.369Z"
+      }
+    },
+    {
+      "symbol": "CC/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "dailyVolumeUSD": 1414018.7205621814,
+      "metrics": {
+        "last": 0.09941,
+        "m20": -0.05843909831407457,
+        "m60": -0.08906808393658949,
+        "volatility": 0.03304130933130492,
+        "atr": 0.006150000000000002,
+        "sma20": 0.1006915,
+        "sma50": 0.11208839999999999,
+        "score": -2.324862157166511
+      },
+      "quote": {
+        "bid": 0.09834,
+        "ask": 0.09841,
+        "last": 0.09842,
+        "at": "2026-11-05T20:00:04.423Z"
+      }
+    },
+    {
+      "symbol": "AAPL",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "MSFT",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "GOOGL",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "AMZN",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "META",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "NVDA",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "AMD",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "AVGO",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "NFLX",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "JPM",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "V",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "MA",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "COST",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "WMT",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "KO",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "PEP",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "PG",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "JNJ",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "UNH",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "XOM",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "HD",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "CRM",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "ADBE",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "ORCL",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "INTC",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "QCOM",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "DIS",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "PYPL",
+      "kind": "stock",
+      "status": "unconfigured"
+    },
+    {
+      "symbol": "UBER",
+      "kind": "stock",
+      "status": "unconfigured"
+    }
+  ],
+  "errors": []
+}
