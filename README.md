@@ -17,6 +17,8 @@ Expected GitHub Pages address: https://axx-plays.github.io/paper-trading-lab/
 
 On a phone, use the browser's **Add to Home Screen** option. This is a responsive web application, not a native app or guaranteed offline app. It loads saved snapshots every minute while open; the underlying cloud job checks approximately every 15 minutes.
 
+The hosted app reads its public data snapshots from this repository's raw GitHub endpoint. Scheduled jobs commit new observations but do not redeploy the website; only source pushes and manual runs publish the static shell. A slow Pages deployment therefore does not block displaying a later committed depot snapshot. The local preview reads local JSON. Request failures are visible and retain the last loaded snapshot with its original timestamp.
+
 ## Setup
 
 1. In GitHub Settings → Secrets and variables → Actions, create `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` from an **Alpaca Paper Trading** account. Keys stay in the Actions runtime. We read prices and the paper market clock; no Alpaca order is placed. The separate $100,000 Alpaca balance is not this application's €1,000 ledger.
