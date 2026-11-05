@@ -17,12 +17,12 @@ Expected GitHub Pages address: https://axx-plays.github.io/paper-trading-lab/
 
 On a phone, use the browser's **Add to Home Screen** option. This is a responsive web application, not a native app or guaranteed offline app. It loads saved snapshots every minute while open; the underlying cloud job checks approximately every 15 minutes.
 
-The hosted app reads its public data snapshots from this repository's raw GitHub endpoint. Scheduled jobs commit new observations but do not redeploy the website; only source pushes and manual runs publish the static shell. A slow Pages deployment therefore does not block displaying a later committed depot snapshot. The local preview reads local JSON. Request failures are visible and retain the last loaded snapshot with its original timestamp.
+The hosted app reads its public data snapshots from this repository's raw GitHub endpoint. Scheduled jobs commit new observations but do not redeploy the website. GitHub Pages publishes the static shell directly from `main` → `/docs`, independently of the paper workflow. A slow Pages deployment therefore does not block displaying a later committed depot snapshot. The local preview reads local JSON. Request failures are visible and retain the last loaded snapshot with its original timestamp.
 
 ## Setup
 
 1. In GitHub Settings → Secrets and variables → Actions, create `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` from an **Alpaca Paper Trading** account. Keys stay in the Actions runtime. We read prices and the paper market clock; no Alpaca order is placed. The separate $100,000 Alpaca balance is not this application's €1,000 ledger.
-2. Enable GitHub Pages with **GitHub Actions** as source.
+2. Enable GitHub Pages with **Deploy from a branch**, branch **main**, folder **/docs**. The `.nojekyll` file makes this a plain static site.
 3. Run **Paper Trading Lab** under Actions. Verify the log and the dashboard's data timestamp. The first valid US-session run starts the experiment automatically.
 4. To pause: Actions → Paper Trading Lab → Disable workflow. To resume the same unexpired test, re-enable it. The 14-day end time does not move.
 5. To start an entirely new experiment, export the old ledger first, reset `docs/data/portfolio.json` to the waiting state, and explicitly enable/run the workflow. Do not reset during the test merely because performance is poor.
@@ -81,7 +81,7 @@ npm test
 npm start
 ```
 
-Open http://127.0.0.1:4173. `npm run update` fetches public crypto and FX data. It does not start the paper experiment locally unless `START_PAPER_RUN=true` and all required stock data are available. Run with environment variables for Alpaca; never commit them. `node scripts/build.mjs` prepares `.local/site`, excluding the large historical cache. `docs/data/history-cache.json` persists daily series in the repository; the website receives only small quote snapshots and research summaries.
+Open http://127.0.0.1:4173. `npm run update` fetches public crypto and FX data. It does not start the paper experiment locally unless `START_PAPER_RUN=true` and all required stock data are available. Run with environment variables for Alpaca; never commit them. `node scripts/build.mjs` optionally prepares a smaller `.local/site` export. `docs/data/history-cache.json` persists daily series publicly in the repository and Pages source; the app only fetches small quote snapshots and research summaries.
 
 ## Reliability and limits
 

@@ -8,8 +8,6 @@ on:
     - cron: '7,22,37,52 * * * *'
 permissions:
   contents: write
-  pages: write
-  id-token: write
   actions: write
 concurrency:
   group: paper-trading-lab
@@ -47,33 +45,14 @@ jobs:
             git commit -m 'Update paper observations and portfolio'
             git push
           fi
-      - name: Prepare small website artifact
-        if: github.event_name != 'schedule'
-        run: node scripts/build.mjs
       - name: Detect end of experiment
         id: state
         run: node scripts/run-state.mjs
-      - uses: actions/upload-pages-artifact@v3
-        if: github.event_name != 'schedule'
-        with:
-          path: .local/site
       - name: Report degraded data
         if: steps.update.outcome == 'failure'
         run: echo '::warning::Data update reported errors. See dashboard status. No fabricated replacement prices are used.'
-  deploy:
-    needs: update
-    if: github.event_name != 'schedule'
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy dashboard
-        id: deployment
-        uses: actions/deploy-pages@v4
   stop-schedule:
-    needs: [update, deploy]
+    needs: update
     if: always() && needs.update.outputs.stop == 'true'
     runs-on: ubuntu-latest
     steps:
