@@ -1,8 +1,19 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {newPortfolio,portfolioStep,rankUniverse,modelStudy,validateBars,parseCSV,DAY} from '../docs/core.js';
+import {newPortfolio,waitingPortfolio,startTimeReached,portfolioStep,rankUniverse,modelStudy,validateBars,parseCSV,DAY} from '../docs/core.js';
 const config={initialCapitalEUR:1000,durationDays:14,mediumWeight:.55,highWeight:.25,cryptoWeight:.10,reserveWeight:.10,maxDrawdown:.08};
 const now='2026-11-05T16:00:00.000Z';
+test('scheduled reset retains 1000 EUR and prohibits startup before 22:00 Berlin',()=>{
+  const scheduled={...config,startNotBefore:'2026-11-05T21:00:00.000Z'};
+  const before='2026-11-05T20:59:59.999Z',at='2026-11-05T21:00:00.000Z';
+  assert.equal(startTimeReached(scheduled,before),false);
+  assert.throws(()=>newPortfolio(scheduled,before));
+  const p=waitingPortfolio(scheduled,before);assert.equal(p.equityEUR,1000);assert.equal(p.cashEUR,1000);assert.equal(p.trades.length,0);assert.equal(p.startedAt,undefined);assert.match(p.message,/22:00/);
+  assert.equal(startTimeReached(scheduled,at),true);
+  assert.equal(newPortfolio(scheduled,at).endsAt,'2026-11-19T21:00:00.000Z');
+  const m=market();m.stocksReady=false;assert.equal(portfolioStep(newPortfolio(scheduled,at),m,scheduled,at).trades.length,0);
+  assert.equal(startTimeReached({...config,startNotBefore:'invalid'},at),false);
+});
 function asset(symbol,kind,vol=.02){return {symbol,kind,status:'ok',metrics:{volatility:vol,atr:2,last:100,score:1},quote:{bid:100,ask:100.1,last:100,at:now}};}
 function market(){return {usdPerEUR:1.1,fxAt:now,stocksReady:true,assets:[...Array.from({length:16},(_,i)=>asset('S'+i,'stock',.005+i*.002)),asset('BTC/USD','crypto'),asset('ETH/USD','crypto')]};}
 test('1000 EUR creates eight stocks, two cryptos and a 10% reserve without borrowing',()=>{const p=portfolioStep(newPortfolio(config,now),market(),config,now);assert.equal(p.positions.length,10);assert.equal(p.positions.filter(x=>x.bucket==='medium').length,4);assert.equal(p.positions.filter(x=>x.bucket==='high').length,4);assert.ok(Math.abs(p.cashEUR-100)<1e-8);assert.ok(p.equityEUR<1000);assert.ok(p.trades.every(t=>t.feeEUR>0));});

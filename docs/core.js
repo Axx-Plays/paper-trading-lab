@@ -32,7 +32,18 @@ export function stopPercent(asset) {
   const [min,max]=ranges[asset.bucket];
   return clamp(2*asset.metrics.atr/asset.metrics.last,min,max);
 }
+export function startTimeReached(config, now) {
+  return !config.startNotBefore || Date.parse(now) >= Date.parse(config.startNotBefore);
+}
+export function waitingPortfolio(config, now, startRequested = true) {
+  const scheduled = config.startNotBefore ? new Date(config.startNotBefore).toLocaleString('de-DE', {timeZone:'Europe/Berlin',dateStyle:'short',timeStyle:'short'}) : null;
+  const message = !startRequested ? 'Cloud-Start noch nicht aktiviert.' : !startTimeReached(config, now)
+    ? `Start frühestens ${scheduled} Uhr (Berlin). Bis dahin bleibt das Startkapital unverändert. Danach warten Käufe auf eine geöffnete US-Börse und vollständige, handelbare Kurse.`
+    : 'Startzeit erreicht. Wartet auf eine geöffnete US-Börse und vollständige, handelbare Kurse. Erst mit dem Start beginnt der 14-Tage-Test.';
+  return {version:1,status:'waiting',startNotBefore:config.startNotBefore??null,initialCapitalEUR:config.initialCapitalEUR,cashEUR:config.initialCapitalEUR,equityEUR:config.initialCapitalEUR,positions:[],trades:[],decisions:[],history:[],message};
+}
 export function newPortfolio(config, now) {
+  if (!startTimeReached(config, now)) throw new Error('Der geplante Startzeitpunkt ist noch nicht erreicht oder ungültig.');
   return {version:1,status:'running',startedAt:now,endsAt:new Date(Date.parse(now)+config.durationDays*DAY).toISOString(),initialCapitalEUR:config.initialCapitalEUR,cashEUR:config.initialCapitalEUR,equityEUR:config.initialCapitalEUR,peakEUR:config.initialCapitalEUR,positions:[],trades:[],decisions:[],history:[],lastRebalance:null,stopCooldown:{}};
 }
 export function portfolioStep(state, market, config, now) {

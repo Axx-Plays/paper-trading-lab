@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "status": "running",
+  "startedAt": "2026-11-05T20:01:39.624Z",
+  "endsAt": "2026-11-19T20:01:39.624Z",
+  "initialCapitalEUR": 1000,
+  "cashEUR": 491.098994620776,
+  "equityEUR": 969.271250732565,
+  "peakEUR": 1000,
+  "positions": [
+    {
+      "symbol": "V",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 0.3622466240698837,
+      "entryUSD": 425.822805,
+      "highWaterUSD": 425.822805,
+      "stopUSD": 408.7898928,
+      "stopPercent": 0.04,
+      "costEUR": 137.5,
+      "openedAt": "2026-11-05T20:01:39.624Z",
+      "markEUR": 377.3219671975232,
+      "markAt": "2026-11-05T20:36:31.629778143Z"
+    },
+    {
+      "symbol": "CRM",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.30110811453745345,
+      "entryUSD": 232.85637,
+      "highWaterUSD": 232.85637,
+      "stopUSD": 214.07888247070588,
+      "stopPercent": 0.08063978464189799,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-05T20:01:39.624Z",
+      "markEUR": 192.25236457590879,
+      "markAt": "2026-11-05T20:36:32.129116411Z"
+    },
+    {
+      "symbol": "HD",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.20015395018263765,
+      "entryUSD": 350.30506499999996,
+      "highWaterUSD": 350.30506499999996,
+      "stopUSD": 325.78371044999994,
+      "stopPercent": 0.07,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-05T20:01:39.624Z",
+      "markEUR": 311.37762603349967,
+      "markAt": "2026-11-05T20:36:31.897453442Z"
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.1985266361967335,
+      "entryUSD": 353.1765,
+      "highWaterUSD": 353.1765,
+      "stopUSD": 324.54476249165555,
+      "stopPercent": 0.08106920338228744,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-05T20:01:39.624Z",
+      "markEUR": 302.61946275837494,
+      "markAt": "2026-11-05T20:36:32.041223904Z"
+    },
+    {
+      "symbol": "MSFT",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.1302430958378035,
+      "entryUSD": 538.339035,
+      "highWaterUSD": 538.339035,
+      "stopUSD": 500.65530254999993,
+      "stopPercent": 0.07,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-05T20:01:39.624Z",
+      "markEUR": 475.7355966010335,
+      "markAt": "2026-11-05T20:36:32.16247153Z"
+    },
+    {
+      "symbol": "QNT/USD",
+      "kind": "crypto",
+      "bucket": "crypto",
+      "quantity": 0.2922406894641288,
+      "entryUSD": 191.84165,
+      "highWaterUSD": 191.84165,
+      "stopUSD": 163.06540249999998,
+      "stopPercent": 0.15,
+      "costEUR": 50,
+      "openedAt": "2026-11-05T20:01:39.624Z",
+      "markEUR": 168.42600625445473,
+      "markAt": "2026-11-05T20:36:29.375Z"
+    },
+    {
+      "symbol": "NIGHT/USD",
+      "kind": "crypto",
+      "bucket": "crypto",
+      "quantity": 1427.681063874593,
+      "entryUSD": 0.039269229999999995,
+      "highWaterUSD": 0.0394,
+      "stopUSD": 0.03349,
+      "stopPercent": 0.15,
+      "costEUR": 50,
+      "openedAt": "2026-11-05T20:01:39.624Z",
+      "markEUR": 0.035033178367783316,
+      "markAt": "2026-11-05T20:36:29.376Z"
+    }
+  ],
+  "trades": [
+    {
+      "id": "2026-11-05T20:01:39.624Z-V-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "V",
+      "side": "buy",
+      "quantity": 0.3622466240698837,
+      "priceUSD": 425.822805,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-05T20:01:39.624Z-MA-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "MA",
+      "side": "buy",
+      "quantity": 0.21979896451639944,
+      "priceUSD": 701.79072,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-05T20:01:39.624Z-DIS-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "DIS",
+      "side": "buy",
+      "quantity": 1.3066851908668804,
+      "priceUSD": 118.04899499999999,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-05T20:01:39.624Z-WMT-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "WMT",
+      "side": "buy",
+      "quantity": 1.193403403284954,
+      "priceUSD": 129.254595,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-05T20:01:39.624Z-CRM-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "CRM",
+      "side": "buy",
+      "quantity": 0.30110811453745345,
+      "priceUSD": 232.85637,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-05T20:01:39.624Z-HD-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "HD",
+      "side": "buy",
+      "quantity": 0.20015395018263765,
+      "priceUSD": 350.30506499999996,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-05T20:01:39.624Z-TSLA-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "TSLA",
+      "side": "buy",
+      "quantity": 0.1985266361967335,
+      "priceUSD": 353.1765,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-05T20:01:39.624Z-MSFT-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "MSFT",
+      "side": "buy",
+      "quantity": 0.1302430958378035,
+      "priceUSD": 538.339035,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-05T20:01:39.624Z-QNT/USD-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "QNT/USD",
+      "side": "buy",
+      "quantity": 0.2922406894641288,
+      "priceUSD": 191.84165,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 50,
+      "feeEUR": 0.049950049950041375,
+      "pnlEUR": null,
+      "reason": "Ranking · crypto"
+    },
+    {
+      "id": "2026-11-05T20:01:39.624Z-NIGHT/USD-buy",
+      "at": "2026-11-05T20:01:39.624Z",
+      "symbol": "NIGHT/USD",
+      "side": "buy",
+      "quantity": 1427.681063874593,
+      "priceUSD": 0.039269229999999995,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 50,
+      "feeEUR": 0.049950049950041375,
+      "pnlEUR": null,
+      "reason": "Ranking · crypto"
+    },
+    {
+      "id": "2026-11-05T20:07:06.063Z-MA-sell",
+      "at": "2026-11-05T20:07:06.063Z",
+      "symbol": "MA",
+      "side": "sell",
+      "quantity": 0.21979896451639944,
+      "priceUSD": 655.91188,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 128.38263334104226,
+      "feeEUR": 0.06422342838471348,
+      "pnlEUR": -9.117366658957735,
+      "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-05T20:07:06.063Z-DIS-sell",
+      "at": "2026-11-05T20:07:06.063Z",
+      "symbol": "DIS",
+      "side": "sell",
+      "quantity": 1.3066851908668804,
+      "priceUSD": 113.22336000000001,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 131.74742883847418,
+      "feeEUR": 0.06590666775311366,
+      "pnlEUR": -5.752571161525822,
+      "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-05T20:18:26.241Z-WMT-sell",
+      "at": "2026-11-05T20:18:26.241Z",
+      "symbol": "WMT",
+      "side": "sell",
+      "quantity": 1.193403403284954,
+      "priceUSD": 123.23835,
+      "usdPerEUR": 1.1224,
+      "amountEUR": 130.9689324412595,
+      "feeEUR": 0.06551722483304628,
+      "pnlEUR": -6.531067558740489,
+      "reason": "Trailing Stop ausgelöst"
+    }
+  ],
+  "decisions": [
+    {
+      "at": "2026-11-05T20:01:39.624Z",
+      "selection": [
+        {
+          "symbol": "V",
+          "bucket": "medium",
+          "score": 13.031913661601013,
+          "volatility": 0.014744051977389233
+        },
+        {
+          "symbol": "MA",
+          "bucket": "medium",
+          "score": 11.58270841707689,
+          "volatility": 0.016606653115610735
+        },
+        {
+          "symbol": "DIS",
+          "bucket": "medium",
+          "score": 10.678933762073068,
+          "volatility": 0.013451369134228418
+        },
+        {
+          "symbol": "WMT",
+          "bucket": "medium",
+          "score": 9.934144019526084,
+          "volatility": 0.01653644239529256
+        },
+        {
+          "symbol": "CRM",
+          "bucket": "high",
+          "score": 4.504584735553859,
+          "volatility": 0.02132636456524981
+        },
+        {
+          "symbol": "HD",
+          "bucket": "high",
+          "score": 4.408915276284748,
+          "volatility": 0.023501020014248145
+        },
+        {
+          "symbol": "TSLA",
+          "bucket": "high",
+          "score": 4.2773541219209195,
+          "volatility": 0.023944646804035886
+        },
+        {
+          "symbol": "MSFT",
+          "bucket": "high",
+          "score": 3.994135716417006,
+          "volatility": 0.02089432847316684
+        },
+        {
+          "symbol": "QNT/USD",
+          "bucket": "crypto",
+          "score": 28.20435878420619,
+          "volatility": 0.045438457395489525
+        },
+        {
+          "symbol": "NIGHT/USD",
+          "bucket": "crypto",
+          "score": 12.15886408476049,
+          "volatility": 0.046816451772344225
+        }
+      ],
+      "reason": "Momentum 20/60 Tage, Risiko relativ zum Aktienuniversum"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-05T20:01:39.624Z",
+      "equity": 978.0459451051852,
+      "cash": 100
+    },
+    {
+      "at": "2026-11-05T20:07:06.063Z",
+      "equity": 973.6685040270464,
+      "cash": 360.1300621795165
+    },
+    {
+      "at": "2026-11-05T20:07:54.589Z",
+      "equity": 975.6623234684424,
+      "cash": 360.1300621795165
+    },
+    {
+      "at": "2026-11-05T20:18:26.241Z",
+      "equity": 970.3365978704612,
+      "cash": 491.098994620776
+    },
+    {
+      "at": "2026-11-05T20:19:31.977Z",
+      "equity": 971.4019484852142,
+      "cash": 491.098994620776
+    },
+    {
+      "at": "2026-11-05T20:28:21.349Z",
+      "equity": 969.4551154260522,
+      "cash": 491.098994620776
+    },
+    {
+      "at": "2026-11-05T20:36:28.788Z",
+      "equity": 969.271250732565,
+      "cash": 491.098994620776
+    }
+  ],
+  "lastRebalance": "2026-11-05",
+  "stopCooldown": {
+    "MA": "2026-11-05",
+    "DIS": "2026-11-05",
+    "WMT": "2026-11-05"
+  },
+  "updatedAt": "2026-11-05T20:36:28.788Z"
+}

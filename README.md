@@ -4,6 +4,8 @@ Mobile-first dark dashboard and a **paper-only** trading experiment, maintained 
 
 ## Your experiment
 
+The user requested a fresh €1,000 run on 2026-11-05, with no startup before **22:00 Europe/Berlin** (`2026-11-05T21:00:00Z`). The previous pilot's complete ledger is retained in `archives/2026-11-05-engineering-pilot/portfolio.json`. This is an explicit new experiment, not erased performance. The start gate still requires an open US stock session and valid narrow-spread quotes for all ten selections; because 22:00 coincides with the regular US close, first purchases are expected during the next eligible session. The 14-day period begins at actual startup.
+
 - Start: **€1,000 virtual cash**. Eight US stocks: four relatively lower-volatility and four relatively higher-volatility stocks. Two cryptocurrencies from up to 40 liquid Kraken USD pairs.
 - Initial target allocation: 55% lower-volatility stocks, 25% higher-volatility stocks, 10% crypto, 10% cash. No leverage or shorts. Fractional quantities are simulated.
 - Cloud checks at minutes 07, 22, 37 and 52 each hour. GitHub may delay or skip schedules. This is not continuous exchange-side stop execution.
