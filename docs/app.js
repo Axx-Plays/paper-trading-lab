@@ -63,9 +63,29 @@ function renderJournal(){const trades=state.portfolio.trades,closed=trades.filte
   $('#trade-rows').innerHTML=[...trades].reverse().map(t=>`<tr><td>${date(t.at)}</td><td><span class="asset-name">${escape(name(t.symbol))}</span><span class="symbol">${escape(t.symbol)}</span></td><td class="${t.side==='buy'?'positive':'amber-text'}">${t.side==='buy'?'Kauf':'Verkauf'}</td><td>${euro(t.amountEUR)}</td><td>${euro(t.feeEUR)}</td><td>${t.pnlEUR===null?'—':euro(t.pnlEUR)}</td><td>${escape(t.reason)}</td></tr>`).join('')||'<tr><td colspan="7">Noch keine Transaktionen. Hier erscheinen später alle simulierten Käufe und Verkäufe.</td></tr>';
 }
 function navigate(){let id=location.hash.slice(1)||'overview';if(!['overview','positions','markets','research','journal'].includes(id))id='overview';$$('.view').forEach(v=>v.hidden=v.id!==id);$$('[data-tab]').forEach(a=>{a.classList.toggle('active',a.dataset.tab===id);if(a.dataset.tab===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});$('#page-title').textContent={overview:'Super-reich-werd-Bot',positions:'Unternehmen & Kryptos.',markets:'Was die Märkte bewegt.',research:'Aus Daten lernen.',journal:'Jeder Trade zählt.'}[id];window.scrollTo(0,0);}
-async function load(){const button=$('#refresh');button.disabled=true;try{const read=async f=>{const remote=location.protocol==='https:';const url=remote?`https://raw.githubusercontent.com/Axx-Plays/paper-trading-lab/main/docs/data/${f}.json`:`data/${f}.json`;const r=await fetch(`${url}?t=${Date.now()}`,{cache:'no-store',signal:AbortSignal.timeout(20000)});if(!r.ok)throw Error(`Datenabruf fehlgeschlagen (${r.status}).`);return r.json();};const [portfolio,market]=await Promise.all(['portfolio','market'].map(read));const research=state.research??await read('research');state={portfolio,market,research};render();$('#load-error').hidden=true;}catch(e){$('#load-error').hidden=false;$('#load-error').textContent=e.message+' Der zuletzt geladene Stand bleibt sichtbar. Bitte später erneut versuchen.';}finally{button.disabled=false;}}
+let cloudRevision=null,revisionCheckedAt=0;
+async function load(force=false){
+  const button=$('#refresh');button.disabled=true;
+  try{
+    const remote=location.protocol==='https:';
+    if(remote && (force || !cloudRevision || Date.now()-revisionCheckedAt>=300000)){
+      const response=await fetch('https://api.github.com/repos/Axx-Plays/paper-trading-lab/git/ref/heads/main',{cache:'no-store',signal:AbortSignal.timeout(20000)});
+      if(!response.ok)throw Error('Aktueller Datenstand konnte nicht geprüft werden ('+response.status+').');
+      const ref=await response.json();if(!/^[a-f0-9]{40}$/.test(ref.object?.sha??''))throw Error('Ungültige Datenversion.');
+      cloudRevision=ref.object.sha;revisionCheckedAt=Date.now();
+    }
+    const read=async f=>{
+      const url=remote?'https://raw.githubusercontent.com/Axx-Plays/paper-trading-lab/'+cloudRevision+'/docs/data/'+f+'.json':'data/'+f+'.json?t='+Date.now();
+      const r=await fetch(url,{cache:remote?'default':'no-store',signal:AbortSignal.timeout(20000)});
+      if(!r.ok)throw Error('Datenabruf fehlgeschlagen ('+r.status+').');return r.json();
+    };
+    const [portfolio,market]=await Promise.all(['portfolio','market'].map(read));
+    const research=state.research??await read('research');state={portfolio,market,research};render();$('#load-error').hidden=true;
+  }catch(e){$('#load-error').hidden=false;$('#load-error').textContent=e.message+' Der zuletzt geladene Stand bleibt sichtbar. Bitte später erneut versuchen.';}
+  finally{button.disabled=false;}
+}
 function download(filename,content,type){const url=URL.createObjectURL(new Blob([content],{type})),a=document.createElement('a');a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-$('#refresh').addEventListener('click',load);window.addEventListener('hashchange',navigate);$('#search').addEventListener('input',()=>state.market&&renderMarkets());$('#study-select').addEventListener('change',renderStudy);
+$('#refresh').addEventListener('click',()=>load(true));window.addEventListener('hashchange',navigate);$('#search').addEventListener('input',()=>state.market&&renderMarkets());$('#study-select').addEventListener('change',renderStudy);
 $('#market-filters').addEventListener('click',e=>{if(!e.target.dataset.filter)return;filter=e.target.dataset.filter;$$('[data-filter]').forEach(b=>b.classList.toggle('selected',b.dataset.filter===filter));renderMarkets();});
 $('#export-portfolio').addEventListener('click',()=>download('paper-depot.json',JSON.stringify(state.portfolio,null,2),'application/json'));
 $('#export-trades').addEventListener('click',()=>{const cols=['at','symbol','side','quantity','priceUSD','usdPerEUR','amountEUR','feeEUR','pnlEUR','reason'];const csv=[cols.join(','),...state.portfolio.trades.map(t=>cols.map(c=>'"'+String(t[c]??'').replaceAll('"','""')+'"').join(','))].join('\n');download('paper-journal.csv','\uFEFF'+csv,'text/csv;charset=utf-8');});
