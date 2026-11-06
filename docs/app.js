@@ -9,7 +9,7 @@ const names={AAPL:'Apple',MSFT:'Microsoft',GOOGL:'Alphabet',AMZN:'Amazon',META:'
 Object.assign(names,{QNT:'Quant',NIGHT:'Midnight',XDG:'Dogecoin',ZEC:'Zcash',XMR:'Monero',HYPE:'Hyperliquid'});
 const name=s=>names[s.split('/')[0]]??s.split('/')[0];
 const bucket={medium:'Mittel',high:'Hoch',crypto:'Krypto'};
-let state={portfolio:null,market:null,research:null},filter='all';
+let state={portfolio:null,market:null,research:null,comparison:null},filter='all';
 function chart(target,rows,keys=['equity']){
   const el=$(target);if(!rows.length){el.innerHTML='<div class="chart-empty">Noch keine Beobachtungen gespeichert</div>';return;}
   const values=rows.flatMap(r=>keys.map(k=>r[k])).filter(Number.isFinite);if(!values.length)return;
@@ -43,7 +43,7 @@ function render(){
   const empty='<div class="empty-state"><strong>Noch keine virtuellen Käufe.</strong>Der Bot wartet auf vollständige Kurse und eine geöffnete US-Börse. Erst danach beginnt dein 14-Tage-Test.</div>';
   const preview=[...p.positions.filter(x=>x.bucket==='medium').slice(0,2),...p.positions.filter(x=>x.bucket==='high').slice(0,2),...p.positions.filter(x=>x.kind==='crypto').slice(0,2)];
   $('#overview-positions').innerHTML=p.positions.length?preview.map(positionCard).join(''):empty;$('#all-positions').innerHTML=p.positions.length?p.positions.map(positionCard).join(''):empty;
-  renderMarkets();renderJournal();
+  renderMarkets();renderJournal();renderComparison();
   const selected=$('#study-select').value;$('#study-select').replaceChildren(...Object.keys(state.research.studies).map(symbol=>{const o=document.createElement('option');o.value=symbol;o.textContent=`${name(symbol)} · ${symbol}`;return o;}));
   if(state.research.studies[selected])$('#study-select').value=selected;renderStudy();
 }
@@ -54,6 +54,24 @@ function renderMarkets(){
   $('#market-note').textContent=`${m.assets.filter(a=>a.kind==='stock').length} Aktien · ${m.assets.filter(a=>a.kind==='crypto').length} Kryptos. Kurse in USD; Depot in EUR. EZB: 1 EUR = ${m.usdPerEUR??'—'} USD (${m.fxAt?.slice(0,10)??'offen'}). Keine garantierten Echtzeitkurse.`;
 }
 function stat(label,value,cls=''){return `<div class="stat"><span>${label}</span><strong class="${cls}">${value}</strong></div>`;}
+function renderComparison(){
+  const c=state.comparison,available=!!c?.filtered;
+  $('#export-comparison').disabled=!available;
+  if(!available){$('#comparison-note').textContent='Der Vergleich wartet auf den ersten gemeinsamen Cloud-Durchlauf. Dein bisheriges Depot bleibt unverändert.';return;}
+  $('#comparison-summary').textContent=`A/B-Vergleich aktiv: A ${pct(c.baselineStats.returnPct)} · B ${pct(c.filteredStats.returnPct)} seit Vergleichsstart. Im Labor ansehen ↗`;
+  $('#comparison-note').textContent=`Vergleich seit ${date(c.startedAt)} · gleicher Ausgangswert ${euro(c.base.equityEUR)} und gleiche übernommenen Positionen. Stand ${date(c.updatedAt)}. Ende ${date(c.endsAt)}. Ergebnisse ausschließlich seit Vergleichsstart; kein neuer 1.000-€-Start und noch kein Beleg für Überlegenheit.`;
+  const card=(title,s)=>`<section class="comparison-variant"><h3>${title}</h3><div class="position-value">${euro(s.equityEUR)}</div><p class="${s.returnPct>=0?'positive':'negative'}">${pct(s.returnPct)} seit Vergleichsstart</p><div class="stats-grid">${stat('Neue Trades',s.trades)+stat('Gebühren (sim.)',euro(s.feesEUR))+stat('Größter Rückgang',pct(-s.maxDrawdown))+stat('Cash',euro(s.cashEUR))}</div><p class="caption">Status: ${escape({running:'läuft',risk_stopped:'Verlustgrenze erreicht',completed:'beendet'}[s.status]??s.status)}. Spread und Slippage sind zusätzlich im Depotwert enthalten.</p></section>`;
+  $('#comparison-stats').innerHTML=card('A · bisherige Regeln',c.baselineStats)+card('B · mit Kaufsignalen',c.filteredStats);
+  chart('#comparison-chart',c.history,['baseline','filtered']);
+  const checks=c.checks??[],confirmed=checks.filter(x=>x.eligible),waiting=checks.filter(x=>x.count===1);
+  $('#comparison-signals').textContent=`${confirmed.length} bestätigte Signale · ${waiting.length} warten auf eine zweite Beobachtung. Bestätigt: ${confirmed.map(x=>name(x.symbol)).join(', ')||'noch keine'}. Ein bestätigtes Signal führt nur bei freiem Depotplatz und ausreichendem Budget zu einem Kauf.`;
+  $('#comparison-positions').innerHTML=c.filtered.positions.map(positionCard).join('')||'<p class="muted">B hält aktuell nur Cash.</p>';
+  const trades=c.filtered.trades.slice(c.base.tradeCount).slice(-20).reverse();
+  $('#comparison-trades').replaceChildren(...(trades.length?trades.map(t=>{const p=document.createElement('p');p.textContent=`${date(t.at)} · ${t.side==='buy'?'Kauf':'Verkauf'} ${name(t.symbol)} · ${euro(t.amountEUR)} · ${t.reason}`;return p;}):[document.createTextNode('Seit Vergleichsstart noch keine Trades in B.')])) ;
+  const events=c.latestQuality??[],spreads=events.filter(x=>x.type==='spread'),jumps=events.filter(x=>x.type==='jump');
+  $('#quality-summary').textContent=`Letzter Abruf: ${spreads.length} große Spreads, ${jumps.length} auffällige Sprünge, ${events.filter(x=>x.type==='unavailable').length} nicht verwendbare Kurse. Geschlossene Aktienmärkte können fehlende Kurse erklären.`;
+  const important=[...spreads,...jumps];$('#quality-events').replaceChildren(...(important.length?important.map(e=>{const p=document.createElement('p');p.textContent=`${name(e.symbol)} (${e.symbol}): ${e.type==='spread'?'Spread':'Kursänderung'} ${pct(e.value)}. ${e.message}`;return p;}):[document.createTextNode('In diesem Abruf keine großen Spreads oder auffälligen Sprünge erkannt. Das bestätigt keine Fehlerfreiheit.')])) ;
+}
 function renderStudy(){
   const s=state.research.studies[$('#study-select').value];if(!s){$('#study-stats').innerHTML='';$('#study-chart').innerHTML='<div class="chart-empty">Noch kein Datensatz. CSV importieren oder Cloud-Abruf abwarten.</div>';return;}
   $('#study-stats').innerHTML=stat('Modell · Testzeitraum',pct(s.returnPct),s.returnPct>=0?'positive':'negative')+stat('Kaufen & Halten',pct(s.benchmarkPct))+stat('Größter Rückgang',pct(-s.maxDrawdown),'negative')+stat('Trainings- / Testfälle',`${s.trainCount} / ${s.testCount}`);
@@ -77,20 +95,21 @@ async function load(force=false){
     const read=async f=>{
       const url=remote?'https://raw.githubusercontent.com/Axx-Plays/paper-trading-lab/'+cloudRevision+'/docs/data/'+f+'.json':'data/'+f+'.json?t='+Date.now();
       const r=await fetch(url,{cache:remote?'default':'no-store',signal:AbortSignal.timeout(20000)});
-      if(!r.ok)throw Error('Datenabruf fehlgeschlagen ('+r.status+').');return r.json();
+      if(r.status===404&&f==='comparison')return {status:'waiting'};if(!r.ok)throw Error('Datenabruf fehlgeschlagen ('+r.status+').');return r.json();
     };
-    const [portfolio,market]=await Promise.all(['portfolio','market'].map(read));
-    const research=state.research??await read('research');state={portfolio,market,research};render();$('#load-error').hidden=true;
+    const [portfolio,market,comparison]=await Promise.all(['portfolio','market','comparison'].map(read));
+    const research=state.research??await read('research');state={portfolio,market,research,comparison};render();$('#load-error').hidden=true;
   }catch(e){$('#load-error').hidden=false;$('#load-error').textContent=e.message+' Der zuletzt geladene Stand bleibt sichtbar. Bitte später erneut versuchen.';}
   finally{button.disabled=false;}
 }
 function download(filename,content,type){const url=URL.createObjectURL(new Blob([content],{type})),a=document.createElement('a');a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 $('#refresh').addEventListener('click',()=>load(true));window.addEventListener('hashchange',navigate);$('#search').addEventListener('input',()=>state.market&&renderMarkets());$('#study-select').addEventListener('change',renderStudy);
 $('#market-filters').addEventListener('click',e=>{if(!e.target.dataset.filter)return;filter=e.target.dataset.filter;$$('[data-filter]').forEach(b=>b.classList.toggle('selected',b.dataset.filter===filter));renderMarkets();});
+$('#export-comparison').addEventListener('click',()=>download('paper-strategievergleich.json',JSON.stringify({comparison:state.comparison,baseline:state.portfolio},null,2),'application/json'));
 $('#export-portfolio').addEventListener('click',()=>download('paper-depot.json',JSON.stringify(state.portfolio,null,2),'application/json'));
 $('#export-trades').addEventListener('click',()=>{const cols=['at','symbol','side','quantity','priceUSD','usdPerEUR','amountEUR','feeEUR','pnlEUR','reason'];const csv=[cols.join(','),...state.portfolio.trades.map(t=>cols.map(c=>'"'+String(t[c]??'').replaceAll('"','""')+'"').join(','))].join('\n');download('paper-journal.csv','\uFEFF'+csv,'text/csv;charset=utf-8');});
 $('#csv-file').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>5e6)throw Error('CSV darf höchstens 5 MB groß sein.');$('#csv-status').textContent='Daten werden auf deinem Gerät getestet …';const bars=parseCSV(await f.text());if(bars.length>10000)throw Error('Maximal 10.000 Tageskerzen je Test.');const result=modelStudy(bars);state.research.studies['Eigene CSV']=result;const o=document.createElement('option');o.value='Eigene CSV';o.textContent='Eigene CSV · lokal';const existing=[...$('#study-select').options].find(o=>o.value==='Eigene CSV');if(!existing)$('#study-select').append(o);$('#study-select').value='Eigene CSV';renderStudy();$('#csv-status').textContent=`${bars.length} Kerzen geprüft. Ergebnis nur in dieser Sitzung gespeichert.`;}catch(err){$('#csv-status').textContent=err.message;}});
 $('#load-stock-chart').addEventListener('click',()=>{const host=$('#tradingview');host.replaceChildren();const wrap=document.createElement('div');wrap.className='tradingview-widget-container';wrap.style.height='100%';const chart=document.createElement('div');chart.className='tradingview-widget-container__widget';chart.style.height='calc(100% - 32px)';wrap.append(chart);const credit=document.createElement('a');credit.href='https://www.tradingview.com/';credit.target='_blank';credit.rel='noopener';credit.textContent='Charts von TradingView ↗';credit.className='caption';wrap.append(credit);const script=document.createElement('script');script.src='https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';script.async=true;script.textContent=JSON.stringify({autosize:true,symbol:$('#stock-chart-select').value,interval:'D',timezone:'Europe/Berlin',theme:'dark',style:'1',locale:'de_DE',allow_symbol_change:true,calendar:false,support_host:'https://www.tradingview.com'});script.onerror=()=>{host.textContent='TradingView konnte nicht geladen werden. Bitte später erneut versuchen.';};wrap.append(script);host.append(wrap);});
-window.addEventListener('hashchange',()=>{if(state.portfolio){chart('#equity-chart',state.portfolio.history);renderStudy();}});
-window.addEventListener('resize',()=>{if(state.portfolio){chart('#equity-chart',state.portfolio.history);renderStudy();}});
+window.addEventListener('hashchange',()=>{if(state.portfolio){chart('#equity-chart',state.portfolio.history);renderStudy();renderComparison();}});
+window.addEventListener('resize',()=>{if(state.portfolio){chart('#equity-chart',state.portfolio.history);renderStudy();renderComparison();}});
 navigate();load();setInterval(()=>{if(!document.hidden)load();},60000);

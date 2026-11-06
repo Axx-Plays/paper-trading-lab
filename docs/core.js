@@ -48,7 +48,7 @@ export function newPortfolio(config, now) {
   if (!startTimeReached(config, now)) throw new Error('Der geplante Startzeitpunkt ist noch nicht erreicht oder ungültig.');
   return {version:1,status:'running',startedAt:now,endsAt:new Date(Date.parse(now)+config.durationDays*DAY).toISOString(),initialCapitalEUR:config.initialCapitalEUR,cashEUR:config.initialCapitalEUR,equityEUR:config.initialCapitalEUR,peakEUR:config.initialCapitalEUR,positions:[],trades:[],decisions:[],history:[],lastRebalance:null,stopCooldown:{}};
 }
-export function portfolioStep(state, market, config, now) {
+export function portfolioStep(state, market, config, now, {entrySymbols = null} = {}) {
   const p=structuredClone(state), stamp=Date.parse(now), day=now.slice(0,10);
   if (p.status!=='running') return p;
   if (stamp>=Date.parse(p.endsAt)) {p.status='completed';p.finishedAt=now;return p;}
@@ -89,6 +89,7 @@ export function portfolioStep(state, market, config, now) {
       const slots={medium:4,high:4,crypto:2},selected=[];
       const budget=equity();
       for(const a of ranked) {
+        if(entrySymbols!==null && !entrySymbols.includes(a.symbol))continue;
         if(a.kind==='stock' && !market.stocksReady)continue;
         if(p.positions.filter(pos=>pos.bucket===a.bucket).length>=slots[a.bucket])continue;
         if(p.positions.some(x=>x.symbol===a.symbol) || p.stopCooldown[a.symbol]===day)continue;
