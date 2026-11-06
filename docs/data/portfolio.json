@@ -1,13 +1,362 @@
 {
   "version": 1,
-  "status": "waiting",
-  "startNotBefore": "2026-11-05T21:00:00.000Z",
+  "status": "running",
+  "startedAt": "2026-11-06T16:14:46.359Z",
+  "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
-  "cashEUR": 1000,
-  "equityEUR": 1000,
-  "positions": [],
-  "trades": [],
-  "decisions": [],
-  "history": [],
-  "message": "Startzeit erreicht. Wartet auf eine geöffnete US-Börse und vollständige, handelbare Kurse. Erst mit dem Start beginnt der 14-Tage-Test."
+  "cashEUR": 100,
+  "equityEUR": 996.7219604646086,
+  "peakEUR": 1000,
+  "positions": [
+    {
+      "symbol": "PG",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 0.9167633828223509,
+      "entryUSD": 167.37364499999998,
+      "highWaterUSD": 167.37364499999998,
+      "stopUSD": 160.35069434336936,
+      "stopPercent": 0.04195971627809527,
+      "costEUR": 137.5,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 149.11185997536947,
+      "markAt": "2026-11-06T16:14:50.260780242Z"
+    },
+    {
+      "symbol": "KO",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 1.5960593850801446,
+      "entryUSD": 96.13804499999999,
+      "highWaterUSD": 96.13804499999999,
+      "stopUSD": 92.29252319999999,
+      "stopPercent": 0.04,
+      "costEUR": 137.5,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 85.95070668607256,
+      "markAt": "2026-11-06T16:14:50.709157584Z"
+    },
+    {
+      "symbol": "WMT",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 1.211320956578083,
+      "entryUSD": 126.673305,
+      "highWaterUSD": 126.673305,
+      "stopUSD": 120.8417448052787,
+      "stopPercent": 0.04603622045482511,
+      "costEUR": 137.5,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 113.25880129422303,
+      "markAt": "2026-11-06T16:14:50.672466141Z"
+    },
+    {
+      "symbol": "MSFT",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 0.2862308398729981,
+      "entryUSD": 536.0779049999999,
+      "highWaterUSD": 536.0779049999999,
+      "stopUSD": 505.63066549616667,
+      "stopPercent": 0.056796296246966575,
+      "costEUR": 137.5,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 478.5358833004927,
+      "markAt": "2026-11-06T16:14:50.752763958Z"
+    },
+    {
+      "symbol": "AMZN",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.2648815299455456,
+      "entryUSD": 263.31158999999997,
+      "highWaterUSD": 263.31158999999997,
+      "stopUSD": 242.5314667395915,
+      "stopPercent": 0.07891837674296238,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 235.40257570309,
+      "markAt": "2026-11-06T16:14:50.447513605Z"
+    },
+    {
+      "symbol": "META",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.11256139160864928,
+      "entryUSD": 619.6296600000001,
+      "highWaterUSD": 619.6296600000001,
+      "stopUSD": 571.8036860233364,
+      "stopPercent": 0.07718477191144091,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 552.5415354970891,
+      "markAt": "2026-11-06T16:14:46.114328416Z"
+    },
+    {
+      "symbol": "ORCL",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.6012723913323157,
+      "entryUSD": 115.99797,
+      "highWaterUSD": 115.99797,
+      "stopUSD": 102.0782136,
+      "stopPercent": 0.12,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 103.64907206448726,
+      "markAt": "2026-11-06T16:14:50.298595191Z"
+    },
+    {
+      "symbol": "AMD",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.15823747826822993,
+      "entryUSD": 440.77027499999997,
+      "highWaterUSD": 440.77027499999997,
+      "stopUSD": 387.877842,
+      "stopPercent": 0.12,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 393.4620420376176,
+      "markAt": "2026-11-06T16:14:50.377940894Z"
+    },
+    {
+      "symbol": "QNT/USD",
+      "kind": "crypto",
+      "bucket": "crypto",
+      "quantity": 0.29520223203507023,
+      "entryUSD": 188.91872999999998,
+      "highWaterUSD": 188.91872999999998,
+      "stopUSD": 160.5809205,
+      "stopPercent": 0.15,
+      "costEUR": 50,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 168.609877859382,
+      "markAt": "2026-11-06T16:14:47.320Z"
+    },
+    {
+      "symbol": "INJ/USD",
+      "kind": "crypto",
+      "bucket": "crypto",
+      "quantity": 6.727873113389544,
+      "entryUSD": 8.289280999999999,
+      "highWaterUSD": 8.289280999999999,
+      "stopUSD": 7.045888849999999,
+      "stopPercent": 0.15,
+      "costEUR": 50,
+      "openedAt": "2026-11-06T16:14:46.359Z",
+      "markEUR": 7.3976321325570975,
+      "markAt": "2026-11-06T16:14:47.321Z"
+    }
+  ],
+  "trades": [
+    {
+      "id": "2026-11-06T16:14:46.359Z-PG-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "PG",
+      "side": "buy",
+      "quantity": 0.9167633828223509,
+      "priceUSD": 167.37364499999998,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-06T16:14:46.359Z-KO-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "KO",
+      "side": "buy",
+      "quantity": 1.5960593850801446,
+      "priceUSD": 96.13804499999999,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-06T16:14:46.359Z-WMT-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "WMT",
+      "side": "buy",
+      "quantity": 1.211320956578083,
+      "priceUSD": 126.673305,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-06T16:14:46.359Z-MSFT-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "MSFT",
+      "side": "buy",
+      "quantity": 0.2862308398729981,
+      "priceUSD": 536.0779049999999,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-06T16:14:46.359Z-AMZN-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "AMZN",
+      "side": "buy",
+      "quantity": 0.2648815299455456,
+      "priceUSD": 263.31158999999997,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-06T16:14:46.359Z-META-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "META",
+      "side": "buy",
+      "quantity": 0.11256139160864928,
+      "priceUSD": 619.6296600000001,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-06T16:14:46.359Z-ORCL-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "ORCL",
+      "side": "buy",
+      "quantity": 0.6012723913323157,
+      "priceUSD": 115.99797,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-06T16:14:46.359Z-AMD-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "AMD",
+      "side": "buy",
+      "quantity": 0.15823747826822993,
+      "priceUSD": 440.77027499999997,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-06T16:14:46.359Z-QNT/USD-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "QNT/USD",
+      "side": "buy",
+      "quantity": 0.29520223203507023,
+      "priceUSD": 188.91872999999998,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 50,
+      "feeEUR": 0.049950049950041375,
+      "pnlEUR": null,
+      "reason": "Ranking · crypto"
+    },
+    {
+      "id": "2026-11-06T16:14:46.359Z-INJ/USD-buy",
+      "at": "2026-11-06T16:14:46.359Z",
+      "symbol": "INJ/USD",
+      "side": "buy",
+      "quantity": 6.727873113389544,
+      "priceUSD": 8.289280999999999,
+      "usdPerEUR": 1.1165,
+      "amountEUR": 50,
+      "feeEUR": 0.049950049950041375,
+      "pnlEUR": null,
+      "reason": "Ranking · crypto"
+    }
+  ],
+  "decisions": [
+    {
+      "at": "2026-11-06T16:14:46.359Z",
+      "selection": [
+        {
+          "symbol": "PG",
+          "bucket": "medium",
+          "score": 8.490933462200008,
+          "volatility": 0.017333788082462893
+        },
+        {
+          "symbol": "KO",
+          "bucket": "medium",
+          "score": 7.495032810698361,
+          "volatility": 0.01370828962508093
+        },
+        {
+          "symbol": "WMT",
+          "bucket": "medium",
+          "score": 7.369420349364332,
+          "volatility": 0.01681517549584733
+        },
+        {
+          "symbol": "MSFT",
+          "bucket": "medium",
+          "score": 2.92109897782967,
+          "volatility": 0.022266576710169617
+        },
+        {
+          "symbol": "AMZN",
+          "bucket": "high",
+          "score": -0.1775755983219305,
+          "volatility": 0.0264569409052271
+        },
+        {
+          "symbol": "META",
+          "bucket": "high",
+          "score": -1.4752438190238761,
+          "volatility": 0.024681190610363255
+        },
+        {
+          "symbol": "ORCL",
+          "bucket": "high",
+          "score": -4.118401156541959,
+          "volatility": 0.05009804764772632
+        },
+        {
+          "symbol": "AMD",
+          "bucket": "high",
+          "score": -4.237068517808761,
+          "volatility": 0.056353410780922764
+        },
+        {
+          "symbol": "QNT/USD",
+          "bucket": "crypto",
+          "score": 22.095692652027296,
+          "volatility": 0.04815349565262768
+        },
+        {
+          "symbol": "INJ/USD",
+          "bucket": "crypto",
+          "score": 7.093360677667938,
+          "volatility": 0.04187383481476234
+        }
+      ],
+      "reason": "Momentum 20/60 Tage, Risiko relativ zum Aktienuniversum"
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-06T16:14:46.359Z",
+      "equity": 996.7219604646086,
+      "cash": 100
+    }
+  ],
+  "lastRebalance": "2026-11-06",
+  "stopCooldown": {},
+  "updatedAt": "2026-11-06T16:14:46.359Z"
 }
