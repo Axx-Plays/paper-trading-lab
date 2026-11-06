@@ -20,11 +20,13 @@ export function indicators(bars) {
   const m20=last/c.at(-21)-1, m60=last/c.at(-61)-1;
   return {last,m20,m60,volatility,atr,sma20:average(c.slice(-20)),sma50:average(c.slice(-50)),score:(m20*0.4+m60*0.6)/Math.max(volatility,0.005)};
 }
-export function rankUniverse(assets) {
+export function rankUniverse(assets, {all = false, excluded = []} = {}) {
   const usable=assets.filter(a=>a.metrics && a.quote && a.status==='ok' && a.entryEligible!==false && (a.quote.ask-a.quote.bid)/a.quote.bid <= (a.kind==='crypto'?0.01:0.005));
   const stocks=usable.filter(a=>a.kind==='stock').sort((a,b)=>a.metrics.volatility-b.metrics.volatility || a.symbol.localeCompare(b.symbol));
   const middle=Math.floor(stocks.length/2);
-  const pick=(a,n,bucket)=>a.sort((x,y)=>y.metrics.score-x.metrics.score || x.symbol.localeCompare(y.symbol)).slice(0,n).map(x=>({...x,bucket}));
+  // Assign risk groups before cooldown exclusions, so a stopped symbol does not shift the boundary.
+  const omitted=new Set(excluded);
+  const pick=(a,n,bucket)=>a.filter(x=>!omitted.has(x.symbol)).sort((x,y)=>y.metrics.score-x.metrics.score || x.symbol.localeCompare(y.symbol)).slice(0,all?Infinity:n).map(x=>({...x,bucket}));
   return [...pick(stocks.slice(0,middle),4,'medium'),...pick(stocks.slice(middle),4,'high'),...pick(usable.filter(a=>a.kind==='crypto'),2,'crypto')];
 }
 export function stopPercent(asset) {
@@ -50,6 +52,10 @@ export function portfolioStep(state, market, config, now) {
   const p=structuredClone(state), stamp=Date.parse(now), day=now.slice(0,10);
   if (p.status!=='running') return p;
   if (stamp>=Date.parse(p.endsAt)) {p.status='completed';p.finishedAt=now;return p;}
+  if(p.strategyVersion!==2){
+    p.strategyChanges=[...(p.strategyChanges??[]),{at:now,version:2,reason:'Ersatzkäufe bei jedem Durchlauf; gehaltene Positionen bleiben bis zum Stop oder zur Depot-Verlustgrenze.'}];
+    p.strategyVersion=2;
+  }
   const fx=market.usdPerEUR;
   if (!(fx>0) || stamp-Date.parse(market.fxAt)>4*DAY) throw new Error('EUR/USD-Referenzkurs fehlt oder ist zu alt.');
   const assets=market.assets.filter(a=>a.status==='ok' && a.quote?.bid>0 && a.quote?.ask>=a.quote.bid && Math.abs(stamp-Date.parse(a.quote.at))<15*60*1000);
@@ -73,13 +79,18 @@ export function portfolioStep(state, market, config, now) {
     for(const pos of [...p.positions])sell(pos,'Depot-Verlustgrenze');
     // Keep retrying exits when a market or data feed is unavailable.
     if(!p.positions.length)p.status='risk_stopped';
-  } else if(p.lastRebalance!==day && market.stocksReady) {
-    const selected=rankUniverse(assets), stocks=selected.filter(a=>a.kind==='stock');
-    if(stocks.length===8 && selected.filter(a=>a.kind==='crypto').length===2) {
-      const wanted=new Set(selected.map(a=>a.symbol));
-      for(const pos of [...p.positions])if(!wanted.has(pos.symbol))sell(pos,'Tägliches Ranking');
+  } else {
+    const excluded=Object.keys(p.stopCooldown).filter(symbol=>p.stopCooldown[symbol]===day);
+    const ranked=rankUniverse(assets,{all:true,excluded});
+    const previouslyInvested=p.trades.some(t=>t.side==='buy');
+    const initial=rankUniverse(assets,{excluded});
+    // Keep the original complete-start rule. After startup, asset classes operate independently.
+    if(previouslyInvested || (market.stocksReady && initial.length===10)) {
+      const slots={medium:4,high:4,crypto:2},selected=[];
       const budget=equity();
-      for(const a of selected) {
+      for(const a of ranked) {
+        if(a.kind==='stock' && !market.stocksReady)continue;
+        if(p.positions.filter(pos=>pos.bucket===a.bucket).length>=slots[a.bucket])continue;
         if(p.positions.some(x=>x.symbol===a.symbol) || p.stopCooldown[a.symbol]===day)continue;
         const weight=a.bucket==='medium'?config.mediumWeight/4:a.bucket==='high'?config.highWeight/4:config.cryptoWeight/2;
         const allocation=Math.min(budget*weight,Math.max(0,p.cashEUR-budget*config.reserveWeight));
@@ -89,9 +100,10 @@ export function portfolioStep(state, market, config, now) {
         p.cashEUR-=allocation;
         p.positions.push({symbol:a.symbol,kind:a.kind,bucket:a.bucket,quantity,entryUSD:priceUSD,highWaterUSD:priceUSD,stopUSD:priceUSD*(1-stop),stopPercent:stop,costEUR:allocation,openedAt:now,markEUR:netPrice(a),markAt:a.quote.at});
         p.trades.push({id:`${now}-${a.symbol}-buy`,at:now,symbol:a.symbol,side:'buy',quantity,priceUSD,usdPerEUR:fx,amountEUR:allocation,feeEUR:allocation-net,pnlEUR:null,reason:`Ranking · ${a.bucket}`});
+        selected.push(a);
       }
-      p.lastRebalance=day;
-      p.decisions.push({at:now,selection:selected.map(a=>({symbol:a.symbol,bucket:a.bucket,score:a.metrics.score,volatility:a.metrics.volatility})),reason:'Momentum 20/60 Tage, Risiko relativ zum Aktienuniversum'});
+      p.lastEntryCheck=now;
+      p.decisions.push({at:now,selection:selected.map(a=>({symbol:a.symbol,bucket:a.bucket,score:a.metrics.score,volatility:a.metrics.volatility})),reason:selected.length?'Freie Depotplätze nach Momentum-Ranking besetzt.':'Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.',stocksReady:market.stocksReady,cooldownSymbols:excluded});
     }
   }
   p.equityEUR=equity();p.updatedAt=now;p.peakEUR=Math.max(p.peakEUR,p.equityEUR);
