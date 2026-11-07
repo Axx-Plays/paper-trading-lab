@@ -5,7 +5,7 @@
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 98.47020648615991,
-  "equityEUR": 982.4412670261262,
+  "equityEUR": 984.4381574900434,
   "peakEUR": 1000,
   "positions": [
     {
@@ -112,13 +112,13 @@
       "bucket": "crypto",
       "quantity": 0.29520223203507023,
       "entryUSD": 188.91872999999998,
-      "highWaterUSD": 194.07,
-      "stopUSD": 164.9595,
+      "highWaterUSD": 202.8,
+      "stopUSD": 172.38,
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 173.47250700403043,
-      "markAt": "2026-11-07T01:19:31.770Z"
+      "markEUR": 181.27595414240932,
+      "markAt": "2026-11-07T07:26:00.129Z"
     },
     {
       "symbol": "INJ/USD",
@@ -131,8 +131,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 7.4789739068517695,
-      "markAt": "2026-11-07T01:19:31.249Z"
+      "markEUR": 7.433386758620689,
+      "markAt": "2026-11-07T07:26:00.129Z"
     },
     {
       "symbol": "AAPL",
@@ -459,6 +459,13 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-07T07:25:59.202Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -491,6 +498,11 @@
       "at": "2026-11-07T01:19:26.479Z",
       "equity": 982.4412670261262,
       "cash": 98.47020648615991
+    },
+    {
+      "at": "2026-11-07T07:25:59.202Z",
+      "equity": 984.4381574900434,
+      "cash": 98.47020648615991
     }
   ],
   "lastRebalance": "2026-11-06",
@@ -498,7 +510,7 @@
     "PG": "2026-11-06",
     "V": "2026-11-06"
   },
-  "updatedAt": "2026-11-07T01:19:26.479Z",
+  "updatedAt": "2026-11-07T07:25:59.202Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -507,5 +519,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-07T01:19:26.479Z"
+  "lastEntryCheck": "2026-11-07T07:25:59.202Z"
 }
