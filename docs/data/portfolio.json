@@ -4,8 +4,8 @@
   "startedAt": "2026-11-06T16:14:46.359Z",
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
-  "cashEUR": 98.47020648615991,
-  "equityEUR": 1005.471243798892,
+  "cashEUR": 100.07268918066448,
+  "equityEUR": 1000.5172653204726,
   "peakEUR": 1005.471243798892,
   "positions": [
     {
@@ -107,20 +107,6 @@
       "markAt": "2026-11-11T16:27:01.096609853Z"
     },
     {
-      "symbol": "QNT/USD",
-      "kind": "crypto",
-      "bucket": "crypto",
-      "quantity": 0.29520223203507023,
-      "entryUSD": 188.91872999999998,
-      "highWaterUSD": 202.8,
-      "stopUSD": 172.38,
-      "stopPercent": 0.15,
-      "costEUR": 50,
-      "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 162.63819657589647,
-      "markAt": "2026-11-11T16:26:57.163Z"
-    },
-    {
       "symbol": "INJ/USD",
       "kind": "crypto",
       "bucket": "crypto",
@@ -131,8 +117,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 7.219295451604205,
-      "markAt": "2026-11-11T16:26:57.359Z"
+      "markEUR": 6.969055244001078,
+      "markAt": "2026-11-11T23:01:21.382Z"
     },
     {
       "symbol": "AAPL",
@@ -147,6 +133,20 @@
       "openedAt": "2026-11-06T16:35:39.157Z",
       "markEUR": 316.93814887435974,
       "markAt": "2026-11-11T16:27:00.8076181Z"
+    },
+    {
+      "symbol": "NIGHT/USD",
+      "kind": "crypto",
+      "bucket": "crypto",
+      "quantity": 1019.6334603011885,
+      "entryUSD": 0.047257209999999994,
+      "highWaterUSD": 0.047257209999999994,
+      "stopUSD": 0.04016862849999999,
+      "stopPercent": 0.15,
+      "costEUR": 43.34790832123339,
+      "openedAt": "2026-11-11T23:01:20.783Z",
+      "markEUR": 0.04230763653275815,
+      "markAt": "2026-11-11T23:01:21.382Z"
     }
   ],
   "trades": [
@@ -331,6 +331,32 @@
       "feeEUR": 0.06273112682794135,
       "pnlEUR": null,
       "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-11T23:01:20.783Z-QNT/USD-sell",
+      "at": "2026-11-11T23:01:20.783Z",
+      "symbol": "QNT/USD",
+      "side": "sell",
+      "quantity": 0.29520223203507023,
+      "priceUSD": 169.60023,
+      "usdPerEUR": 1.1127,
+      "amountEUR": 44.95039101573795,
+      "feeEUR": 0.04499538640214009,
+      "pnlEUR": -5.049608984262051,
+      "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-11T23:01:20.783Z-NIGHT/USD-buy",
+      "at": "2026-11-11T23:01:20.783Z",
+      "symbol": "NIGHT/USD",
+      "side": "buy",
+      "quantity": 1019.6334603011885,
+      "priceUSD": 0.047257209999999994,
+      "usdPerEUR": 1.1127,
+      "amountEUR": 43.34790832123339,
+      "feeEUR": 0.04330460371750888,
+      "pnlEUR": null,
+      "reason": "Ranking · crypto"
     }
   ],
   "decisions": [
@@ -585,6 +611,22 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": true,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-11T23:01:20.783Z",
+      "selection": [
+        {
+          "symbol": "NIGHT/USD",
+          "bucket": "crypto",
+          "score": 11.371161647221948,
+          "volatility": 0.05248842667643945
+        }
+      ],
+      "reason": "Freie Depotplätze nach Momentum-Ranking besetzt.",
+      "stocksReady": false,
+      "cooldownSymbols": [
+        "QNT/USD"
+      ]
     }
   ],
   "history": [
@@ -707,14 +749,20 @@
       "at": "2026-11-11T16:26:56.332Z",
       "equity": 1005.471243798892,
       "cash": 98.47020648615991
+    },
+    {
+      "at": "2026-11-11T23:01:20.783Z",
+      "equity": 1000.5172653204726,
+      "cash": 100.07268918066448
     }
   ],
   "lastRebalance": "2026-11-06",
   "stopCooldown": {
     "PG": "2026-11-06",
-    "V": "2026-11-06"
+    "V": "2026-11-06",
+    "QNT/USD": "2026-11-11"
   },
-  "updatedAt": "2026-11-11T16:26:56.332Z",
+  "updatedAt": "2026-11-11T23:01:20.783Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -723,5 +771,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-11T16:26:56.332Z"
+  "lastEntryCheck": "2026-11-11T23:01:20.783Z"
 }
