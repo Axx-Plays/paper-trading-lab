@@ -5,7 +5,7 @@
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 100.07268918066448,
-  "equityEUR": 997.9001124781161,
+  "equityEUR": 999.11437210028,
   "peakEUR": 1005.471243798892,
   "positions": [
     {
@@ -117,8 +117,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 6.729578056079806,
-      "markAt": "2026-11-12T03:46:06.045Z"
+      "markEUR": 6.759176360204907,
+      "markAt": "2026-11-12T11:56:12.620Z"
     },
     {
       "symbol": "AAPL",
@@ -145,8 +145,8 @@
       "stopPercent": 0.15,
       "costEUR": 43.34790832123339,
       "openedAt": "2026-11-11T23:01:20.783Z",
-      "markEUR": 0.041321026395254784,
-      "markAt": "2026-11-12T03:46:06.465Z"
+      "markEUR": 0.04231660571582637,
+      "markAt": "2026-11-12T11:56:12.620Z"
     }
   ],
   "trades": [
@@ -634,6 +634,13 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-12T11:56:11.481Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -766,6 +773,11 @@
       "at": "2026-11-12T03:46:03.630Z",
       "equity": 997.9001124781161,
       "cash": 100.07268918066448
+    },
+    {
+      "at": "2026-11-12T11:56:11.481Z",
+      "equity": 999.11437210028,
+      "cash": 100.07268918066448
     }
   ],
   "lastRebalance": "2026-11-06",
@@ -774,7 +786,7 @@
     "V": "2026-11-06",
     "QNT/USD": "2026-11-11"
   },
-  "updatedAt": "2026-11-12T03:46:03.630Z",
+  "updatedAt": "2026-11-12T11:56:11.481Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -783,5 +795,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-12T03:46:03.630Z"
+  "lastEntryCheck": "2026-11-12T11:56:11.481Z"
 }
