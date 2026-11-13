@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-13T15:40:28.969Z",
+  "generatedAt": "2026-11-13T21:41:23.158Z",
   "usdPerEUR": 1.1052,
   "fxAt": "2026-11-13T00:00:00Z",
-  "stocksReady": true,
-  "stockMessage": "Aktien-Datenanbindung bereit.",
+  "stocksReady": false,
+  "stockMessage": "US-Börse geschlossen.",
   "assets": [
     {
       "symbol": "BTC/USD",
@@ -11,7 +11,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 447162131.4590784,
+      "dailyVolumeUSD": 374673358.80965865,
       "metrics": {
         "last": 71370.7,
         "m20": -0.11981693555746853,
@@ -23,10 +23,10 @@
         "score": -4.375821230574906
       },
       "quote": {
-        "bid": 68104.7,
-        "ask": 68104.8,
-        "last": 68104.8,
-        "at": "2026-11-13T15:40:29.562Z"
+        "bid": 68211.7,
+        "ask": 68211.8,
+        "last": 68211.7,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -35,7 +35,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 102871770.87678333,
+      "dailyVolumeUSD": 108551072.53473547,
       "metrics": {
         "last": 2017.15,
         "m20": -0.15406454967876126,
@@ -47,34 +47,10 @@
         "score": -6.024494437117556
       },
       "quote": {
-        "bid": 1914.9,
-        "ask": 1915.07,
-        "last": 1914.76,
-        "at": "2026-11-13T15:40:29.562Z"
-      }
-    },
-    {
-      "symbol": "XRP/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 37717175.79006615,
-      "metrics": {
-        "last": 1.04003,
-        "m20": -0.19580749423936417,
-        "m60": -0.2242287265783507,
-        "volatility": 0.02673381263965395,
-        "atr": 0.05581857142857146,
-        "sma20": 1.213526,
-        "sma50": 1.3352636000000002,
-        "score": -7.9622101236328335
-      },
-      "quote": {
-        "bid": 1.00964,
-        "ask": 1.00965,
-        "last": 1.00961,
-        "at": "2026-11-13T15:40:29.562Z"
+        "bid": 1925.71,
+        "ask": 1925.72,
+        "last": 1925.42,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -83,7 +59,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 36007862.16575256,
+      "dailyVolumeUSD": 40244693.34613292,
       "metrics": {
         "last": 956.97,
         "m20": -0.18959910573649708,
@@ -95,10 +71,34 @@
         "score": -2.723587991917396
       },
       "quote": {
-        "bid": 924.06,
-        "ask": 924.07,
-        "last": 923.75,
-        "at": "2026-11-13T15:40:29.562Z"
+        "bid": 936.91,
+        "ask": 937.23,
+        "last": 936.45,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "XRP/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 39729457.43405308,
+      "metrics": {
+        "last": 1.04003,
+        "m20": -0.19580749423936417,
+        "m60": -0.2242287265783507,
+        "volatility": 0.02673381263965395,
+        "atr": 0.05581857142857146,
+        "sma20": 1.213526,
+        "sma50": 1.3352636000000002,
+        "score": -7.9622101236328335
+      },
+      "quote": {
+        "bid": 1.0107,
+        "ask": 1.01071,
+        "last": 1.01047,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -107,7 +107,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 32807714.870894674,
+      "dailyVolumeUSD": 32451457.196875326,
       "metrics": {
         "last": 81.62,
         "m20": -0.20533541037873615,
@@ -119,10 +119,10 @@
         "score": -7.694847310090334
       },
       "quote": {
-        "bid": 78.95,
-        "ask": 78.96,
-        "last": 78.95,
-        "at": "2026-11-13T15:40:29.563Z"
+        "bid": 79.19,
+        "ask": 79.2,
+        "last": 79.2,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -131,7 +131,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 17553463.780211274,
+      "dailyVolumeUSD": 17436563.49569716,
       "metrics": {
         "last": 3.4189,
         "m20": -0.27021431010928965,
@@ -143,10 +143,10 @@
         "score": 3.6812913219335086
       },
       "quote": {
-        "bid": 3.4457,
-        "ask": 3.4475,
-        "last": 3.4467,
-        "at": "2026-11-13T15:40:29.563Z"
+        "bid": 3.4921,
+        "ask": 3.4934,
+        "last": 3.4878,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -155,7 +155,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 17228704.5074408,
+      "dailyVolumeUSD": 17118090.158257168,
       "metrics": {
         "last": 72.67,
         "m20": -0.056478836665801,
@@ -167,10 +167,10 @@
         "score": -1.6121399162025254
       },
       "quote": {
-        "bid": 72.2,
-        "ask": 72.21,
-        "last": 72.14,
-        "at": "2026-11-13T15:40:29.563Z"
+        "bid": 72.45,
+        "ask": 72.46,
+        "last": 72.41,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -179,7 +179,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 8211716.276720165,
+      "dailyVolumeUSD": 7786447.9168507205,
       "metrics": {
         "last": 0.8045,
         "m20": -0.16171720329269568,
@@ -191,130 +191,10 @@
         "score": 0.6335330421175058
       },
       "quote": {
-        "bid": 0.798,
-        "ask": 0.7983,
-        "last": 0.7982,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "XMR/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 6868798.495248081,
-      "metrics": {
-        "last": 551.79,
-        "m20": -0.05376067496656034,
-        "m60": 0.06589012517385262,
-        "volatility": 0.02798061978762889,
-        "atr": 30.45857142857141,
-        "sma20": 599.0109999999999,
-        "sma50": 574.3492000000001,
-        "score": 0.6443676106724046
-      },
-      "quote": {
-        "bid": 529.76,
-        "ask": 530.7,
-        "last": 529.6,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "UNI/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 6273395.90669475,
-      "metrics": {
-        "last": 6.0589,
-        "m20": -0.12919313576130376,
-        "m60": -0.010646462337323026,
-        "volatility": 0.05146454711428502,
-        "atr": 0.5697857142857143,
-        "sma20": 6.929925,
-        "sma50": 7.632517999999999,
-        "score": -1.1282549825605708
-      },
-      "quote": {
-        "bid": 5.7352,
-        "ask": 5.7393,
-        "last": 5.736,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "TAO/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 5894565.345412259,
-      "metrics": {
-        "last": 212.0404,
-        "m20": -0.16865876102003385,
-        "m60": -0.0830578346212042,
-        "volatility": 0.03345488486137468,
-        "atr": 13.97680714285714,
-        "sma20": 232.01476000000002,
-        "sma50": 265.5983979999999,
-        "score": -3.5061607794131926
-      },
-      "quote": {
-        "bid": 209.7414,
-        "ask": 209.9323,
-        "last": 209.8413,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "ADA/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 5620486.262298859,
-      "metrics": {
-        "last": 0.174116,
-        "m20": -0.17344245485445198,
-        "m60": -0.14466632279615854,
-        "volatility": 0.029453618392397535,
-        "atr": 0.010163785714285714,
-        "sma20": 0.1898045,
-        "sma50": 0.21992303999999996,
-        "score": -5.302464829237677
-      },
-      "quote": {
-        "bid": 0.169299,
-        "ask": 0.169426,
-        "last": 0.169337,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "LINK/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 5567404.674707879,
-      "metrics": {
-        "last": 10.13784,
-        "m20": -0.14218844398413977,
-        "m60": -0.09469749399238625,
-        "volatility": 0.03741577323571969,
-        "atr": 0.6494899999999998,
-        "sma20": 11.018177,
-        "sma50": 12.3382284,
-        "score": -3.0386616166613813
-      },
-      "quote": {
-        "bid": 9.80225,
-        "ask": 9.81022,
-        "last": 9.79634,
-        "at": "2026-11-13T15:40:29.563Z"
+        "bid": 0.7985,
+        "ask": 0.7986,
+        "last": 0.7983,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -323,7 +203,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 4942558.424835328,
+      "dailyVolumeUSD": 6587412.290704853,
       "metrics": {
         "last": 8.354,
         "m20": -0.07690607734806643,
@@ -335,154 +215,10 @@
         "score": 1.578927625455443
       },
       "quote": {
-        "bid": 8.29,
-        "ask": 8.291,
-        "last": 8.287,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "XDG/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 4823345.395283209,
-      "metrics": {
-        "last": 0.0664175,
-        "m20": -0.15412408684754808,
-        "m60": -0.1941892573935493,
-        "volatility": 0.02565328295281042,
-        "atr": 0.0034291142857142873,
-        "sma20": 0.07371853,
-        "sma50": 0.08219783,
-        "score": -6.945044402421419
-      },
-      "quote": {
-        "bid": 0.0642672,
-        "ask": 0.0642762,
-        "last": 0.0643148,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "PEPE/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 4277499.242010329,
-      "metrics": {
-        "last": 0.000004521,
-        "m20": -0.008552631578947367,
-        "m60": 0.3451353763760787,
-        "volatility": 0.05744307395740034,
-        "atr": 4.842142857142858e-7,
-        "sma20": 0.0000047845,
-        "sma50": 0.0000044532,
-        "score": 3.545426091666025
-      },
-      "quote": {
-        "bid": 0.000004457,
-        "ask": 0.000004459,
-        "last": 0.000004455,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "ENA/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 3740017.758490066,
-      "metrics": {
-        "last": 0.1404,
-        "m20": -0.2948267202410849,
-        "m60": 0.03083700440528636,
-        "volatility": 0.05547574624421648,
-        "atr": 0.015407142857142855,
-        "sma20": 0.17542,
-        "sma50": 0.20501599999999998,
-        "score": -1.7922874802901438
-      },
-      "quote": {
-        "bid": 0.1342,
-        "ask": 0.1343,
-        "last": 0.1342,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "INJ/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 3579614.1649172693,
-      "metrics": {
-        "last": 7.468,
-        "m20": -0.04022619200616884,
-        "m60": 0.26683630195080577,
-        "volatility": 0.03829953708179567,
-        "atr": 0.5802857142857144,
-        "sma20": 7.7343,
-        "sma50": 7.816979999999998,
-        "score": 3.7601317232752303
-      },
-      "quote": {
-        "bid": 8.004,
-        "ask": 8.009,
-        "last": 7.998,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "XLM/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 3453474.3039524863,
-      "metrics": {
-        "last": 0.148285,
-        "m20": -0.14317329527397538,
-        "m60": -0.16289375635090886,
-        "volatility": 0.03036242581174806,
-        "atr": 0.008446642857142856,
-        "sma20": 0.16022045000000001,
-        "sma50": 0.18432369999999998,
-        "score": -5.10517746115528
-      },
-      "quote": {
-        "bid": 0.14672,
-        "ask": 0.146769,
-        "last": 0.146673,
-        "at": "2026-11-13T15:40:29.563Z"
-      }
-    },
-    {
-      "symbol": "PUMP/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 3357220.0006744787,
-      "metrics": {
-        "last": 0.003481,
-        "m20": -0.18838890184192125,
-        "m60": 0.0031700288184437486,
-        "volatility": 0.049021513257200666,
-        "atr": 0.00035164285714285717,
-        "sma20": 0.003991300000000001,
-        "sma50": 0.004695100000000001,
-        "score": -1.4983940430462503
-      },
-      "quote": {
-        "bid": 0.003392,
-        "ask": 0.003395,
-        "last": 0.003388,
-        "at": "2026-11-13T15:40:29.563Z"
+        "bid": 8.317,
+        "ask": 8.32,
+        "last": 8.305,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -491,7 +227,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 3300146.209028143,
+      "dailyVolumeUSD": 6010294.756102109,
       "metrics": {
         "last": 0.00275498,
         "m20": -0.9291981133408942,
@@ -503,10 +239,226 @@
         "score": -3.068084434324181
       },
       "quote": {
-        "bid": 0.00950257,
-        "ask": 0.00958385,
-        "last": 0.00955071,
-        "at": "2026-11-13T15:40:29.564Z"
+        "bid": 0.01245942,
+        "ask": 0.01254455,
+        "last": 0.01260613,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "XMR/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 6005214.3693918055,
+      "metrics": {
+        "last": 551.79,
+        "m20": -0.05376067496656034,
+        "m60": 0.06589012517385262,
+        "volatility": 0.02798061978762889,
+        "atr": 30.45857142857141,
+        "sma20": 599.0109999999999,
+        "sma50": 574.3492000000001,
+        "score": 0.6443676106724046
+      },
+      "quote": {
+        "bid": 531.72,
+        "ask": 532.29,
+        "last": 532.08,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "UNI/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 5889270.346897282,
+      "metrics": {
+        "last": 6.0589,
+        "m20": -0.12919313576130376,
+        "m60": -0.010646462337323026,
+        "volatility": 0.05146454711428502,
+        "atr": 0.5697857142857143,
+        "sma20": 6.929925,
+        "sma50": 7.632517999999999,
+        "score": -1.1282549825605708
+      },
+      "quote": {
+        "bid": 5.7399,
+        "ask": 5.7434,
+        "last": 5.7317,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "TAO/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 5690253.722604293,
+      "metrics": {
+        "last": 212.0404,
+        "m20": -0.16865876102003385,
+        "m60": -0.0830578346212042,
+        "volatility": 0.03345488486137468,
+        "atr": 13.97680714285714,
+        "sma20": 232.01476000000002,
+        "sma50": 265.5983979999999,
+        "score": -3.5061607794131926
+      },
+      "quote": {
+        "bid": 215.7606,
+        "ask": 215.8656,
+        "last": 215.4599,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "ADA/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 5543808.393188258,
+      "metrics": {
+        "last": 0.174116,
+        "m20": -0.17344245485445198,
+        "m60": -0.14466632279615854,
+        "volatility": 0.029453618392397535,
+        "atr": 0.010163785714285714,
+        "sma20": 0.1898045,
+        "sma50": 0.21992303999999996,
+        "score": -5.302464829237677
+      },
+      "quote": {
+        "bid": 0.168616,
+        "ask": 0.168706,
+        "last": 0.168536,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "LINK/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 5113751.916575458,
+      "metrics": {
+        "last": 10.13784,
+        "m20": -0.14218844398413977,
+        "m60": -0.09469749399238625,
+        "volatility": 0.03741577323571969,
+        "atr": 0.6494899999999998,
+        "sma20": 11.018177,
+        "sma50": 12.3382284,
+        "score": -3.0386616166613813
+      },
+      "quote": {
+        "bid": 9.8749,
+        "ask": 9.87792,
+        "last": 9.86516,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "XDG/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 4512513.6900551235,
+      "metrics": {
+        "last": 0.0664175,
+        "m20": -0.15412408684754808,
+        "m60": -0.1941892573935493,
+        "volatility": 0.02565328295281042,
+        "atr": 0.0034291142857142873,
+        "sma20": 0.07371853,
+        "sma50": 0.08219783,
+        "score": -6.945044402421419
+      },
+      "quote": {
+        "bid": 0.0646803,
+        "ask": 0.0646815,
+        "last": 0.0646815,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "PEPE/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 4291745.218485292,
+      "metrics": {
+        "last": 0.000004521,
+        "m20": -0.008552631578947367,
+        "m60": 0.3451353763760787,
+        "volatility": 0.05744307395740034,
+        "atr": 4.842142857142858e-7,
+        "sma20": 0.0000047845,
+        "sma50": 0.0000044532,
+        "score": 3.545426091666025
+      },
+      "quote": {
+        "bid": 0.000004388,
+        "ask": 0.00000439,
+        "last": 0.000004381,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "PUMP/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 3971559.8636782095,
+      "metrics": {
+        "last": 0.003481,
+        "m20": -0.18838890184192125,
+        "m60": 0.0031700288184437486,
+        "volatility": 0.049021513257200666,
+        "atr": 0.00035164285714285717,
+        "sma20": 0.003991300000000001,
+        "sma50": 0.004695100000000001,
+        "score": -1.4983940430462503
+      },
+      "quote": {
+        "bid": 0.003476,
+        "ask": 0.003478,
+        "last": 0.003471,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "INJ/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 3927739.24312068,
+      "metrics": {
+        "last": 7.468,
+        "m20": -0.04022619200616884,
+        "m60": 0.26683630195080577,
+        "volatility": 0.03829953708179567,
+        "atr": 0.5802857142857144,
+        "sma20": 7.7343,
+        "sma50": 7.816979999999998,
+        "score": 3.7601317232752303
+      },
+      "quote": {
+        "bid": 8.065,
+        "ask": 8.072,
+        "last": 8.055,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -515,7 +467,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 3154701.547778967,
+      "dailyVolumeUSD": 3480728.9822335653,
       "metrics": {
         "last": 656.19,
         "m20": -0.11169622309462568,
@@ -527,10 +479,10 @@
         "score": -3.89812549246693
       },
       "quote": {
-        "bid": 628.61,
-        "ask": 628.62,
-        "last": 628.6,
-        "at": "2026-11-13T15:40:29.564Z"
+        "bid": 629.97,
+        "ask": 630.1,
+        "last": 629.81,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -539,7 +491,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 3111428.6298230877,
+      "dailyVolumeUSD": 3456352.351864768,
       "metrics": {
         "last": 50,
         "m20": -0.12617965746242565,
@@ -551,34 +503,58 @@
         "score": -3.0052313901611654
       },
       "quote": {
-        "bid": 48.66,
-        "ask": 48.67,
-        "last": 48.67,
-        "at": "2026-11-13T15:40:29.564Z"
+        "bid": 49.35,
+        "ask": 49.37,
+        "last": 49.36,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
-      "symbol": "QNT/USD",
+      "symbol": "XLM/USD",
       "kind": "crypto",
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 2937934.817311253,
+      "dailyVolumeUSD": 3258280.0712996004,
       "metrics": {
-        "last": 163.68,
-        "m20": -0.09723677679113119,
-        "m60": 1.5960348929421095,
-        "volatility": 0.04717646089881057,
-        "atr": 15.14285714285714,
-        "sma20": 191.1105,
-        "sma50": 207.4718,
-        "score": 19.47425066537741
+        "last": 0.148285,
+        "m20": -0.14317329527397538,
+        "m60": -0.16289375635090886,
+        "volatility": 0.03036242581174806,
+        "atr": 0.008446642857142856,
+        "sma20": 0.16022045000000001,
+        "sma50": 0.18432369999999998,
+        "score": -5.10517746115528
       },
       "quote": {
-        "bid": 160.35,
-        "ask": 160.49,
-        "last": 160.4,
-        "at": "2026-11-13T15:40:29.564Z"
+        "bid": 0.146838,
+        "ask": 0.146889,
+        "last": 0.14672,
+        "at": "2026-11-13T21:41:24.051Z"
+      }
+    },
+    {
+      "symbol": "ENA/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 3042071.6634782027,
+      "metrics": {
+        "last": 0.1404,
+        "m20": -0.2948267202410849,
+        "m60": 0.03083700440528636,
+        "volatility": 0.05547574624421648,
+        "atr": 0.015407142857142855,
+        "sma20": 0.17542,
+        "sma50": 0.20501599999999998,
+        "score": -1.7922874802901438
+      },
+      "quote": {
+        "bid": 0.1344,
+        "ask": 0.1345,
+        "last": 0.1342,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -587,7 +563,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 2929844.8376132767,
+      "dailyVolumeUSD": 2912440.012713976,
       "metrics": {
         "last": 0.0459,
         "m20": 0.17994858611825215,
@@ -599,34 +575,34 @@
         "score": 14.93259405507026
       },
       "quote": {
-        "bid": 0.04421,
-        "ask": 0.04426,
-        "last": 0.04424,
-        "at": "2026-11-13T15:40:29.564Z"
+        "bid": 0.04689,
+        "ask": 0.04694,
+        "last": 0.04695,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
-      "symbol": "AAVE/USD",
+      "symbol": "QNT/USD",
       "kind": "crypto",
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 2220574.003369063,
+      "dailyVolumeUSD": 2665917.684350447,
       "metrics": {
-        "last": 113.91,
-        "m20": -0.21011025587684629,
-        "m60": -0.08307172180632705,
-        "volatility": 0.04345747287053137,
-        "atr": 9.059285714285718,
-        "sma20": 129.203,
-        "sma50": 148.56159999999997,
-        "score": -3.080877156235285
+        "last": 163.68,
+        "m20": -0.09723677679113119,
+        "m60": 1.5960348929421095,
+        "volatility": 0.04717646089881057,
+        "atr": 15.14285714285714,
+        "sma20": 191.1105,
+        "sma50": 207.4718,
+        "score": 19.47425066537741
       },
       "quote": {
-        "bid": 110.81,
-        "ask": 110.89,
-        "last": 110.94,
-        "at": "2026-11-13T15:40:29.564Z"
+        "bid": 160.24,
+        "ask": 160.32,
+        "last": 160.08,
+        "at": "2026-11-13T21:41:24.051Z"
       }
     },
     {
@@ -635,7 +611,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 2153955.115211955,
+      "dailyVolumeUSD": 2050569.559282673,
       "metrics": {
         "last": 0.35266,
         "m20": -0.15766594215014218,
@@ -647,34 +623,34 @@
         "score": -1.022352743288466
       },
       "quote": {
-        "bid": 0.33764,
-        "ask": 0.33796,
-        "last": 0.33736,
-        "at": "2026-11-13T15:40:29.564Z"
+        "bid": 0.33989,
+        "ask": 0.3399,
+        "last": 0.33971,
+        "at": "2026-11-13T21:41:24.052Z"
       }
     },
     {
-      "symbol": "TON/USD",
+      "symbol": "AAVE/USD",
       "kind": "crypto",
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 2127110.0709681874,
+      "dailyVolumeUSD": 1901118.1777613952,
       "metrics": {
-        "last": 1.139,
-        "m20": -0.06639344262295077,
-        "m60": -0.1531598513011152,
-        "volatility": 0.03744982858054531,
-        "atr": 0.08207142857142857,
-        "sma20": 1.1632500000000001,
-        "sma50": 1.3288399999999998,
-        "score": -3.162986115546183
+        "last": 113.91,
+        "m20": -0.21011025587684629,
+        "m60": -0.08307172180632705,
+        "volatility": 0.04345747287053137,
+        "atr": 9.059285714285718,
+        "sma20": 129.203,
+        "sma50": 148.56159999999997,
+        "score": -3.080877156235285
       },
       "quote": {
-        "bid": 1.113,
-        "ask": 1.114,
-        "last": 1.114,
-        "at": "2026-11-13T15:40:29.564Z"
+        "bid": 111.71,
+        "ask": 111.72,
+        "last": 111.69,
+        "at": "2026-11-13T21:41:24.052Z"
       }
     },
     {
@@ -683,7 +659,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 1935921.5439896914,
+      "dailyVolumeUSD": 1741909.727913712,
       "metrics": {
         "last": 0.06372,
         "m20": -0.17663780850239053,
@@ -695,130 +671,10 @@
         "score": -5.414013779041115
       },
       "quote": {
-        "bid": 0.06245,
-        "ask": 0.06248,
-        "last": 0.06249,
-        "at": "2026-11-13T15:40:29.564Z"
-      }
-    },
-    {
-      "symbol": "BCH/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 1685629.9587893449,
-      "metrics": {
-        "last": 225.1,
-        "m20": -0.20197114191512744,
-        "m60": 0.01661999819347848,
-        "volatility": 0.032389237239226994,
-        "atr": 15.240714285714287,
-        "sma20": 266.767,
-        "sma50": 284.6102,
-        "score": -2.1864194370158625
-      },
-      "quote": {
-        "bid": 221.59,
-        "ask": 221.78,
-        "last": 221.55,
-        "at": "2026-11-13T15:40:29.691Z"
-      }
-    },
-    {
-      "symbol": "TRX/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 1615224.7876022425,
-      "metrics": {
-        "last": 0.31542,
-        "m20": -0.04332370853856804,
-        "m60": -0.0672986791018958,
-        "volatility": 0.034527664641952,
-        "atr": 0.008935714285714293,
-        "sma20": 0.32303109999999996,
-        "sma50": 0.32915586,
-        "score": -1.6713754456027456
-      },
-      "quote": {
-        "bid": 0.31238,
-        "ask": 0.312381,
-        "last": 0.312381,
-        "at": "2026-11-13T15:40:29.691Z"
-      }
-    },
-    {
-      "symbol": "VVV/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 1613419.809893688,
-      "metrics": {
-        "last": 18.976,
-        "m20": -0.24208171905579745,
-        "m60": -0.11434705497993092,
-        "volatility": 0.047792436826885804,
-        "atr": 2.0170000000000003,
-        "sma20": 22.170450000000002,
-        "sma50": 24.411499999999997,
-        "score": -3.461654847388074
-      },
-      "quote": {
-        "bid": 18.676,
-        "ask": 18.696,
-        "last": 18.665,
-        "at": "2026-11-13T15:40:29.691Z"
-      }
-    },
-    {
-      "symbol": "LIGHTER/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "insufficient",
-      "entryEligible": true,
-      "dailyVolumeUSD": 1608595.2653357338,
-      "metrics": {
-        "last": 3.215,
-        "m20": 0.021607880521131273,
-        "m60": -0.21719016313610917,
-        "volatility": 0.05474917079356576,
-        "atr": 0.3820714285714285,
-        "sma20": 3.16295,
-        "sma50": 3.4945600000000008,
-        "score": -2.2223340355597134
-      },
-      "quote": {
-        "bid": 3.252,
-        "ask": 3.257,
-        "last": 3.254,
-        "at": "2026-11-13T15:40:29.802Z"
-      }
-    },
-    {
-      "symbol": "ARB/USD",
-      "kind": "crypto",
-      "source": "Kraken Public API",
-      "status": "ok",
-      "entryEligible": true,
-      "dailyVolumeUSD": 1539896.9903069383,
-      "metrics": {
-        "last": 0.1505,
-        "m20": -0.12244897959183687,
-        "m60": 0.13157894736842102,
-        "volatility": 0.042743276166616856,
-        "atr": 0.013435714285714287,
-        "sma20": 0.16306500000000002,
-        "sma50": 0.182576,
-        "score": 0.701110894436378
-      },
-      "quote": {
-        "bid": 0.1454,
-        "ask": 0.1455,
-        "last": 0.1455,
-        "at": "2026-11-13T15:40:29.802Z"
+        "bid": 0.06186,
+        "ask": 0.06189,
+        "last": 0.06179,
+        "at": "2026-11-13T21:41:24.052Z"
       }
     },
     {
@@ -827,7 +683,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 1531364.8237798882,
+      "dailyVolumeUSD": 1683742.9002782442,
       "metrics": {
         "last": 1.548,
         "m20": -0.091015854374633,
@@ -839,10 +695,154 @@
         "score": 4.533714266446988
       },
       "quote": {
-        "bid": 1.548,
-        "ask": 1.551,
-        "last": 1.55,
-        "at": "2026-11-13T15:40:29.802Z"
+        "bid": 1.569,
+        "ask": 1.57,
+        "last": 1.573,
+        "at": "2026-11-13T21:41:24.052Z"
+      }
+    },
+    {
+      "symbol": "BCH/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 1672876.2952791466,
+      "metrics": {
+        "last": 225.1,
+        "m20": -0.20197114191512744,
+        "m60": 0.01661999819347848,
+        "volatility": 0.032389237239226994,
+        "atr": 15.240714285714287,
+        "sma20": 266.767,
+        "sma50": 284.6102,
+        "score": -2.1864194370158625
+      },
+      "quote": {
+        "bid": 222.9,
+        "ask": 223.06,
+        "last": 223.04,
+        "at": "2026-11-13T21:41:24.052Z"
+      }
+    },
+    {
+      "symbol": "VVV/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 1624165.8287464313,
+      "metrics": {
+        "last": 18.976,
+        "m20": -0.24208171905579745,
+        "m60": -0.11434705497993092,
+        "volatility": 0.047792436826885804,
+        "atr": 2.0170000000000003,
+        "sma20": 22.170450000000002,
+        "sma50": 24.411499999999997,
+        "score": -3.461654847388074
+      },
+      "quote": {
+        "bid": 19.139,
+        "ask": 19.153,
+        "last": 19.181,
+        "at": "2026-11-13T21:41:24.052Z"
+      }
+    },
+    {
+      "symbol": "TRX/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 1559481.7264335696,
+      "metrics": {
+        "last": 0.31542,
+        "m20": -0.04332370853856804,
+        "m60": -0.0672986791018958,
+        "volatility": 0.034527664641952,
+        "atr": 0.008935714285714293,
+        "sma20": 0.32303109999999996,
+        "sma50": 0.32915586,
+        "score": -1.6713754456027456
+      },
+      "quote": {
+        "bid": 0.31231,
+        "ask": 0.312346,
+        "last": 0.312333,
+        "at": "2026-11-13T21:41:24.052Z"
+      }
+    },
+    {
+      "symbol": "LIGHTER/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "insufficient",
+      "entryEligible": true,
+      "dailyVolumeUSD": 1443739.844454289,
+      "metrics": {
+        "last": 3.215,
+        "m20": 0.021607880521131273,
+        "m60": -0.21719016313610917,
+        "volatility": 0.05474917079356576,
+        "atr": 0.3820714285714285,
+        "sma20": 3.16295,
+        "sma50": 3.4945600000000008,
+        "score": -2.2223340355597134
+      },
+      "quote": {
+        "bid": 3.227,
+        "ask": 3.231,
+        "last": 3.228,
+        "at": "2026-11-13T21:41:24.052Z"
+      }
+    },
+    {
+      "symbol": "TON/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 1382227.905165694,
+      "metrics": {
+        "last": 1.139,
+        "m20": -0.06639344262295077,
+        "m60": -0.1531598513011152,
+        "volatility": 0.03744982858054531,
+        "atr": 0.08207142857142857,
+        "sma20": 1.1632500000000001,
+        "sma50": 1.3288399999999998,
+        "score": -3.162986115546183
+      },
+      "quote": {
+        "bid": 1.111,
+        "ask": 1.112,
+        "last": 1.112,
+        "at": "2026-11-13T21:41:24.052Z"
+      }
+    },
+    {
+      "symbol": "ARB/USD",
+      "kind": "crypto",
+      "source": "Kraken Public API",
+      "status": "ok",
+      "entryEligible": true,
+      "dailyVolumeUSD": 1334767.428467086,
+      "metrics": {
+        "last": 0.1505,
+        "m20": -0.12244897959183687,
+        "m60": 0.13157894736842102,
+        "volatility": 0.042743276166616856,
+        "atr": 0.013435714285714287,
+        "sma20": 0.16306500000000002,
+        "sma50": 0.182576,
+        "score": 0.701110894436378
+      },
+      "quote": {
+        "bid": 0.1443,
+        "ask": 0.1444,
+        "last": 0.144,
+        "at": "2026-11-13T21:41:24.052Z"
       }
     },
     {
@@ -851,7 +851,7 @@
       "source": "Kraken Public API",
       "status": "ok",
       "entryEligible": true,
-      "dailyVolumeUSD": 1366861.344881289,
+      "dailyVolumeUSD": 1230365.1137099084,
       "metrics": {
         "last": 0.13218,
         "m20": -0.1643168742492256,
@@ -863,41 +863,41 @@
         "score": -3.2792779841326287
       },
       "quote": {
-        "bid": 0.12793,
-        "ask": 0.12818,
-        "last": 0.128,
-        "at": "2026-11-13T15:40:29.802Z"
+        "bid": 0.1246,
+        "ask": 0.12474,
+        "last": 0.1245,
+        "at": "2026-11-13T21:41:24.052Z"
       }
     },
     {
-      "symbol": "FLR/USD",
+      "symbol": "CAP/USD",
       "kind": "crypto",
       "source": "Kraken Public API",
-      "status": "ok",
+      "status": "insufficient",
       "entryEligible": true,
-      "dailyVolumeUSD": 1005867.4768786427,
+      "dailyVolumeUSD": 1107984.2401378232,
       "metrics": {
-        "last": 0.00527,
-        "m20": -0.13888888888888873,
-        "m60": -0.17656249999999996,
-        "volatility": 0.016487592818232567,
-        "atr": 0.00023857142857142857,
-        "sma20": 0.005855000000000001,
-        "sma50": 0.0064964,
-        "score": -9.794823133730638
+        "last": 0.103317,
+        "m20": 0.43995818815331034,
+        "m60": 1.1943588981160929,
+        "volatility": 0.13495091438850584,
+        "atr": 0.014127857142857142,
+        "sma20": 0.0907859,
+        "sma50": 0.07927152,
+        "score": 6.6142465071507885
       },
       "quote": {
-        "bid": 0.00503,
-        "ask": 0.00504,
-        "last": 0.00504,
-        "at": "2026-11-13T15:40:29.802Z"
+        "bid": 0.106773,
+        "ask": 0.107014,
+        "last": 0.106802,
+        "at": "2026-11-13T21:41:24.495Z"
       }
     },
     {
       "symbol": "AAPL",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 354.85,
         "m20": 0.03863603102590374,
@@ -909,17 +909,17 @@
         "score": 5.113554606583774
       },
       "quote": {
-        "bid": 358.6,
-        "ask": 359,
-        "last": 358.8,
-        "at": "2026-11-13T15:40:32.196056363Z"
+        "bid": 340.05,
+        "ask": 0,
+        "last": 170.025,
+        "at": "2026-11-13T21:00:01.350962357Z"
       }
     },
     {
       "symbol": "MSFT",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 523,
         "m20": -0.03033224562444381,
@@ -931,17 +931,17 @@
         "score": 1.590165455747631
       },
       "quote": {
-        "bid": 522.45,
-        "ask": 523.87,
-        "last": 523.1600000000001,
-        "at": "2026-11-13T15:40:30.64300137Z"
+        "bid": 493.59,
+        "ask": 0,
+        "last": 246.795,
+        "at": "2026-11-13T21:00:04.521949028Z"
       }
     },
     {
       "symbol": "GOOGL",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 298.695,
         "m20": -0.14480201563260509,
@@ -953,17 +953,17 @@
         "score": -4.266343305079403
       },
       "quote": {
-        "bid": 294,
-        "ask": 294.93,
-        "last": 294.46500000000003,
-        "at": "2026-11-13T15:40:29.044610953Z"
+        "bid": 281.88,
+        "ask": 312.29,
+        "last": 297.08500000000004,
+        "at": "2026-11-13T21:00:00.343982181Z"
       }
     },
     {
       "symbol": "AMZN",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 267.445,
         "m20": 0.049791961061391055,
@@ -975,17 +975,17 @@
         "score": 0.9003974532683101
       },
       "quote": {
-        "bid": 265.26,
-        "ask": 265.37,
-        "last": 265.315,
-        "at": "2026-11-13T15:40:31.915229087Z"
+        "bid": 250.74,
+        "ask": 0,
+        "last": 125.37,
+        "at": "2026-11-13T21:00:03.404827603Z"
       }
     },
     {
       "symbol": "META",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 623.51,
         "m20": -0.1535067474001467,
@@ -997,17 +997,17 @@
         "score": 0.9612731516979047
       },
       "quote": {
-        "bid": 625.78,
-        "ask": 626.92,
-        "last": 626.3499999999999,
-        "at": "2026-11-13T15:40:32.094872467Z"
+        "bid": 607.23,
+        "ask": 671.85,
+        "last": 639.54,
+        "at": "2026-11-13T21:00:00.001053806Z"
       }
     },
     {
       "symbol": "NVDA",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 166.07,
         "m20": -0.23586251322873053,
@@ -1019,17 +1019,17 @@
         "score": -7.2680582924600685
       },
       "quote": {
-        "bid": 159.78,
-        "ask": 159.81,
-        "last": 159.79500000000002,
-        "at": "2026-11-13T15:40:32.220943933Z"
+        "bid": 154.78,
+        "ask": 0,
+        "last": 77.39,
+        "at": "2026-11-13T21:00:01.671894791Z"
       }
     },
     {
       "symbol": "TSLA",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 397.425,
         "m20": 0.0965565764423475,
@@ -1041,17 +1041,17 @@
         "score": 3.1822414513687733
       },
       "quote": {
-        "bid": 387.9,
-        "ask": 389.39,
-        "last": 388.645,
-        "at": "2026-11-13T15:40:31.492774485Z"
+        "bid": 373.27,
+        "ask": 406.27,
+        "last": 389.77,
+        "at": "2026-11-13T21:00:00.002760957Z"
       }
     },
     {
       "symbol": "AMD",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 585.69,
         "m20": 0.0418564109861963,
@@ -1063,17 +1063,17 @@
         "score": 2.3451768626861735
       },
       "quote": {
-        "bid": 528.28,
-        "ask": 532.73,
-        "last": 530.505,
-        "at": "2026-11-13T15:40:32.1555096Z"
+        "bid": 505.75,
+        "ask": 0,
+        "last": 252.875,
+        "at": "2026-11-13T21:00:03.229839877Z"
       }
     },
     {
       "symbol": "AVGO",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 364.24,
         "m20": 0.05794533678003999,
@@ -1085,17 +1085,17 @@
         "score": 0.6348426817915713
       },
       "quote": {
-        "bid": 340.09,
-        "ask": 341.05,
-        "last": 340.57,
-        "at": "2026-11-13T15:40:30.907884737Z"
+        "bid": 325.26,
+        "ask": 361.76,
+        "last": 343.51,
+        "at": "2026-11-13T21:00:00.02320597Z"
       }
     },
     {
       "symbol": "NFLX",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 62.68,
         "m20": -0.13675802231097645,
@@ -1107,17 +1107,17 @@
         "score": -7.951027557643164
       },
       "quote": {
-        "bid": 62.87,
-        "ask": 62.88,
-        "last": 62.875,
-        "at": "2026-11-13T15:40:32.211097432Z"
+        "bid": 59.71,
+        "ask": 66.05,
+        "last": 62.879999999999995,
+        "at": "2026-11-13T21:00:00.394251383Z"
       }
     },
     {
       "symbol": "JPM",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 342.755,
         "m20": 0.021563543156890796,
@@ -1129,17 +1129,17 @@
         "score": -0.7683164802611104
       },
       "quote": {
-        "bid": 343.92,
-        "ask": 352.3,
-        "last": 348.11,
-        "at": "2026-11-13T15:40:04.908589576Z"
+        "bid": 329.26,
+        "ask": 0,
+        "last": 164.63,
+        "at": "2026-11-13T21:00:03.045138001Z"
       }
     },
     {
       "symbol": "V",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 420.315,
         "m20": 0.054028638062040724,
@@ -1151,17 +1151,17 @@
         "score": 7.126532218392019
       },
       "quote": {
-        "bid": 426.33,
-        "ask": 426.42,
-        "last": 426.375,
-        "at": "2026-11-13T15:40:30.747783472Z"
+        "bid": 399.85,
+        "ask": 444.68,
+        "last": 422.265,
+        "at": "2026-11-13T21:00:00.004235649Z"
       }
     },
     {
       "symbol": "MA",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 652.6,
         "m20": 0.05886552440290749,
@@ -1173,17 +1173,17 @@
         "score": 6.18113070876213
       },
       "quote": {
-        "bid": 660.25,
-        "ask": 670.43,
-        "last": 665.3399999999999,
-        "at": "2026-11-13T15:40:13.245289153Z"
+        "bid": 620.48,
+        "ask": 692.24,
+        "last": 656.36,
+        "at": "2026-11-13T21:00:00.003465214Z"
       }
     },
     {
       "symbol": "COST",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 1092.66,
         "m20": 0.11909297609537273,
@@ -1195,17 +1195,17 @@
         "score": 9.5976179037326
       },
       "quote": {
-        "bid": 1106.32,
-        "ask": 1152.86,
-        "last": 1129.59,
-        "at": "2026-11-13T15:40:31.182388582Z"
+        "bid": 1036.65,
+        "ask": 0,
+        "last": 518.325,
+        "at": "2026-11-13T21:00:04.304815257Z"
       }
     },
     {
       "symbol": "WMT",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 126.17,
         "m20": 0.07068906992532242,
@@ -1217,17 +1217,17 @@
         "score": 5.7590939443965725
       },
       "quote": {
-        "bid": 122.69,
-        "ask": 129.71,
-        "last": 126.2,
-        "at": "2026-11-13T15:40:31.526417615Z"
+        "bid": 120.43,
+        "ask": 133.35,
+        "last": 126.89,
+        "at": "2026-11-13T21:00:00.32439047Z"
       }
     },
     {
       "symbol": "KO",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 97.42,
         "m20": 0.060122966429076774,
@@ -1239,17 +1239,17 @@
         "score": 5.774500947031105
       },
       "quote": {
-        "bid": 98.97,
-        "ask": 98.98,
-        "last": 98.975,
-        "at": "2026-11-13T15:40:32.213096274Z"
+        "bid": 92.62,
+        "ask": 103.22,
+        "last": 97.92,
+        "at": "2026-11-13T21:00:00.268133242Z"
       }
     },
     {
       "symbol": "PEP",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 142.28,
         "m20": 0.10805653985436714,
@@ -1261,17 +1261,17 @@
         "score": 2.869903760256937
       },
       "quote": {
-        "bid": 143.32,
-        "ask": 144.57,
-        "last": 143.945,
-        "at": "2026-11-13T15:40:31.830495769Z"
+        "bid": 138.2,
+        "ask": 150.36,
+        "last": 144.28,
+        "at": "2026-11-13T21:00:00.003361718Z"
       }
     },
     {
       "symbol": "PG",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 168.08,
         "m20": 0.07709067606536357,
@@ -1283,17 +1283,17 @@
         "score": 7.670908334291518
       },
       "quote": {
-        "bid": 169.48,
-        "ask": 175.99,
-        "last": 172.735,
-        "at": "2026-11-13T15:40:29.143801419Z"
+        "bid": 159.01,
+        "ask": 177.69,
+        "last": 168.35,
+        "at": "2026-11-13T21:00:00.13425761Z"
       }
     },
     {
       "symbol": "JNJ",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 283.56,
         "m20": 0.11941889384548587,
@@ -1305,17 +1305,17 @@
         "score": 4.6129380684669545
       },
       "quote": {
-        "bid": 274.53,
-        "ask": 287.96,
-        "last": 281.245,
-        "at": "2026-11-13T15:40:30.511463329Z"
+        "bid": 269.9,
+        "ask": 299.78,
+        "last": 284.84,
+        "at": "2026-11-13T21:00:00.012850199Z"
       }
     },
     {
       "symbol": "UNH",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 405.13,
         "m20": -0.003762356759946961,
@@ -1327,17 +1327,17 @@
         "score": 1.835209039145081
       },
       "quote": {
-        "bid": 388.94,
-        "ask": 403.57,
-        "last": 396.255,
-        "at": "2026-11-13T15:40:24.149740709Z"
+        "bid": 385.93,
+        "ask": 428.4,
+        "last": 407.16499999999996,
+        "at": "2026-11-13T21:00:00.003305555Z"
       }
     },
     {
       "symbol": "XOM",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 169.75,
         "m20": -0.028473315209615047,
@@ -1349,17 +1349,17 @@
         "score": 0.3365956477073986
       },
       "quote": {
-        "bid": 163.79,
-        "ask": 170.46,
-        "last": 167.125,
-        "at": "2026-11-13T15:40:32.140353202Z"
+        "bid": 161.49,
+        "ask": 179.99,
+        "last": 170.74,
+        "at": "2026-11-13T21:00:00.128757069Z"
       }
     },
     {
       "symbol": "HD",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 348.275,
         "m20": 0.12977260193985796,
@@ -1371,17 +1371,17 @@
         "score": 2.7128804010880443
       },
       "quote": {
-        "bid": 337.05,
-        "ask": 347.71,
-        "last": 342.38,
-        "at": "2026-11-13T15:40:07.764435364Z"
+        "bid": 326.31,
+        "ask": 363.23,
+        "last": 344.77,
+        "at": "2026-11-13T21:00:00.002263515Z"
       }
     },
     {
       "symbol": "CRM",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 217.575,
         "m20": -0.11804049534850725,
@@ -1396,14 +1396,14 @@
         "bid": 207.65,
         "ask": 227.26,
         "last": 217.45499999999998,
-        "at": "2026-11-13T15:40:12.530118164Z"
+        "at": "2026-11-13T21:00:00.002628515Z"
       }
     },
     {
       "symbol": "ADBE",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 238.545,
         "m20": -0.052226945846080564,
@@ -1415,17 +1415,17 @@
         "score": -4.245950761987867
       },
       "quote": {
-        "bid": 240.3,
-        "ask": 241.5,
-        "last": 240.9,
-        "at": "2026-11-13T15:40:11.519818592Z"
+        "bid": 227.43,
+        "ask": 0,
+        "last": 113.715,
+        "at": "2026-11-13T21:00:04.002921634Z"
       }
     },
     {
       "symbol": "ORCL",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 127.11,
         "m20": -0.05469824861488126,
@@ -1437,17 +1437,17 @@
         "score": -1.8564476457291732
       },
       "quote": {
-        "bid": 123.8,
-        "ask": 124.13,
-        "last": 123.965,
-        "at": "2026-11-13T15:40:29.468489142Z"
+        "bid": 118.71,
+        "ask": 0,
+        "last": 59.355,
+        "at": "2026-11-13T21:00:02.137590468Z"
       }
     },
     {
       "symbol": "INTC",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 61.21,
         "m20": -0.3578809336480462,
@@ -1459,17 +1459,17 @@
         "score": -4.376212697865261
       },
       "quote": {
-        "bid": 57.3,
-        "ask": 57.32,
-        "last": 57.31,
-        "at": "2026-11-13T15:40:32.048694369Z"
+        "bid": 56.43,
+        "ask": 62.57,
+        "last": 59.5,
+        "at": "2026-11-13T21:00:00.014231474Z"
       }
     },
     {
       "symbol": "QCOM",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 177.2,
         "m20": -0.006447995514437976,
@@ -1481,17 +1481,17 @@
         "score": 1.3852417863105555
       },
       "quote": {
-        "bid": 168.07,
-        "ask": 168.5,
-        "last": 168.285,
-        "at": "2026-11-13T15:40:31.130687549Z"
+        "bid": 163.71,
+        "ask": 0,
+        "last": 81.855,
+        "at": "2026-11-13T21:00:03.764849976Z"
       }
     },
     {
       "symbol": "DIS",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 118.23,
         "m20": 0.06831119544592035,
@@ -1503,17 +1503,17 @@
         "score": 6.277013218321524
       },
       "quote": {
-        "bid": 117.27,
-        "ask": 123.72,
-        "last": 120.495,
-        "at": "2026-11-13T15:40:31.811310645Z"
+        "bid": 112.09,
+        "ask": 0,
+        "last": 56.045,
+        "at": "2026-11-13T21:00:02.557131271Z"
       }
     },
     {
       "symbol": "PYPL",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 58.3,
         "m20": 0.02012248468941369,
@@ -1525,17 +1525,17 @@
         "score": -1.143084259808376
       },
       "quote": {
-        "bid": 59.1,
-        "ask": 59.13,
-        "last": 59.115,
-        "at": "2026-11-13T15:40:31.88979334Z"
+        "bid": 55.51,
+        "ask": 0,
+        "last": 27.755,
+        "at": "2026-11-13T21:00:03.966881677Z"
       }
     },
     {
       "symbol": "UBER",
       "kind": "stock",
       "source": "Alpaca IEX",
-      "status": "ok",
+      "status": "stale",
       "metrics": {
         "last": 69.1,
         "m20": -0.029903130703355485,
@@ -1547,118 +1547,206 @@
         "score": -4.022373365717837
       },
       "quote": {
-        "bid": 69.07,
-        "ask": 69.7,
+        "bid": 65.74,
+        "ask": 73.03,
         "last": 69.38499999999999,
-        "at": "2026-11-13T15:40:28.23140607Z"
+        "at": "2026-11-13T21:00:00.152375742Z"
       }
     }
   ],
   "errors": [],
   "quality": [
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "LIGHTER/USD",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "CAP/USD",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "AAPL",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "MSFT",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "GOOGL",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "AMZN",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "META",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "NVDA",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "TSLA",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "AMD",
-      "type": "spread",
-      "value": 0.008423563261906651,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "AVGO",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "NFLX",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "JPM",
-      "type": "spread",
-      "value": 0.024366131658525223,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "V",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "MA",
-      "type": "spread",
-      "value": 0.01541840212040886,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "COST",
-      "type": "spread",
-      "value": 0.04206739460553906,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "WMT",
-      "type": "spread",
-      "value": 0.05721737712935048,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "KO",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "PEP",
-      "type": "spread",
-      "value": 0.008721741557354173,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "PG",
-      "type": "spread",
-      "value": 0.03841161198961541,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "JNJ",
-      "type": "spread",
-      "value": 0.048919972316322474,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "UNH",
-      "type": "spread",
-      "value": 0.03761505630688537,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "XOM",
-      "type": "spread",
-      "value": 0.04072287685450892,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "HD",
-      "type": "spread",
-      "value": 0.03162735499184088,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "CRM",
-      "type": "spread",
-      "value": 0.09443775583915234,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "ADBE",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "ORCL",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "INTC",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "QCOM",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "DIS",
-      "type": "spread",
-      "value": 0.05500127909951397,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-13T15:40:28.969Z",
+      "at": "2026-11-13T21:41:23.158Z",
+      "symbol": "PYPL",
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+    },
+    {
+      "at": "2026-11-13T21:41:23.158Z",
       "symbol": "UBER",
-      "type": "spread",
-      "value": 0.009121181410163742,
-      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+      "type": "unavailable",
+      "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     }
   ]
 }
