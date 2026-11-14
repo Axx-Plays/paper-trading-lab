@@ -5,7 +5,7 @@
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 100.07268918066448,
-  "equityEUR": 1005.0268376701215,
+  "equityEUR": 1006.8271079333796,
   "peakEUR": 1008.8652790790825,
   "positions": [
     {
@@ -117,8 +117,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 7.179791848534202,
-      "markAt": "2026-11-14T08:55:03.082Z"
+      "markEUR": 6.934174519543974,
+      "markAt": "2026-11-14T15:45:23.195Z"
     },
     {
       "symbol": "AAPL",
@@ -140,13 +140,13 @@
       "bucket": "crypto",
       "quantity": 1019.6334603011885,
       "entryUSD": 0.047257209999999994,
-      "highWaterUSD": 0.04741,
-      "stopUSD": 0.0402985,
+      "highWaterUSD": 0.05025,
+      "stopUSD": 0.0427125,
       "stopPercent": 0.15,
       "costEUR": 43.34790832123339,
       "openedAt": "2026-11-11T23:01:20.783Z",
-      "markEUR": 0.04198972719869707,
-      "markAt": "2026-11-14T08:55:03.082Z"
+      "markEUR": 0.04537599552117264,
+      "markAt": "2026-11-14T15:45:23.195Z"
     }
   ],
   "trades": [
@@ -690,6 +690,13 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-14T15:45:22.269Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -862,6 +869,11 @@
       "at": "2026-11-14T08:55:02.348Z",
       "equity": 1005.0268376701215,
       "cash": 100.07268918066448
+    },
+    {
+      "at": "2026-11-14T15:45:22.269Z",
+      "equity": 1006.8271079333796,
+      "cash": 100.07268918066448
     }
   ],
   "lastRebalance": "2026-11-06",
@@ -870,7 +882,7 @@
     "V": "2026-11-06",
     "QNT/USD": "2026-11-11"
   },
-  "updatedAt": "2026-11-14T08:55:02.348Z",
+  "updatedAt": "2026-11-14T15:45:22.269Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -879,5 +891,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-14T08:55:02.348Z"
+  "lastEntryCheck": "2026-11-14T15:45:22.269Z"
 }
