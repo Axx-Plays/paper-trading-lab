@@ -4,8 +4,8 @@
   "startedAt": "2026-11-06T16:14:46.359Z",
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
-  "cashEUR": 100.07268918066448,
-  "equityEUR": 1001.6110155714537,
+  "cashEUR": 99.9119686980739,
+  "equityEUR": 998.9162259670805,
   "peakEUR": 1008.8652790790825,
   "positions": [
     {
@@ -107,20 +107,6 @@
       "markAt": "2026-11-13T15:40:32.1555096Z"
     },
     {
-      "symbol": "INJ/USD",
-      "kind": "crypto",
-      "bucket": "crypto",
-      "quantity": 6.727873113389544,
-      "entryUSD": 8.289280999999999,
-      "highWaterUSD": 8.375,
-      "stopUSD": 7.1187499999999995,
-      "stopPercent": 0.15,
-      "costEUR": 50,
-      "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 6.473642027687296,
-      "markAt": "2026-11-14T20:10:46.103Z"
-    },
-    {
       "symbol": "AAPL",
       "kind": "stock",
       "bucket": "medium",
@@ -145,8 +131,22 @@
       "stopPercent": 0.15,
       "costEUR": 43.34790832123339,
       "openedAt": "2026-11-11T23:01:20.783Z",
-      "markEUR": 0.04329908428338763,
-      "markAt": "2026-11-14T20:10:46.103Z"
+      "markEUR": 0.04296497247557003,
+      "markAt": "2026-11-14T23:59:14.086Z"
+    },
+    {
+      "symbol": "QNT/USD",
+      "kind": "crypto",
+      "bucket": "crypto",
+      "quantity": 0.3197648967972918,
+      "entryUSD": 143.51336999999998,
+      "highWaterUSD": 143.51336999999998,
+      "stopUSD": 121.98636449999998,
+      "stopPercent": 0.15,
+      "costEUR": 41.56390561439434,
+      "openedAt": "2026-11-14T23:59:12.642Z",
+      "markEUR": 129.34641986970686,
+      "markAt": "2026-11-14T23:59:14.086Z"
     }
   ],
   "trades": [
@@ -355,6 +355,32 @@
       "usdPerEUR": 1.1127,
       "amountEUR": 43.34790832123339,
       "feeEUR": 0.04330460371750888,
+      "pnlEUR": null,
+      "reason": "Ranking · crypto"
+    },
+    {
+      "id": "2026-11-14T23:59:12.642Z-INJ/USD-sell",
+      "at": "2026-11-14T23:59:12.642Z",
+      "symbol": "INJ/USD",
+      "side": "sell",
+      "quantity": 6.727873113389544,
+      "priceUSD": 6.808185000000001,
+      "usdPerEUR": 1.1052,
+      "amountEUR": 41.40318513180376,
+      "feeEUR": 0.04144462976156532,
+      "pnlEUR": -8.59681486819624,
+      "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-14T23:59:12.642Z-QNT/USD-buy",
+      "at": "2026-11-14T23:59:12.642Z",
+      "symbol": "QNT/USD",
+      "side": "buy",
+      "quantity": 0.3197648967972918,
+      "priceUSD": 143.51336999999998,
+      "usdPerEUR": 1.1052,
+      "amountEUR": 41.56390561439434,
+      "feeEUR": 0.041522383231161086,
       "pnlEUR": null,
       "reason": "Ranking · crypto"
     }
@@ -704,6 +730,22 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-14T23:59:12.642Z",
+      "selection": [
+        {
+          "symbol": "QNT/USD",
+          "bucket": "crypto",
+          "score": 17.823811483422936,
+          "volatility": 0.04734234327720554
+        }
+      ],
+      "reason": "Freie Depotplätze nach Momentum-Ranking besetzt.",
+      "stocksReady": false,
+      "cooldownSymbols": [
+        "INJ/USD"
+      ]
     }
   ],
   "history": [
@@ -886,15 +928,21 @@
       "at": "2026-11-14T20:10:45.033Z",
       "equity": 1001.6110155714537,
       "cash": 100.07268918066448
+    },
+    {
+      "at": "2026-11-14T23:59:12.642Z",
+      "equity": 998.9162259670805,
+      "cash": 99.9119686980739
     }
   ],
   "lastRebalance": "2026-11-06",
   "stopCooldown": {
     "PG": "2026-11-06",
     "V": "2026-11-06",
-    "QNT/USD": "2026-11-11"
+    "QNT/USD": "2026-11-11",
+    "INJ/USD": "2026-11-14"
   },
-  "updatedAt": "2026-11-14T20:10:45.033Z",
+  "updatedAt": "2026-11-14T23:59:12.642Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -903,5 +951,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-14T20:10:45.033Z"
+  "lastEntryCheck": "2026-11-14T23:59:12.642Z"
 }
