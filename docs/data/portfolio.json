@@ -5,7 +5,7 @@
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 99.9119686980739,
-  "equityEUR": 998.9162259670805,
+  "equityEUR": 1002.0481874356652,
   "peakEUR": 1008.8652790790825,
   "positions": [
     {
@@ -131,8 +131,8 @@
       "stopPercent": 0.15,
       "costEUR": 43.34790832123339,
       "openedAt": "2026-11-11T23:01:20.783Z",
-      "markEUR": 0.04296497247557003,
-      "markAt": "2026-11-14T23:59:14.086Z"
+      "markEUR": 0.04515024429967427,
+      "markAt": "2026-11-15T06:18:04.040Z"
     },
     {
       "symbol": "QNT/USD",
@@ -140,13 +140,13 @@
       "bucket": "crypto",
       "quantity": 0.3197648967972918,
       "entryUSD": 143.51336999999998,
-      "highWaterUSD": 143.51336999999998,
-      "stopUSD": 121.98636449999998,
+      "highWaterUSD": 146.37,
+      "stopUSD": 124.4145,
       "stopPercent": 0.15,
       "costEUR": 41.56390561439434,
       "openedAt": "2026-11-14T23:59:12.642Z",
-      "markEUR": 129.34641986970686,
-      "markAt": "2026-11-14T23:59:14.086Z"
+      "markEUR": 132.17282516286645,
+      "markAt": "2026-11-15T06:18:05.090Z"
     }
   ],
   "trades": [
@@ -746,6 +746,13 @@
       "cooldownSymbols": [
         "INJ/USD"
       ]
+    },
+    {
+      "at": "2026-11-15T06:17:59.706Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -933,6 +940,11 @@
       "at": "2026-11-14T23:59:12.642Z",
       "equity": 998.9162259670805,
       "cash": 99.9119686980739
+    },
+    {
+      "at": "2026-11-15T06:17:59.706Z",
+      "equity": 1002.0481874356652,
+      "cash": 99.9119686980739
     }
   ],
   "lastRebalance": "2026-11-06",
@@ -942,7 +954,7 @@
     "QNT/USD": "2026-11-11",
     "INJ/USD": "2026-11-14"
   },
-  "updatedAt": "2026-11-14T23:59:12.642Z",
+  "updatedAt": "2026-11-15T06:17:59.706Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -951,5 +963,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-14T23:59:12.642Z"
+  "lastEntryCheck": "2026-11-15T06:17:59.706Z"
 }
