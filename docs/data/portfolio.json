@@ -5,7 +5,7 @@
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 99.9119686980739,
-  "equityEUR": 1002.3805063310014,
+  "equityEUR": 998.6554057556046,
   "peakEUR": 1008.8652790790825,
   "positions": [
     {
@@ -131,8 +131,8 @@
       "stopPercent": 0.15,
       "costEUR": 43.34790832123339,
       "openedAt": "2026-11-11T23:01:20.783Z",
-      "markEUR": 0.042522500081433226,
-      "markAt": "2026-11-16T03:16:43.634Z"
+      "markEUR": 0.03955161400651466,
+      "markAt": "2026-11-16T11:47:10.440Z"
     },
     {
       "symbol": "QNT/USD",
@@ -145,8 +145,8 @@
       "stopPercent": 0.15,
       "costEUR": 41.56390561439434,
       "openedAt": "2026-11-14T23:59:12.642Z",
-      "markEUR": 141.59116612377852,
-      "markAt": "2026-11-16T03:16:44.469Z"
+      "markEUR": 139.41492434853419,
+      "markAt": "2026-11-16T11:47:10.440Z"
     }
   ],
   "trades": [
@@ -781,6 +781,13 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-16T11:47:09.765Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -993,6 +1000,11 @@
       "at": "2026-11-16T03:16:41.911Z",
       "equity": 1002.3805063310014,
       "cash": 99.9119686980739
+    },
+    {
+      "at": "2026-11-16T11:47:09.765Z",
+      "equity": 998.6554057556046,
+      "cash": 99.9119686980739
     }
   ],
   "lastRebalance": "2026-11-06",
@@ -1002,7 +1014,7 @@
     "QNT/USD": "2026-11-11",
     "INJ/USD": "2026-11-14"
   },
-  "updatedAt": "2026-11-16T03:16:41.911Z",
+  "updatedAt": "2026-11-16T11:47:09.765Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -1011,5 +1023,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-16T03:16:41.911Z"
+  "lastEntryCheck": "2026-11-16T11:47:09.765Z"
 }
