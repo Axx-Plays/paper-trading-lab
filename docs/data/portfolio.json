@@ -5,7 +5,7 @@
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 99.9119686980739,
-  "equityEUR": 1003.8882683664193,
+  "equityEUR": 1002.5830898249181,
   "peakEUR": 1008.8652790790825,
   "positions": [
     {
@@ -131,8 +131,8 @@
       "stopPercent": 0.15,
       "costEUR": 43.34790832123339,
       "openedAt": "2026-11-11T23:01:20.783Z",
-      "markEUR": 0.044726102560377706,
-      "markAt": "2026-11-17T04:00:12.281Z"
+      "markEUR": 0.04268733167786454,
+      "markAt": "2026-11-17T13:12:55.735Z"
     },
     {
       "symbol": "QNT/USD",
@@ -145,8 +145,8 @@
       "stopPercent": 0.15,
       "costEUR": 41.56390561439434,
       "openedAt": "2026-11-14T23:59:12.642Z",
-      "markEUR": 139.27976548937718,
-      "markAt": "2026-11-17T04:00:12.717Z"
+      "markEUR": 141.69910693662612,
+      "markAt": "2026-11-17T13:12:55.735Z"
     }
   ],
   "trades": [
@@ -802,6 +802,13 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-17T13:12:54.641Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -1029,6 +1036,11 @@
       "at": "2026-11-17T04:00:10.571Z",
       "equity": 1003.8882683664193,
       "cash": 99.9119686980739
+    },
+    {
+      "at": "2026-11-17T13:12:54.641Z",
+      "equity": 1002.5830898249181,
+      "cash": 99.9119686980739
     }
   ],
   "lastRebalance": "2026-11-06",
@@ -1038,7 +1050,7 @@
     "QNT/USD": "2026-11-11",
     "INJ/USD": "2026-11-14"
   },
-  "updatedAt": "2026-11-17T04:00:10.571Z",
+  "updatedAt": "2026-11-17T13:12:54.641Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -1047,5 +1059,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-17T04:00:10.571Z"
+  "lastEntryCheck": "2026-11-17T13:12:54.641Z"
 }
