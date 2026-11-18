@@ -4,8 +4,8 @@
   "startedAt": "2026-11-06T16:14:46.359Z",
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
-  "cashEUR": 154.57310886179047,
-  "equityEUR": 989.9231768228291,
+  "cashEUR": 98.63845266720124,
+  "equityEUR": 985.8831416700789,
   "peakEUR": 1008.8652790790825,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stopPercent": 0.04,
       "costEUR": 137.5,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 89.45987580754615,
-      "markAt": "2026-11-13T15:40:32.213096274Z"
+      "markEUR": 89.33437684172138,
+      "markAt": "2026-11-18T20:25:44.093133009Z"
     },
     {
       "symbol": "WMT",
@@ -28,27 +28,13 @@
       "bucket": "medium",
       "quantity": 1.211320956578083,
       "entryUSD": 126.673305,
-      "highWaterUSD": 126.673305,
-      "stopUSD": 120.8417448052787,
+      "highWaterUSD": 126.81,
+      "stopUSD": 120.97214688412363,
       "stopPercent": 0.04603622045482511,
       "costEUR": 137.5,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 110.9005977854687,
-      "markAt": "2026-11-13T15:40:31.526417615Z"
-    },
-    {
-      "symbol": "MSFT",
-      "kind": "stock",
-      "bucket": "medium",
-      "quantity": 0.2862308398729981,
-      "entryUSD": 536.0779049999999,
-      "highWaterUSD": 542.14,
-      "stopUSD": 511.3484559526695,
-      "stopPercent": 0.056796296246966575,
-      "costEUR": 137.5,
-      "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 472.24726801710113,
-      "markAt": "2026-11-13T15:40:30.64300137Z"
+      "markEUR": 115.50257266821664,
+      "markAt": "2026-11-18T20:25:44.082185233Z"
     },
     {
       "symbol": "AMZN",
@@ -61,8 +47,8 @@
       "stopPercent": 0.07891837674296238,
       "costEUR": 62.5,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 239.7709069082519,
-      "markAt": "2026-11-13T15:40:31.915229087Z"
+      "markEUR": 242.29945888493796,
+      "markAt": "2026-11-18T20:25:44.198880454Z"
     },
     {
       "symbol": "META",
@@ -75,8 +61,8 @@
       "stopPercent": 0.07718477191144091,
       "costEUR": 62.5,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 565.6481871561709,
-      "markAt": "2026-11-13T15:40:32.094872467Z"
+      "markEUR": 559.0685206509847,
+      "markAt": "2026-11-18T20:25:40.914322856Z"
     },
     {
       "symbol": "AMD",
@@ -89,8 +75,8 @@
       "stopPercent": 0.12,
       "costEUR": 62.5,
       "openedAt": "2026-11-06T16:14:46.359Z",
-      "markEUR": 477.5170576094825,
-      "markAt": "2026-11-13T15:40:32.1555096Z"
+      "markEUR": 475.36308394876005,
+      "markAt": "2026-11-18T20:25:43.945147241Z"
     },
     {
       "symbol": "AAPL",
@@ -103,8 +89,8 @@
       "stopPercent": 0.048146919824226836,
       "costEUR": 125.52498478273604,
       "openedAt": "2026-11-06T16:35:39.157Z",
-      "markEUR": 324.14177492761496,
-      "markAt": "2026-11-13T15:40:32.196056363Z"
+      "markEUR": 320.61277169948943,
+      "markAt": "2026-11-18T20:25:43.725531354Z"
     },
     {
       "symbol": "NIGHT/USD",
@@ -117,8 +103,8 @@
       "stopPercent": 0.15,
       "costEUR": 43.34790832123339,
       "openedAt": "2026-11-11T23:01:20.783Z",
-      "markEUR": 0.042539236363636365,
-      "markAt": "2026-11-18T11:57:36.088Z"
+      "markEUR": 0.04051876780634573,
+      "markAt": "2026-11-18T20:25:43.189Z"
     },
     {
       "symbol": "QNT/USD",
@@ -131,8 +117,36 @@
       "stopPercent": 0.15,
       "costEUR": 41.56390561439434,
       "openedAt": "2026-11-14T23:59:12.642Z",
-      "markEUR": 142.0578,
-      "markAt": "2026-11-18T11:57:36.088Z"
+      "markEUR": 136.54269699124728,
+      "markAt": "2026-11-18T20:25:43.189Z"
+    },
+    {
+      "symbol": "PG",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 0.8711924335214842,
+      "entryUSD": 170.66529,
+      "highWaterUSD": 170.66529,
+      "stopUSD": 163.8386784,
+      "stopPercent": 0.04,
+      "costEUR": 135.6278724174017,
+      "openedAt": "2026-11-18T20:25:42.401Z",
+      "markEUR": 155.2968112919402,
+      "markAt": "2026-11-18T20:25:43.754147985Z"
+    },
+    {
+      "symbol": "TSLA",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.14930949110956432,
+      "entryUSD": 383.50165499999997,
+      "highWaterUSD": 383.50165499999997,
+      "stopUSD": 348.1659454000259,
+      "stopPercent": 0.0921396534780901,
+      "costEUR": 52.232920465171006,
+      "openedAt": "2026-11-18T20:25:42.401Z",
+      "markEUR": 348.71193081008397,
+      "markAt": "2026-11-18T20:25:42.982317919Z"
     }
   ],
   "trades": [
@@ -382,6 +396,45 @@
       "feeEUR": 0.027344242202959758,
       "pnlEUR": -7.83885983628344,
       "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-18T20:25:42.401Z-MSFT-sell",
+      "at": "2026-11-18T20:25:42.401Z",
+      "symbol": "MSFT",
+      "side": "sell",
+      "quantity": 0.2862308398729981,
+      "priceUSD": 505.776985,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 131.92613668798347,
+      "feeEUR": 0.06599606637718033,
+      "pnlEUR": -5.5738633120165275,
+      "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-18T20:25:42.401Z-PG-buy",
+      "at": "2026-11-18T20:25:42.401Z",
+      "symbol": "PG",
+      "side": "buy",
+      "quantity": 0.8711924335214842,
+      "priceUSD": 170.66529,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 135.6278724174017,
+      "feeEUR": 0.06778004618558953,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-18T20:25:42.401Z-TSLA-buy",
+      "at": "2026-11-18T20:25:42.401Z",
+      "symbol": "TSLA",
+      "side": "buy",
+      "quantity": 0.14930949110956432,
+      "priceUSD": 383.50165499999997,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 52.232920465171006,
+      "feeEUR": 0.02610340852832138,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
     }
   ],
   "decisions": [
@@ -831,6 +884,28 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-18T20:25:42.401Z",
+      "selection": [
+        {
+          "symbol": "PG",
+          "bucket": "medium",
+          "score": 8.075330864524272,
+          "volatility": 0.01753412505425491
+        },
+        {
+          "symbol": "TSLA",
+          "bucket": "high",
+          "score": 1.656881163943052,
+          "volatility": 0.03660038985036739
+        }
+      ],
+      "reason": "Freie Depotplätze nach Momentum-Ranking besetzt.",
+      "stocksReady": true,
+      "cooldownSymbols": [
+        "MSFT"
+      ]
     }
   ],
   "history": [
@@ -1078,6 +1153,11 @@
       "at": "2026-11-18T11:57:35.324Z",
       "equity": 989.9231768228291,
       "cash": 154.57310886179047
+    },
+    {
+      "at": "2026-11-18T20:25:42.401Z",
+      "equity": 985.8831416700789,
+      "cash": 98.63845266720124
     }
   ],
   "lastRebalance": "2026-11-06",
@@ -1086,9 +1166,10 @@
     "V": "2026-11-06",
     "QNT/USD": "2026-11-11",
     "INJ/USD": "2026-11-14",
-    "ORCL": "2026-11-17"
+    "ORCL": "2026-11-17",
+    "MSFT": "2026-11-18"
   },
-  "updatedAt": "2026-11-18T11:57:35.324Z",
+  "updatedAt": "2026-11-18T20:25:42.401Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -1097,5 +1178,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-18T11:57:35.324Z"
+  "lastEntryCheck": "2026-11-18T20:25:42.401Z"
 }
