@@ -5,7 +5,7 @@
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 154.57310886179047,
-  "equityEUR": 986.8155604115534,
+  "equityEUR": 989.9231768228291,
   "peakEUR": 1008.8652790790825,
   "positions": [
     {
@@ -117,8 +117,8 @@
       "stopPercent": 0.15,
       "costEUR": 43.34790832123339,
       "openedAt": "2026-11-11T23:01:20.783Z",
-      "markEUR": 0.04036868181818182,
-      "markAt": "2026-11-18T03:15:06.861Z"
+      "markEUR": 0.042539236363636365,
+      "markAt": "2026-11-18T11:57:36.088Z"
     },
     {
       "symbol": "QNT/USD",
@@ -131,8 +131,8 @@
       "stopPercent": 0.15,
       "costEUR": 41.56390561439434,
       "openedAt": "2026-11-14T23:59:12.642Z",
-      "markEUR": 139.2606,
-      "markAt": "2026-11-18T03:15:06.984Z"
+      "markEUR": 142.0578,
+      "markAt": "2026-11-18T11:57:36.088Z"
     }
   ],
   "trades": [
@@ -824,6 +824,13 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-18T11:57:35.324Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -1066,6 +1073,11 @@
       "at": "2026-11-18T03:15:05.061Z",
       "equity": 986.8155604115534,
       "cash": 154.57310886179047
+    },
+    {
+      "at": "2026-11-18T11:57:35.324Z",
+      "equity": 989.9231768228291,
+      "cash": 154.57310886179047
     }
   ],
   "lastRebalance": "2026-11-06",
@@ -1076,7 +1088,7 @@
     "INJ/USD": "2026-11-14",
     "ORCL": "2026-11-17"
   },
-  "updatedAt": "2026-11-18T03:15:05.061Z",
+  "updatedAt": "2026-11-18T11:57:35.324Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -1085,5 +1097,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-18T03:15:05.061Z"
+  "lastEntryCheck": "2026-11-18T11:57:35.324Z"
 }
