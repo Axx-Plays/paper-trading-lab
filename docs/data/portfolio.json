@@ -4,52 +4,10 @@
   "startedAt": "2026-11-19T14:30:53.853Z",
   "endsAt": "2026-12-03T14:30:53.853Z",
   "initialCapitalEUR": 1000,
-  "cashEUR": 97.41494583246246,
-  "equityEUR": 964.1475589528969,
+  "cashEUR": 593.9160996117897,
+  "equityEUR": 938.9659848711995,
   "peakEUR": 1000,
   "positions": [
-    {
-      "symbol": "AAPL",
-      "kind": "stock",
-      "bucket": "medium",
-      "quantity": 0.4256152975652356,
-      "entryUSD": 354.15699,
-      "highWaterUSD": 354.15699,
-      "stopUSD": 336.44124194177044,
-      "stopPercent": 0.050022302420826385,
-      "costEUR": 137.5,
-      "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 317.1044188750911,
-      "markAt": "2026-11-19T20:45:39.572024287Z"
-    },
-    {
-      "symbol": "KO",
-      "kind": "stock",
-      "bucket": "medium",
-      "quantity": 1.563180151817204,
-      "entryUSD": 96.42818999999999,
-      "highWaterUSD": 96.51,
-      "stopUSD": 92.6496,
-      "stopPercent": 0.04,
-      "costEUR": 137.5,
-      "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 87.40343344477803,
-      "markAt": "2026-11-19T20:45:39.611480523Z"
-    },
-    {
-      "symbol": "UBER",
-      "kind": "stock",
-      "bucket": "medium",
-      "quantity": 2.175899812711469,
-      "entryUSD": 69.27461999999998,
-      "highWaterUSD": 69.27461999999998,
-      "stopUSD": 64.70562358337314,
-      "stopPercent": 0.06595483911173895,
-      "costEUR": 137.5,
-      "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 59.4565105121907,
-      "markAt": "2026-11-19T20:45:37.822269965Z"
-    },
     {
       "symbol": "NFLX",
       "kind": "stock",
@@ -63,20 +21,6 @@
       "openedAt": "2026-11-19T14:30:53.853Z",
       "markEUR": 53.021901915029126,
       "markAt": "2026-11-19T20:45:38.472380614Z"
-    },
-    {
-      "symbol": "AMZN",
-      "kind": "stock",
-      "bucket": "high",
-      "quantity": 0.2520203929571502,
-      "entryUSD": 271.865865,
-      "highWaterUSD": 272.49,
-      "stopUSD": 250.34824230633745,
-      "stopPercent": 0.08125713858733359,
-      "costEUR": 62.5,
-      "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 234.40879228529846,
-      "markAt": "2026-11-19T20:45:39.570792634Z"
     },
     {
       "symbol": "MSFT",
@@ -93,20 +37,6 @@
       "markAt": "2026-11-19T20:45:39.600923422Z"
     },
     {
-      "symbol": "META",
-      "kind": "stock",
-      "bucket": "high",
-      "quantity": 0.10939536961381217,
-      "entryUSD": 626.313,
-      "highWaterUSD": 626.74,
-      "stopUSD": 582.8682,
-      "stopPercent": 0.07,
-      "costEUR": 62.5,
-      "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 543.1972975072781,
-      "markAt": "2026-11-19T20:45:39.565288812Z"
-    },
-    {
       "symbol": "QNT/USD",
       "kind": "crypto",
       "bucket": "crypto",
@@ -117,8 +47,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 136.15377543668123,
-      "markAt": "2026-11-19T20:45:38.611Z"
+      "markEUR": 136.06298204148476,
+      "markAt": "2026-11-19T21:01:00.806Z"
     },
     {
       "symbol": "NIGHT/USD",
@@ -131,8 +61,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 0.04039398152292577,
-      "markAt": "2026-11-19T20:45:38.611Z"
+      "markEUR": 0.040357664164847165,
+      "markAt": "2026-11-19T21:01:00.807Z"
     },
     {
       "symbol": "MA",
@@ -145,8 +75,8 @@
       "stopPercent": 0.07,
       "costEUR": 57.98693163429776,
       "openedAt": "2026-11-19T16:01:00.333Z",
-      "markEUR": 569.5628335812411,
-      "markAt": "2026-11-19T20:45:39.10015261Z"
+      "markEUR": 548.2595531409208,
+      "markAt": "2026-11-19T21:00:00.001957927Z"
     }
   ],
   "trades": [
@@ -305,6 +235,71 @@
       "feeEUR": 0.028978976328978945,
       "pnlEUR": null,
       "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-19T21:01:00.013Z-AAPL-sell",
+      "at": "2026-11-19T21:01:00.013Z",
+      "symbol": "AAPL",
+      "side": "sell",
+      "quantity": 0.4256152975652356,
+      "priceUSD": 334.82250500000004,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 129.57999209157936,
+      "feeEUR": 0.06482240724941439,
+      "pnlEUR": -7.920007908420644,
+      "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-19T21:01:00.013Z-KO-sell",
+      "at": "2026-11-19T21:01:00.013Z",
+      "symbol": "KO",
+      "side": "sell",
+      "quantity": 1.563180151817204,
+      "priceUSD": 91.164395,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 129.5807129094026,
+      "feeEUR": 0.0648227678386206,
+      "pnlEUR": -7.9192870905974075,
+      "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-19T21:01:00.013Z-UBER-sell",
+      "at": "2026-11-19T21:01:00.013Z",
+      "symbol": "UBER",
+      "side": "sell",
+      "quantity": 2.175899812711469,
+      "priceUSD": 62.618675,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 123.89359281580967,
+      "feeEUR": 0.061977785300555116,
+      "pnlEUR": -13.606407184190331,
+      "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-19T21:01:00.013Z-AMZN-sell",
+      "at": "2026-11-19T21:01:00.013Z",
+      "symbol": "AMZN",
+      "side": "sell",
+      "quantity": 0.2520203929571502,
+      "priceUSD": 248.165855,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 56.870073569413506,
+      "feeEUR": 0.028449261415414463,
+      "pnlEUR": -5.629926430586494,
+      "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-19T21:01:00.013Z-META-sell",
+      "at": "2026-11-19T21:01:00.013Z",
+      "symbol": "META",
+      "side": "sell",
+      "quantity": 0.10939536961381217,
+      "priceUSD": 568.765475,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 56.57678239312214,
+      "feeEUR": 0.028302542467794966,
+      "pnlEUR": -5.923217606877863,
+      "reason": "Trailing Stop ausgelöst"
     }
   ],
   "decisions": [
@@ -597,6 +592,20 @@
       "cooldownSymbols": [
         "AMD"
       ]
+    },
+    {
+      "at": "2026-11-19T21:01:00.013Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": [
+        "AMD",
+        "AAPL",
+        "KO",
+        "UBER",
+        "AMZN",
+        "META"
+      ]
     }
   ],
   "history": [
@@ -729,11 +738,21 @@
       "at": "2026-11-19T20:45:37.380Z",
       "equity": 964.1475589528969,
       "cash": 97.41494583246246
+    },
+    {
+      "at": "2026-11-19T21:01:00.013Z",
+      "equity": 938.9659848711995,
+      "cash": 593.9160996117897
     }
   ],
   "lastRebalance": null,
   "stopCooldown": {
-    "AMD": "2026-11-19"
+    "AMD": "2026-11-19",
+    "AAPL": "2026-11-19",
+    "KO": "2026-11-19",
+    "UBER": "2026-11-19",
+    "AMZN": "2026-11-19",
+    "META": "2026-11-19"
   },
   "strategyChanges": [
     {
@@ -743,8 +762,8 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-19T20:45:37.380Z",
-  "updatedAt": "2026-11-19T20:45:37.380Z",
+  "lastEntryCheck": "2026-11-19T21:01:00.013Z",
+  "updatedAt": "2026-11-19T21:01:00.013Z",
   "experimentId": "2026-11-19-cadence-v1",
   "resetAt": "2026-11-19T09:30:51.937Z"
 }
