@@ -2,7 +2,19 @@
 
 Mobile-first dark dashboard and a **paper-only** trading experiment, maintained through GitHub Actions. No real orders, withdrawals or brokerage order endpoints are implemented.
 
-## Your experiment
+## Reliability retest requested 2026-11-19
+
+The first pilot produced only 51 observations by November 19; it did **not** achieve a 15-minute cadence. The new runner accepts an independent `workflow_dispatch` from cron-job.org at UTC minutes 00, 15, 30 and 45. GitHub's old scheduled trigger remains a backup during setup, not a timing guarantee. Runner capacity, provider outages and network delays can still interrupt execution.
+
+`config.nextExperimentId` arms one explicit, idempotent restart. It waits for three successful external observations in consecutive quarter-hour slots, each no more than three minutes late and 12–18 minutes apart. Manual test requests must use `source: manual`, never `cron-job.org`. On the following eligible run, all previous data (including both ledgers, market snapshot, daily cache and frozen research) is copied to `archives/before-<experiment-id>/data/` before resetting to €1,000. The existing research cache remains available. New trading confirmations start empty; A and B start from the same €1,000 cash. The new 14-day clock starts on the first complete eligible US-market observation. This does not add automatic strategy learning.
+
+`docs/data/runtime.json` records actual attempt/observation times, source, quarter-hour slot, lateness, outcomes and missing slots. The site displays an overdue warning after 20 minutes. A quarter-hour already processed cannot trade again, including through the backup trigger. Each update runs in a staging directory; a crash before the coherent final snapshot leaves the prior financial state intact. A failed/degraded run saves diagnostics and then fails CI visibly. Code pushes only test and do not simulate trades. All state from one run is published in a single Git commit; a failed push leaves the prior cloud state authoritative.
+
+External setup: POST to `https://api.github.com/repos/Axx-Plays/paper-trading-lab/actions/workflows/paper-lab.yml/dispatches`, JSON body `{"ref":"main","inputs":{"source":"cron-job.org"}}`, `Content-Type: application/json`, `Accept: application/vnd.github+json`, and an `Authorization: Bearer …` header stored only in cron-job.org. Use a short-lived fine-grained GitHub token limited to this repository, Actions read/write (plus mandatory metadata read); no contents-write or broker key. A successful HTTP dispatch alone does not prove a completed observation: check the resulting Actions run and committed runtime record. Set an expiration on the external schedule and verify it covers the eventual actual test end.
+
+The initial three-run check is evidence for setup, not a guarantee of future punctuality. The dashboard and recorded gaps remain the source of truth throughout the retest.
+
+## Original experiment
 
 The user requested a fresh €1,000 run on 2026-11-05, with no startup before **22:00 Europe/Berlin** (`2026-11-05T21:00:00Z`). The previous pilot's complete ledger is retained in `archives/2026-11-05-engineering-pilot/portfolio.json`. This is an explicit new experiment, not erased performance. The start gate still requires an open US stock session and valid narrow-spread quotes for all ten selections; because 22:00 coincides with the regular US close, first purchases are expected during the next eligible session. The 14-day period begins at actual startup.
 

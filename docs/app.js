@@ -33,12 +33,23 @@ function render(){
   $('#balance').textContent=euro(p.equityEUR);$('#cash').textContent=euro(p.cashEUR);$('#invested').textContent=euro(p.equityEUR-p.cashEUR);
   const change=p.equityEUR-p.initialCapitalEUR;$('#total-return').textContent=`${euro(change)} · ${pct(change/p.initialCapitalEUR)} seit Start`;$('#total-return').className=`return ${change>=0?'positive':'negative'}`;
   const age=m.generatedAt?(Date.now()-Date.parse(m.generatedAt))/60000:Infinity;
-  $('#updated').textContent=`Stand: ${date(m.generatedAt)}${age>45?' · Abruf veraltet':''}`;
+  const observationAt=m.runtime?.lastObservationAt??m.generatedAt;
+  const overdue=!['completed','risk_stopped'].includes(p.status) && (!observationAt||Date.now()-Date.parse(observationAt)>20*60000);
+  const failed=['degraded','failed'].includes(m.runtime?.lastOutcome);
+  $('#updated').textContent=`Stand: ${date(m.generatedAt)}${overdue?' · 15-Minuten-Abruf überfällig':''}`;
+  if(overdue||failed){$('#bot-state').textContent=overdue?'Abruf überfällig':'Datenabruf gestört';$('#bot-state').classList.add('amber');}
   $('#run-days').textContent=p.startedAt?`Tag ${Math.min(14,1+Math.floor((Date.now()-Date.parse(p.startedAt))/86400000))} / 14`:'14-Tage-Test · noch nicht gestartet';
   let message=p.status==='waiting'?p.message:p.status==='running'?`Cloud-Test läuft bis ${date(p.endsAt)}. ${m.stockMessage}`:p.status==='completed'?`Test beendet. Abschlussbewertung vom ${date(p.updatedAt)}; offene Positionen wurden eingefroren.`:'Depot-Verlustgrenze erreicht. Neue Käufe sind gesperrt.';
   if(p.riskStopTriggered&&p.positions.length)message='Verlustgrenze ausgelöst. Neue Käufe gesperrt; offene Verkäufe warten auf gültige Kurse.';
   if(m.errors?.length)message+=' Datenfehler: '+m.errors.join(' · ');
-  $('#run-message').textContent=message;$('#run-message').classList.toggle('warning',p.status!=='running'||!!m.errors?.length);
+  if(m.runtime){
+    message+=` Ziel: alle 15 Minuten · ${m.runtime.observations} gespeicherte Abrufe · ${m.runtime.missedSlots} ausgelassene Zeitfenster.`;
+    if(m.runtime.pendingRestart)message+=' Neuer 1.000-€-Test wartet auf drei erfolgreiche automatische Abrufe im 15-Minuten-Abstand.';
+    else if(m.runtime.verifiedAt)message+=` Zeitgeber erstmals geprüft: ${date(m.runtime.verifiedAt)}.`;
+  }
+  if(overdue)message+=' Der letzte Abruf ist über 20 Minuten alt. Stops werden erst beim nächsten gültigen Abruf geprüft.';
+  if(failed)message+=' Der letzte Durchlauf meldete einen Fehler; die angezeigten Werte können älter sein.';
+  $('#run-message').textContent=message;$('#run-message').classList.toggle('warning',p.status!=='running'||!!m.errors?.length||overdue||failed);
   chart('#equity-chart',p.history);$('#chart-caption').textContent=p.history.length?`${p.history.length} Beobachtungen · Gebühren und geschätzte Ausführungskosten enthalten.`:'Es werden keine historischen Gewinne als Paper-Ergebnis ausgegeben.';
   const empty='<div class="empty-state"><strong>Noch keine virtuellen Käufe.</strong>Der Bot wartet auf vollständige Kurse und eine geöffnete US-Börse. Erst danach beginnt dein 14-Tage-Test.</div>';
   const preview=[...p.positions.filter(x=>x.bucket==='medium').slice(0,2),...p.positions.filter(x=>x.bucket==='high').slice(0,2),...p.positions.filter(x=>x.kind==='crypto').slice(0,2)];

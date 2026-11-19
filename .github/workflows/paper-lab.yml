@@ -4,7 +4,14 @@ on:
     branches: [main]
     paths-ignore: ['docs/data/**']
   workflow_dispatch:
+    inputs:
+      source:
+        description: 'Dispatcher (manual or cron-job.org)'
+        type: choice
+        options: [manual, cron-job.org]
+        default: manual
   schedule:
+    # Backup only; the independent dispatcher uses 00,15,30,45.
     - cron: '7,22,37,52 * * * *'
 permissions:
   contents: write
@@ -14,6 +21,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   update:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
@@ -35,12 +43,13 @@ jobs:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
           START_PAPER_RUN: 'true'
-        run: node scripts/update.mjs
+          TRIGGER_SOURCE: ${{ inputs.source || 'github-schedule' }}
+        run: node scripts/runner.mjs
       - name: Save durable paper state
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/data
+          git add docs/data archives
           if ! git diff --cached --quiet; then
             git commit -m 'Update paper observations and portfolio'
             git push
@@ -48,9 +57,22 @@ jobs:
       - name: Detect end of experiment
         id: state
         run: node scripts/run-state.mjs
-      - name: Report degraded data
+      - name: Report update failure after saving diagnostic state
         if: steps.update.outcome == 'failure'
-        run: echo '::warning::Data update reported errors. See dashboard status. No fabricated replacement prices are used.'
+        run: |
+          echo '::error::Update failed or data was degraded. Diagnostics were saved; no fabricated prices are used.'
+          exit 1
+  test:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm test
   stop-schedule:
     needs: update
     if: always() && needs.update.outputs.stop == 'true'

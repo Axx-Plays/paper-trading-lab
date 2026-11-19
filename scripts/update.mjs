@@ -1,12 +1,15 @@
 import {readFile,writeFile,mkdir,rename} from 'node:fs/promises';
+import {pathToFileURL} from 'node:url';
+import {resolve,sep} from 'node:path';
 import {cryptoAsset,cryptoUniverse,stockAssets,fxRate} from './providers.mjs';
 import {modelStudy,newPortfolio,waitingPortfolio,startTimeReached,portfolioStep,rankUniverse,DAY} from '../docs/core.js';
 import {comparisonStep,quoteDiagnostics,experimentsFinished} from '../docs/comparison.js';
 const config=JSON.parse(await readFile(new URL('../config.json',import.meta.url),'utf8'));
-const dir=new URL('../docs/data/',import.meta.url);await mkdir(dir,{recursive:true});
+const dir=process.env.PAPER_DATA_DIR?pathToFileURL(resolve(process.env.PAPER_DATA_DIR)+sep):new URL('../docs/data/',import.meta.url);await mkdir(dir,{recursive:true});
 async function read(name,fallback){try{return JSON.parse(await readFile(new URL(name,dir),'utf8'));}catch(e){if(e.code==='ENOENT')return fallback;throw e;}}
 async function save(name,value){const target=new URL(name,dir),tmp=new URL(name+'.tmp',dir);await writeFile(tmp,JSON.stringify(value,null,2));await rename(tmp,target);}
 const now=new Date().toISOString();let p=await read('portfolio.json',null);
+const experimentId=p?.experimentId,resetAt=p?.resetAt;
 let comparison=await read('comparison.json',{status:'waiting'});
 if(p?.startedAt && Date.parse(now)>=Date.parse(p.endsAt)){
   if(p.status==='running'){p.status='completed';p.finishedAt=now;}
@@ -46,6 +49,7 @@ if(p?.startedAt){
     p=next;comparison=nextComparison;
   }catch(e){errors.push(e.message);}
 }else p=waitingPortfolio(config,now,startRequested);
+if(experimentId){p.experimentId=experimentId;p.resetAt=resetAt;}
 await save('portfolio.json',p);
 await save('comparison.json',comparison);
 await save('market.json',{...market,assets:assets.map(({bars,...a})=>a)});
