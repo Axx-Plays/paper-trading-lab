@@ -5,7 +5,7 @@
   "endsAt": "2026-11-20T16:14:46.359Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 98.63845266720124,
-  "equityEUR": 985.8831416700789,
+  "equityEUR": 986.59061927514,
   "peakEUR": 1008.8652790790825,
   "positions": [
     {
@@ -103,8 +103,8 @@
       "stopPercent": 0.15,
       "costEUR": 43.34790832123339,
       "openedAt": "2026-11-11T23:01:20.783Z",
-      "markEUR": 0.04051876780634573,
-      "markAt": "2026-11-18T20:25:43.189Z"
+      "markEUR": 0.041201208315098464,
+      "markAt": "2026-11-19T01:59:01.701Z"
     },
     {
       "symbol": "QNT/USD",
@@ -117,8 +117,8 @@
       "stopPercent": 0.15,
       "costEUR": 41.56390561439434,
       "openedAt": "2026-11-14T23:59:12.642Z",
-      "markEUR": 136.54269699124728,
-      "markAt": "2026-11-18T20:25:43.189Z"
+      "markEUR": 136.57909381838073,
+      "markAt": "2026-11-19T01:59:01.681Z"
     },
     {
       "symbol": "PG",
@@ -906,6 +906,13 @@
       "cooldownSymbols": [
         "MSFT"
       ]
+    },
+    {
+      "at": "2026-11-19T01:58:58.982Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -1158,6 +1165,11 @@
       "at": "2026-11-18T20:25:42.401Z",
       "equity": 985.8831416700789,
       "cash": 98.63845266720124
+    },
+    {
+      "at": "2026-11-19T01:58:58.982Z",
+      "equity": 986.59061927514,
+      "cash": 98.63845266720124
     }
   ],
   "lastRebalance": "2026-11-06",
@@ -1169,7 +1181,7 @@
     "ORCL": "2026-11-17",
     "MSFT": "2026-11-18"
   },
-  "updatedAt": "2026-11-18T20:25:42.401Z",
+  "updatedAt": "2026-11-19T01:58:58.982Z",
   "strategyChanges": [
     {
       "at": "2026-11-06T16:25:33.991Z",
@@ -1178,5 +1190,5 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-18T20:25:42.401Z"
+  "lastEntryCheck": "2026-11-19T01:58:58.982Z"
 }
