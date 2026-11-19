@@ -1,15 +1,375 @@
 {
   "version": 1,
-  "status": "waiting",
-  "startNotBefore": "2026-11-05T21:00:00.000Z",
+  "status": "running",
+  "startedAt": "2026-11-19T14:30:53.853Z",
+  "endsAt": "2026-12-03T14:30:53.853Z",
   "initialCapitalEUR": 1000,
-  "cashEUR": 1000,
-  "equityEUR": 1000,
-  "positions": [],
-  "trades": [],
-  "decisions": [],
-  "history": [],
-  "message": "Startzeit erreicht. Wartet auf eine geöffnete US-Börse und vollständige, handelbare Kurse. Erst mit dem Start beginnt der 14-Tage-Test.",
+  "cashEUR": 100,
+  "equityEUR": 996.1486963365297,
+  "peakEUR": 1000,
+  "positions": [
+    {
+      "symbol": "AAPL",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 0.4256152975652356,
+      "entryUSD": 354.15699,
+      "highWaterUSD": 354.15699,
+      "stopUSD": 336.44124194177044,
+      "stopPercent": 0.050022302420826385,
+      "costEUR": 137.5,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 322.17029397109775,
+      "markAt": "2026-11-19T14:30:55.434346027Z"
+    },
+    {
+      "symbol": "KO",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 1.563180151817204,
+      "entryUSD": 96.42818999999999,
+      "highWaterUSD": 96.42818999999999,
+      "stopUSD": 92.57106239999999,
+      "stopPercent": 0.04,
+      "costEUR": 137.5,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 87.67666307895698,
+      "markAt": "2026-11-19T14:30:53.805235055Z"
+    },
+    {
+      "symbol": "UBER",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 2.175899812711469,
+      "entryUSD": 69.27461999999998,
+      "highWaterUSD": 69.27461999999998,
+      "stopUSD": 64.70562358337314,
+      "stopPercent": 0.06595483911173895,
+      "costEUR": 137.5,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 62.87471485913567,
+      "markAt": "2026-11-19T14:30:53.312270963Z"
+    },
+    {
+      "symbol": "NFLX",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 2.5030620208031586,
+      "entryUSD": 60.22009499999999,
+      "highWaterUSD": 60.22009499999999,
+      "stopUSD": 56.536849374395345,
+      "stopPercent": 0.061163065677738424,
+      "costEUR": 137.5,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 54.695445853847566,
+      "markAt": "2026-11-19T14:30:54.976146805Z"
+    },
+    {
+      "symbol": "AMZN",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.2520203929571502,
+      "entryUSD": 271.865865,
+      "highWaterUSD": 271.865865,
+      "stopUSD": 249.77482273052965,
+      "stopPercent": 0.08125713858733359,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 247.39100829914298,
+      "markAt": "2026-11-19T14:30:55.268736103Z"
+    },
+    {
+      "symbol": "AMD",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.12641260660891296,
+      "entryUSD": 542.000865,
+      "highWaterUSD": 542.000865,
+      "stopUSD": 476.9607612,
+      "stopPercent": 0.12,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 491.84913840262584,
+      "markAt": "2026-11-19T14:30:54.386985443Z"
+    },
+    {
+      "symbol": "MSFT",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.13125347652754465,
+      "entryUSD": 522.0108749999999,
+      "highWaterUSD": 522.0108749999999,
+      "stopUSD": 485.47011374999994,
+      "stopPercent": 0.07,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 473.6051786948397,
+      "markAt": "2026-11-19T14:30:55.193493057Z"
+    },
+    {
+      "symbol": "META",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.10939536961381217,
+      "entryUSD": 626.313,
+      "highWaterUSD": 626.313,
+      "stopUSD": 582.47109,
+      "stopPercent": 0.07,
+      "costEUR": 62.5,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 567.4572809559628,
+      "markAt": "2026-11-19T14:30:53.63360955Z"
+    },
+    {
+      "symbol": "QNT/USD",
+      "kind": "crypto",
+      "bucket": "crypto",
+      "quantity": 0.3540134818946565,
+      "entryUSD": 154.75459999999998,
+      "highWaterUSD": 154.75459999999998,
+      "stopUSD": 131.54140999999998,
+      "stopPercent": 0.15,
+      "costEUR": 50,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 140.5645463894967,
+      "markAt": "2026-11-19T14:30:54.872Z"
+    },
+    {
+      "symbol": "NIGHT/USD",
+      "kind": "crypto",
+      "bucket": "crypto",
+      "quantity": 1221.3899643140792,
+      "entryUSD": 0.044854809999999995,
+      "highWaterUSD": 0.044854809999999995,
+      "stopUSD": 0.038126588499999996,
+      "stopPercent": 0.15,
+      "costEUR": 50,
+      "openedAt": "2026-11-19T14:30:53.853Z",
+      "markEUR": 0.04071895035557987,
+      "markAt": "2026-11-19T14:30:54.872Z"
+    }
+  ],
+  "trades": [
+    {
+      "id": "2026-11-19T14:30:53.853Z-AAPL-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "AAPL",
+      "side": "buy",
+      "quantity": 0.4256152975652356,
+      "priceUSD": 354.15699,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-19T14:30:53.853Z-KO-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "KO",
+      "side": "buy",
+      "quantity": 1.563180151817204,
+      "priceUSD": 96.42818999999999,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-19T14:30:53.853Z-UBER-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "UBER",
+      "side": "buy",
+      "quantity": 2.175899812711469,
+      "priceUSD": 69.27461999999998,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-19T14:30:53.853Z-NFLX-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "NFLX",
+      "side": "buy",
+      "quantity": 2.5030620208031586,
+      "priceUSD": 60.22009499999999,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 137.5,
+      "feeEUR": 0.06871564217891546,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-19T14:30:53.853Z-AMZN-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "AMZN",
+      "side": "buy",
+      "quantity": 0.2520203929571502,
+      "priceUSD": 271.865865,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-19T14:30:53.853Z-AMD-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "AMD",
+      "side": "buy",
+      "quantity": 0.12641260660891296,
+      "priceUSD": 542.000865,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-19T14:30:53.853Z-MSFT-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "MSFT",
+      "side": "buy",
+      "quantity": 0.13125347652754465,
+      "priceUSD": 522.0108749999999,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-19T14:30:53.853Z-META-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "META",
+      "side": "buy",
+      "quantity": 0.10939536961381217,
+      "priceUSD": 626.313,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 62.5,
+      "feeEUR": 0.031234382808591477,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-19T14:30:53.853Z-QNT/USD-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "QNT/USD",
+      "side": "buy",
+      "quantity": 0.3540134818946565,
+      "priceUSD": 154.75459999999998,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 50,
+      "feeEUR": 0.049950049950041375,
+      "pnlEUR": null,
+      "reason": "Ranking · crypto"
+    },
+    {
+      "id": "2026-11-19T14:30:53.853Z-NIGHT/USD-buy",
+      "at": "2026-11-19T14:30:53.853Z",
+      "symbol": "NIGHT/USD",
+      "side": "buy",
+      "quantity": 1221.3899643140792,
+      "priceUSD": 0.044854809999999995,
+      "usdPerEUR": 1.0968,
+      "amountEUR": 50,
+      "feeEUR": 0.049950049950041375,
+      "pnlEUR": null,
+      "reason": "Ranking · crypto"
+    }
+  ],
+  "decisions": [
+    {
+      "at": "2026-11-19T14:30:53.853Z",
+      "selection": [
+        {
+          "symbol": "AAPL",
+          "bucket": "medium",
+          "score": 5.441405529316534,
+          "volatility": 0.017029454303252867
+        },
+        {
+          "symbol": "KO",
+          "bucket": "medium",
+          "score": 5.4192091271602,
+          "volatility": 0.01282531913320758
+        },
+        {
+          "symbol": "UBER",
+          "bucket": "medium",
+          "score": -4.083614789960317,
+          "volatility": 0.019556356833587276
+        },
+        {
+          "symbol": "NFLX",
+          "bucket": "medium",
+          "score": -9.479520558121273,
+          "volatility": 0.020674530463156836
+        },
+        {
+          "symbol": "AMZN",
+          "bucket": "high",
+          "score": 0.9024488729366702,
+          "volatility": 0.026015194363655503
+        },
+        {
+          "symbol": "AMD",
+          "bucket": "high",
+          "score": 0.6376696217777209,
+          "volatility": 0.07579826203505677
+        },
+        {
+          "symbol": "MSFT",
+          "bucket": "high",
+          "score": 0.10479480197260307,
+          "volatility": 0.02339868064142173
+        },
+        {
+          "symbol": "META",
+          "bucket": "high",
+          "score": 0.08207968461305594,
+          "volatility": 0.025525500469464724
+        },
+        {
+          "symbol": "QNT/USD",
+          "bucket": "crypto",
+          "score": 15.02892767542636,
+          "volatility": 0.04817951988368731
+        },
+        {
+          "symbol": "NIGHT/USD",
+          "bucket": "crypto",
+          "score": 11.474536854935621,
+          "volatility": 0.05168737049575234
+        }
+      ],
+      "reason": "Freie Depotplätze nach Momentum-Ranking besetzt.",
+      "stocksReady": true,
+      "cooldownSymbols": []
+    }
+  ],
+  "history": [
+    {
+      "at": "2026-11-19T14:30:53.853Z",
+      "equity": 996.1486963365297,
+      "cash": 100
+    }
+  ],
+  "lastRebalance": null,
+  "stopCooldown": {},
+  "strategyChanges": [
+    {
+      "at": "2026-11-19T14:30:53.853Z",
+      "version": 2,
+      "reason": "Ersatzkäufe bei jedem Durchlauf; gehaltene Positionen bleiben bis zum Stop oder zur Depot-Verlustgrenze."
+    }
+  ],
+  "strategyVersion": 2,
+  "lastEntryCheck": "2026-11-19T14:30:53.853Z",
+  "updatedAt": "2026-11-19T14:30:53.853Z",
   "experimentId": "2026-11-19-cadence-v1",
   "resetAt": "2026-11-19T09:30:51.937Z"
 }
