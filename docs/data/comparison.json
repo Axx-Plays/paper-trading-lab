@@ -13,7 +13,7 @@
     "endsAt": "2026-12-03T14:30:53.853Z",
     "initialCapitalEUR": 1000,
     "cashEUR": 226.6760937870562,
-    "equityEUR": 990.9685443337966,
+    "equityEUR": 992.5337223349001,
     "peakEUR": 1000,
     "positions": [
       {
@@ -27,8 +27,8 @@
         "stopPercent": 0.050022302420826385,
         "costEUR": 137.5,
         "openedAt": "2026-11-19T14:45:37.836Z",
-        "markEUR": 317.63154782796585,
-        "markAt": "2026-11-19T18:30:54.546591231Z"
+        "markEUR": 317.9314660252912,
+        "markAt": "2026-11-19T18:45:47.764239814Z"
       },
       {
         "symbol": "AMZN",
@@ -41,8 +41,8 @@
         "stopPercent": 0.08125713858733359,
         "costEUR": 62.5,
         "openedAt": "2026-11-19T14:45:37.836Z",
-        "markEUR": 236.61728082923952,
-        "markAt": "2026-11-19T18:30:54.692505755Z"
+        "markEUR": 236.4173353643559,
+        "markAt": "2026-11-19T18:45:47.993205906Z"
       },
       {
         "symbol": "UBER",
@@ -55,8 +55,8 @@
         "stopPercent": 0.07,
         "costEUR": 62.5,
         "openedAt": "2026-11-19T14:45:37.836Z",
-        "markEUR": 60.29264609261281,
-        "markAt": "2026-11-19T18:30:54.693918776Z"
+        "markEUR": 60.08361219750729,
+        "markAt": "2026-11-19T18:45:45.284708283Z"
       },
       {
         "symbol": "NIGHT/USD",
@@ -64,13 +64,13 @@
         "bucket": "crypto",
         "quantity": 1222.4812218207258,
         "entryUSD": 0.04481476999999999,
-        "highWaterUSD": 0.04481476999999999,
-        "stopUSD": 0.038092554499999993,
+        "highWaterUSD": 0.04502,
+        "stopUSD": 0.038266999999999995,
         "stopPercent": 0.15,
         "costEUR": 50,
         "openedAt": "2026-11-19T14:45:37.836Z",
-        "markEUR": 0.04060280633187773,
-        "markAt": "2026-11-19T18:30:53.985Z"
+        "markEUR": 0.04087518651746725,
+        "markAt": "2026-11-19T18:45:47.788Z"
       },
       {
         "symbol": "PIEVERSE/USD",
@@ -83,8 +83,8 @@
         "stopPercent": 0.15,
         "costEUR": 50,
         "openedAt": "2026-11-19T14:45:37.836Z",
-        "markEUR": 2.613306293941048,
-        "markAt": "2026-11-19T18:30:53.985Z"
+        "markEUR": 2.636095436135371,
+        "markAt": "2026-11-19T18:45:47.788Z"
       },
       {
         "symbol": "PG",
@@ -97,8 +97,8 @@
         "stopPercent": 0.04,
         "costEUR": 136.94109788793466,
         "openedAt": "2026-11-19T15:00:59.166Z",
-        "markEUR": 150.6498193595342,
-        "markAt": "2026-11-19T18:30:53.989985408Z"
+        "markEUR": 151.22239046351893,
+        "markAt": "2026-11-19T18:45:45.961218393Z"
       },
       {
         "symbol": "DIS",
@@ -111,8 +111,8 @@
         "stopPercent": 0.05198519711880828,
         "costEUR": 136.94109788793466,
         "openedAt": "2026-11-19T15:00:59.166Z",
-        "markEUR": 109.97909411617542,
-        "markAt": "2026-11-19T18:30:54.698725437Z"
+        "markEUR": 110.13359742994908,
+        "markAt": "2026-11-19T18:45:47.518799475Z"
       },
       {
         "symbol": "KO",
@@ -120,13 +120,13 @@
         "bucket": "medium",
         "quantity": 1.5711619956519665,
         "entryUSD": 95.75785499999999,
-        "highWaterUSD": 96.35,
-        "stopUSD": 92.496,
+        "highWaterUSD": 96.51,
+        "stopUSD": 92.6496,
         "stopPercent": 0.04,
         "costEUR": 136.94171043707442,
         "openedAt": "2026-11-19T16:45:50.290Z",
-        "markEUR": 87.56702518877366,
-        "markAt": "2026-11-19T18:30:54.666307914Z"
+        "markEUR": 87.71244007232534,
+        "markAt": "2026-11-19T18:45:47.961759762Z"
       }
     ],
     "trades": [
@@ -405,6 +405,13 @@
         "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
         "stocksReady": true,
         "cooldownSymbols": []
+      },
+      {
+        "at": "2026-11-19T18:45:47.272Z",
+        "selection": [],
+        "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+        "stocksReady": true,
+        "cooldownSymbols": []
       }
     ],
     "history": [
@@ -492,6 +499,11 @@
         "at": "2026-11-19T18:30:53.009Z",
         "equity": 990.9685443337966,
         "cash": 226.6760937870562
+      },
+      {
+        "at": "2026-11-19T18:45:47.272Z",
+        "equity": 992.5337223349001,
+        "cash": 226.6760937870562
       }
     ],
     "lastRebalance": null,
@@ -504,334 +516,334 @@
       }
     ],
     "strategyVersion": 2,
-    "lastEntryCheck": "2026-11-19T18:30:53.009Z",
-    "updatedAt": "2026-11-19T18:30:53.009Z"
+    "lastEntryCheck": "2026-11-19T18:45:47.272Z",
+    "updatedAt": "2026-11-19T18:45:47.272Z"
   },
   "confirmations": {
     "BTC/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.984Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.787Z"
     },
     "ETH/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.984Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.787Z"
     },
     "XRP/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.984Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.787Z"
     },
     "ZEC/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.984Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.787Z"
     },
     "SOL/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.984Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.787Z"
     },
     "HYPE/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.984Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.787Z"
     },
     "NEAR/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.984Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.787Z"
     },
     "XLM/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.984Z"
-    },
-    "XMR/USD": {
-      "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.787Z"
     },
     "ADA/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.787Z"
+    },
+    "XMR/USD": {
+      "count": 0,
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "VVV/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "PEARL/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "SUI/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
-    },
-    "LINK/USD": {
-      "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "TAO/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "LTC/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
+    },
+    "LINK/USD": {
+      "count": 0,
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "XDG/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "UNI/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "AVAX/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
-    },
-    "QNT/USD": {
-      "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "INJ/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
-    "FARTCOIN/USD": {
+    "QNT/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "SKY/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
+    },
+    "FARTCOIN/USD": {
+      "count": 0,
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "PUMP/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "ENA/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "BNB/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "PEPE/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "TRX/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "AAVE/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
-    },
-    "PIEVERSE/USD": {
-      "count": 2,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "NIGHT/USD": {
       "count": 2,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
+    },
+    "PIEVERSE/USD": {
+      "count": 2,
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "CRV/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "XDC/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "USELESS/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "LUNA/USD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.985Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.788Z"
     },
     "AAPL": {
       "count": 2,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.546591231Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.764239814Z"
     },
     "MSFT": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.699404292Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.295646047Z"
     },
     "GOOGL": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.639066364Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:46.082973414Z"
     },
     "AMZN": {
       "count": 2,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.692505755Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.993205906Z"
     },
     "META": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.015035792Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:45.680775499Z"
     },
     "NVDA": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.684665653Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.983078622Z"
     },
     "TSLA": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.653327903Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:41.364369607Z"
     },
     "AMD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.486549734Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.698805364Z"
     },
     "AVGO": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:44.057252061Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:46.611529928Z"
     },
     "NFLX": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.352736821Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:46.420559436Z"
     },
     "JPM": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:52.222998123Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:41.756780645Z"
     },
     "V": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:44.202525715Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:44.412599148Z"
     },
     "MA": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.313176439Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:46.66712261Z"
     },
     "COST": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.723189919Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:40.47570511Z"
     },
     "WMT": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:52.842482Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:40.28739816Z"
     },
     "KO": {
       "count": 2,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.666307914Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.961759762Z"
     },
     "PEP": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.443759119Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.53332821Z"
     },
     "PG": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.989985408Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:45.961218393Z"
     },
     "JNJ": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.01772614Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:39.700031646Z"
     },
     "UNH": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:50.163253785Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.682225794Z"
     },
     "XOM": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.079279005Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.325587381Z"
     },
     "HD": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.648342862Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:35.462994436Z"
     },
     "CRM": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:51.144864708Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:36.950541704Z"
     },
     "ADBE": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:36.775506905Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:33.520376941Z"
     },
     "ORCL": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.675406774Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.945100092Z"
     },
     "INTC": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.678792974Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.983923568Z"
     },
     "QCOM": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:53.065647191Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:46.349591758Z"
     },
     "DIS": {
       "count": 2,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.698725437Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:47.518799475Z"
     },
     "PYPL": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:52.005214389Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:45.068673807Z"
     },
     "UBER": {
       "count": 0,
-      "at": "2026-11-19T18:30:53.009Z",
-      "quoteAt": "2026-11-19T18:30:54.693918776Z"
+      "at": "2026-11-19T18:45:47.272Z",
+      "quoteAt": "2026-11-19T18:45:45.284708283Z"
     }
   },
   "history": [
@@ -919,6 +931,11 @@
       "at": "2026-11-19T18:30:53.009Z",
       "baseline": 968.6897584704394,
       "filtered": 990.9685443337966
+    },
+    {
+      "at": "2026-11-19T18:45:47.272Z",
+      "baseline": 968.7307118080033,
+      "filtered": 992.5337223349001
     }
   ],
   "qualityHistory": [
@@ -2445,6 +2462,101 @@
           "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
         }
       ]
+    },
+    {
+      "at": "2026-11-19T18:45:47.272Z",
+      "events": [
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "PEARL/USD",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "META",
+          "type": "spread",
+          "value": 0.008444289300021487,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "TSLA",
+          "type": "spread",
+          "value": 0.04341926729986431,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "AVGO",
+          "type": "spread",
+          "value": 0.03391826301731814,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "MA",
+          "type": "spread",
+          "value": 0.015145161290322558,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "COST",
+          "type": "spread",
+          "value": 0.015590697674418596,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "WMT",
+          "type": "spread",
+          "value": 0.014163399215811763,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "PG",
+          "type": "spread",
+          "value": 0.015505739527615919,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "UNH",
+          "type": "spread",
+          "value": 0.020286039135898427,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "HD",
+          "type": "spread",
+          "value": 0.0699450792247965,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "ADBE",
+          "type": "spread",
+          "value": 0.025,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "ORCL",
+          "type": "spread",
+          "value": 0.014098331400017958,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        },
+        {
+          "at": "2026-11-19T18:45:47.272Z",
+          "symbol": "QCOM",
+          "type": "spread",
+          "value": 0.08625371783266522,
+          "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+        }
+      ]
     }
   ],
   "rules": {
@@ -2505,13 +2617,13 @@
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "XMR/USD",
+      "symbol": "ADA/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "ADA/USD",
+      "symbol": "XMR/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
@@ -2535,12 +2647,6 @@
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "LINK/USD",
-      "count": 0,
-      "eligible": false,
-      "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
-    },
-    {
       "symbol": "TAO/USD",
       "count": 0,
       "eligible": false,
@@ -2548,6 +2654,12 @@
     },
     {
       "symbol": "LTC/USD",
+      "count": 0,
+      "eligible": false,
+      "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
+    },
+    {
+      "symbol": "LINK/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
@@ -2571,25 +2683,25 @@
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "QNT/USD",
-      "count": 0,
-      "eligible": false,
-      "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
-    },
-    {
       "symbol": "INJ/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "FARTCOIN/USD",
+      "symbol": "QNT/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
       "symbol": "SKY/USD",
+      "count": 0,
+      "eligible": false,
+      "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
+    },
+    {
+      "symbol": "FARTCOIN/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
@@ -2631,13 +2743,13 @@
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "PIEVERSE/USD",
+      "symbol": "NIGHT/USD",
       "count": 2,
       "eligible": true,
       "reason": "Kaufsignal bestätigt"
     },
     {
-      "symbol": "NIGHT/USD",
+      "symbol": "PIEVERSE/USD",
       "count": 2,
       "eligible": true,
       "reason": "Kaufsignal bestätigt"
@@ -2784,7 +2896,7 @@
       "symbol": "UNH",
       "count": 0,
       "eligible": false,
-      "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
+      "reason": "Kurs, Spread oder Handelszeit ungeeignet"
     },
     {
       "symbol": "XOM",
@@ -2808,13 +2920,13 @@
       "symbol": "ADBE",
       "count": 0,
       "eligible": false,
-      "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
+      "reason": "Kurs, Spread oder Handelszeit ungeeignet"
     },
     {
       "symbol": "ORCL",
       "count": 0,
       "eligible": false,
-      "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
+      "reason": "Kurs, Spread oder Handelszeit ungeeignet"
     },
     {
       "symbol": "INTC",
@@ -2826,7 +2938,7 @@
       "symbol": "QCOM",
       "count": 0,
       "eligible": false,
-      "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
+      "reason": "Kurs, Spread oder Handelszeit ungeeignet"
     },
     {
       "symbol": "DIS",
@@ -2849,86 +2961,114 @@
   ],
   "latestQuality": [
     {
-      "at": "2026-11-19T18:30:53.009Z",
+      "at": "2026-11-19T18:45:47.272Z",
       "symbol": "PEARL/USD",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-19T18:30:53.009Z",
+      "at": "2026-11-19T18:45:47.272Z",
       "symbol": "META",
       "type": "spread",
-      "value": 0.005153011187021098,
+      "value": 0.008444289300021487,
       "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
     },
     {
-      "at": "2026-11-19T18:30:53.009Z",
+      "at": "2026-11-19T18:45:47.272Z",
       "symbol": "TSLA",
       "type": "spread",
       "value": 0.04341926729986431,
       "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
     },
     {
-      "at": "2026-11-19T18:30:53.009Z",
+      "at": "2026-11-19T18:45:47.272Z",
       "symbol": "AVGO",
       "type": "spread",
-      "value": 0.03299856527977044,
+      "value": 0.03391826301731814,
       "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
     },
     {
-      "at": "2026-11-19T18:30:53.009Z",
+      "at": "2026-11-19T18:45:47.272Z",
       "symbol": "MA",
       "type": "spread",
-      "value": 0.014258064516129083,
+      "value": 0.015145161290322558,
       "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
     },
     {
-      "at": "2026-11-19T18:30:53.009Z",
+      "at": "2026-11-19T18:45:47.272Z",
       "symbol": "COST",
       "type": "spread",
-      "value": 0.01579534883720932,
+      "value": 0.015590697674418596,
       "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
     },
     {
-      "at": "2026-11-19T18:30:53.009Z",
+      "at": "2026-11-19T18:45:47.272Z",
       "symbol": "WMT",
       "type": "spread",
-      "value": 0.006671961874503488,
+      "value": 0.014163399215811763,
       "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
     },
     {
-      "at": "2026-11-19T18:30:53.009Z",
+      "at": "2026-11-19T18:45:47.272Z",
       "symbol": "PG",
       "type": "spread",
-      "value": 0.017193532818532958,
+      "value": 0.015505739527615919,
       "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
     },
     {
-      "at": "2026-11-19T18:30:53.009Z",
+      "at": "2026-11-19T18:45:47.272Z",
+      "symbol": "UNH",
+      "type": "spread",
+      "value": 0.020286039135898427,
+      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+    },
+    {
+      "at": "2026-11-19T18:45:47.272Z",
       "symbol": "HD",
       "type": "spread",
-      "value": 0.07316457294362733,
+      "value": 0.0699450792247965,
+      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+    },
+    {
+      "at": "2026-11-19T18:45:47.272Z",
+      "symbol": "ADBE",
+      "type": "spread",
+      "value": 0.025,
+      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+    },
+    {
+      "at": "2026-11-19T18:45:47.272Z",
+      "symbol": "ORCL",
+      "type": "spread",
+      "value": 0.014098331400017958,
+      "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
+    },
+    {
+      "at": "2026-11-19T18:45:47.272Z",
+      "symbol": "QCOM",
+      "type": "spread",
+      "value": 0.08625371783266522,
       "message": "Großer Spread: kann Bewertung und Stop-Verkäufe beeinflussen."
     }
   ],
   "baselineStats": {
     "status": "running",
-    "equityEUR": 968.6897584704394,
+    "equityEUR": 968.7307118080033,
     "cashEUR": 97.41494583246246,
-    "returnPct": -0.031310241529560634,
+    "returnPct": -0.0312692881919967,
     "trades": 12,
     "feesEUR": 0.5563939723105353,
     "maxDrawdown": 0.033612013612585256
   },
   "filteredStats": {
     "status": "running",
-    "equityEUR": 990.9685443337966,
+    "equityEUR": 992.5337223349001,
     "cashEUR": 226.6760937870562,
-    "returnPct": -0.009031455666203447,
+    "returnPct": -0.007466277665099885,
     "trades": 8,
     "feesEUR": 0.4363938061534327,
     "maxDrawdown": 0.009031455666203447
   },
-  "updatedAt": "2026-11-19T18:30:53.009Z",
+  "updatedAt": "2026-11-19T18:45:47.272Z",
   "status": "running"
 }
