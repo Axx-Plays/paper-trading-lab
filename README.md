@@ -14,6 +14,8 @@ External setup: POST to `https://api.github.com/repos/Axx-Plays/paper-trading-la
 
 The initial three-run check is evidence for setup, not a guarantee of future punctuality. The dashboard and recorded gaps remain the source of truth throughout the retest.
 
+External job 8897426 is configured for every 15 minutes in Europe/Berlin, expiring December 7, 2026 at 09:21. Its fine-grained token expires December 10. The scheduling window includes setup buffer; financial simulation still stops exactly 14 days after actual start. After that, dispatches are harmless no-ops until external expiry; only then may the backup workflow disable itself. Reconcile this expiry before any later experiment. The token is stored only in the authenticated cron-job.org job, not in this repository or the website.
+
 ## Original experiment
 
 The user requested a fresh €1,000 run on 2026-11-05, with no startup before **22:00 Europe/Berlin** (`2026-11-05T21:00:00Z`). The previous pilot's complete ledger is retained in `archives/2026-11-05-engineering-pilot/portfolio.json`. This is an explicit new experiment, not erased performance. The start gate still requires an open US stock session and valid narrow-spread quotes for all ten selections; because 22:00 coincides with the regular US close, first purchases are expected during the next eligible session. The 14-day period begins at actual startup.

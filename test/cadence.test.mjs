@@ -43,6 +43,18 @@ test('runner discards a crashed partial ledger and leaves the same slot retryabl
   const p=JSON.parse(await readFile(join(root,'docs','data','portfolio.json')));assert.equal(p.cashEUR,1000);
   const r=JSON.parse(await readFile(join(root,'docs','data','runtime.json')));assert.equal(r.runs[0].outcome,'failed');assert.equal(r.lastProcessedSlot,undefined);
 });
+
+test('completed experiment remains callable until the external schedule expires',async()=>{
+  const root=await fixture('');
+  await copyFile(new URL('../scripts/run-state.mjs',import.meta.url),join(root,'scripts','run-state.mjs'));
+  await writeFile(join(root,'docs','data','portfolio.json'),'{"status":"completed","experimentId":"test-id"}');
+  await writeFile(join(root,'docs','data','comparison.json'),'{"filtered":{"status":"completed"}}');
+  const check=()=>JSON.parse(spawnSync(process.execPath,[join(root,'scripts','run-state.mjs')],{encoding:'utf8',env:{...process.env,GITHUB_OUTPUT:''}}).stdout).stop;
+  await writeFile(join(root,'config.json'),JSON.stringify({schedulerExpiresAt:new Date(Date.now()+86400000).toISOString()}));
+  assert.equal(check(),false);
+  await writeFile(join(root,'config.json'),JSON.stringify({schedulerExpiresAt:new Date(Date.now()-86400000).toISOString()}));
+  assert.equal(check(),true);
+});
 test('reset requires three consecutive timely automatic successful observations',()=>{
   assert.equal(schedulerVerified(good()),true);
   for(const change of [{outcome:'degraded'},{outcome:'failed'},{source:'manual'},{event:'schedule'},{delaySeconds:181},{slot:slotAt(times[2])+1},{startedAt:'2026-11-19T09:00:00Z'}]){
