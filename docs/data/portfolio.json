@@ -5,7 +5,7 @@
   "endsAt": "2026-12-03T14:30:53.853Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 593.9160996117897,
-  "equityEUR": 938.9150424265366,
+  "equityEUR": 938.261251883278,
   "peakEUR": 1000,
   "positions": [
     {
@@ -47,8 +47,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 135.6998084606987,
-      "markAt": "2026-11-19T21:15:48.098Z"
+      "markEUR": 135.48190431222707,
+      "markAt": "2026-11-19T21:30:50.394Z"
     },
     {
       "symbol": "NIGHT/USD",
@@ -61,8 +61,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 0.04042121954148471,
-      "markAt": "2026-11-19T21:15:48.098Z"
+      "markEUR": 0.03994909388646288,
+      "markAt": "2026-11-19T21:30:50.394Z"
     },
     {
       "symbol": "MA",
@@ -620,6 +620,20 @@
         "AMZN",
         "META"
       ]
+    },
+    {
+      "at": "2026-11-19T21:30:49.795Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": [
+        "AMD",
+        "AAPL",
+        "KO",
+        "UBER",
+        "AMZN",
+        "META"
+      ]
     }
   ],
   "history": [
@@ -762,6 +776,11 @@
       "at": "2026-11-19T21:15:47.591Z",
       "equity": 938.9150424265366,
       "cash": 593.9160996117897
+    },
+    {
+      "at": "2026-11-19T21:30:49.795Z",
+      "equity": 938.261251883278,
+      "cash": 593.9160996117897
     }
   ],
   "lastRebalance": null,
@@ -781,8 +800,8 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-19T21:15:47.591Z",
-  "updatedAt": "2026-11-19T21:15:47.591Z",
+  "lastEntryCheck": "2026-11-19T21:30:49.795Z",
+  "updatedAt": "2026-11-19T21:30:49.795Z",
   "experimentId": "2026-11-19-cadence-v1",
   "resetAt": "2026-11-19T09:30:51.937Z"
 }
