@@ -1216,18 +1216,30 @@
       "outcome": "success",
       "processed": true,
       "observationAt": "2026-11-20T09:45:37.981Z"
+    },
+    {
+      "slot": 1994632,
+      "startedAt": "2026-11-20T10:00:54.051Z",
+      "finishedAt": "2026-11-20T10:00:55.609Z",
+      "source": "cron-job.org",
+      "event": "workflow_dispatch",
+      "runId": "44715542203",
+      "delaySeconds": 54.051,
+      "outcome": "success",
+      "processed": true,
+      "observationAt": "2026-11-20T10:00:54.094Z"
     }
   ],
-  "lastAttemptAt": "2026-11-20T09:45:37.903Z",
-  "lastProcessedSlot": 1994631,
+  "lastAttemptAt": "2026-11-20T10:00:54.051Z",
+  "lastProcessedSlot": 1994632,
   "summary": {
     "intervalMinutes": 15,
-    "lastAttemptAt": "2026-11-20T09:45:37.903Z",
-    "lastObservationAt": "2026-11-20T09:45:37.981Z",
+    "lastAttemptAt": "2026-11-20T10:00:54.051Z",
+    "lastObservationAt": "2026-11-20T10:00:54.094Z",
     "lastOutcome": "success",
-    "observations": 98,
+    "observations": 99,
     "missedSlots": 0,
     "schedulerVerified": true,
-    "checkedAt": "2026-11-20T09:45:37.903Z"
+    "checkedAt": "2026-11-20T10:00:54.051Z"
   }
 }
