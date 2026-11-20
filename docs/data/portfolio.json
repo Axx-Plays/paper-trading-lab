@@ -5,7 +5,7 @@
   "endsAt": "2026-12-03T14:30:53.853Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 593.9160996117897,
-  "equityEUR": 938.3697452313857,
+  "equityEUR": 939.2895253439879,
   "peakEUR": 1000,
   "positions": [
     {
@@ -47,8 +47,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 134.69200177401746,
-      "markAt": "2026-11-20T01:15:35.268Z"
+      "markEUR": 134.56489102074235,
+      "markAt": "2026-11-20T01:30:48.217Z"
     },
     {
       "symbol": "NIGHT/USD",
@@ -56,13 +56,13 @@
       "bucket": "crypto",
       "quantity": 1221.3899643140792,
       "entryUSD": 0.044854809999999995,
-      "highWaterUSD": 0.04502,
-      "stopUSD": 0.038266999999999995,
+      "highWaterUSD": 0.04522,
+      "stopUSD": 0.038437,
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 0.04026687076965066,
-      "markAt": "2026-11-20T01:15:35.268Z"
+      "markEUR": 0.04105677330786027,
+      "markAt": "2026-11-20T01:30:48.217Z"
     },
     {
       "symbol": "MA",
@@ -802,6 +802,13 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-20T01:30:47.477Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -1024,6 +1031,11 @@
       "at": "2026-11-20T01:15:34.707Z",
       "equity": 938.3697452313857,
       "cash": 593.9160996117897
+    },
+    {
+      "at": "2026-11-20T01:30:47.477Z",
+      "equity": 939.2895253439879,
+      "cash": 593.9160996117897
     }
   ],
   "lastRebalance": null,
@@ -1043,8 +1055,8 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-20T01:15:34.707Z",
-  "updatedAt": "2026-11-20T01:15:34.707Z",
+  "lastEntryCheck": "2026-11-20T01:30:47.477Z",
+  "updatedAt": "2026-11-20T01:30:47.477Z",
   "experimentId": "2026-11-19-cadence-v1",
   "resetAt": "2026-11-19T09:30:51.937Z"
 }
