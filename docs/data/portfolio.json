@@ -4,8 +4,8 @@
   "startedAt": "2026-11-19T14:30:53.853Z",
   "endsAt": "2026-12-03T14:30:53.853Z",
   "initialCapitalEUR": 1000,
-  "cashEUR": 593.9160996117897,
-  "equityEUR": 934.0782287398167,
+  "cashEUR": 93.63944116649061,
+  "equityEUR": 934.4994235377336,
   "peakEUR": 1000,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stopPercent": 0.061163065677738424,
       "costEUR": 137.5,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 53.021901915029126,
-      "markAt": "2026-11-19T20:45:38.472380614Z"
+      "markEUR": 53.16731679858079,
+      "markAt": "2026-11-20T14:30:59.157401382Z"
     },
     {
       "symbol": "MSFT",
@@ -33,8 +33,8 @@
       "stopPercent": 0.07,
       "costEUR": 62.5,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 454.81231359852626,
-      "markAt": "2026-11-19T20:45:39.600923422Z"
+      "markEUR": 446.11468587609176,
+      "markAt": "2026-11-20T14:30:58.345135635Z"
     },
     {
       "symbol": "QNT/USD",
@@ -47,8 +47,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 127.8007830786026,
-      "markAt": "2026-11-20T14:15:36.004Z"
+      "markEUR": 128.12763930131004,
+      "markAt": "2026-11-20T14:30:59.284Z"
     },
     {
       "symbol": "NIGHT/USD",
@@ -61,8 +61,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 0.038750621069869,
-      "markAt": "2026-11-20T14:15:36.004Z"
+      "markEUR": 0.03911379465065502,
+      "markAt": "2026-11-20T14:30:59.284Z"
     },
     {
       "symbol": "MA",
@@ -75,8 +75,78 @@
       "stopPercent": 0.07,
       "costEUR": 57.98693163429776,
       "openedAt": "2026-11-19T16:01:00.333Z",
-      "markEUR": 548.2595531409208,
-      "markAt": "2026-11-19T21:00:00.001957927Z"
+      "markEUR": 573.4435932860263,
+      "markAt": "2026-11-20T14:30:59.738826348Z"
+    },
+    {
+      "symbol": "AAPL",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 0.40161694921578317,
+      "entryUSD": 352.21602,
+      "highWaterUSD": 352.21602,
+      "stopUSD": 334.15114681659605,
+      "stopPercent": 0.051289186628717086,
+      "costEUR": 128.7542316039246,
+      "openedAt": "2026-11-20T14:30:58.314Z",
+      "markEUR": 319.5219413141376,
+      "markAt": "2026-11-20T14:30:59.957320495Z"
+    },
+    {
+      "symbol": "KO",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 1.4566786606421214,
+      "entryUSD": 97.10853,
+      "highWaterUSD": 97.10853,
+      "stopUSD": 93.2241888,
+      "stopPercent": 0.04,
+      "costEUR": 128.7542316039246,
+      "openedAt": "2026-11-20T14:30:58.314Z",
+      "markEUR": 88.14868472298036,
+      "markAt": "2026-11-20T14:30:59.919061029Z"
+    },
+    {
+      "symbol": "PYPL",
+      "kind": "stock",
+      "bucket": "medium",
+      "quantity": 2.6201858932899245,
+      "entryUSD": 53.986979999999996,
+      "highWaterUSD": 53.986979999999996,
+      "stopUSD": 50.97820377464146,
+      "stopPercent": 0.05573151573506306,
+      "costEUR": 128.7542316039246,
+      "openedAt": "2026-11-20T14:30:58.314Z",
+      "markEUR": 48.92301988491631,
+      "markAt": "2026-11-20T14:30:59.393975459Z"
+    },
+    {
+      "symbol": "AMD",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 0.13812924816419783,
+      "entryUSD": 465.49262999999996,
+      "highWaterUSD": 465.49262999999996,
+      "stopUSD": 409.63351439999997,
+      "stopPercent": 0.12,
+      "costEUR": 58.52465072905663,
+      "openedAt": "2026-11-20T14:30:58.314Z",
+      "markEUR": 420.96699945187413,
+      "markAt": "2026-11-20T14:30:59.85774578Z"
+    },
+    {
+      "symbol": "INTC",
+      "kind": "stock",
+      "bucket": "high",
+      "quantity": 1.1327924262271614,
+      "entryUSD": 53.816894999999995,
+      "highWaterUSD": 53.816894999999995,
+      "stopUSD": 47.358867599999996,
+      "stopPercent": 0.12,
+      "costEUR": 55.48931290446863,
+      "openedAt": "2026-11-20T14:30:58.314Z",
+      "markEUR": 48.832135582696516,
+      "markAt": "2026-11-20T14:30:59.991788195Z"
     }
   ],
   "trades": [
@@ -300,6 +370,71 @@
       "feeEUR": 0.028302542467794966,
       "pnlEUR": -5.923217606877863,
       "reason": "Trailing Stop ausgelöst"
+    },
+    {
+      "id": "2026-11-20T14:30:58.314Z-AAPL-buy",
+      "at": "2026-11-20T14:30:58.314Z",
+      "symbol": "AAPL",
+      "side": "buy",
+      "quantity": 0.40161694921578317,
+      "priceUSD": 352.21602,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 128.7542316039246,
+      "feeEUR": 0.06434494333029761,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-20T14:30:58.314Z-KO-buy",
+      "at": "2026-11-20T14:30:58.314Z",
+      "symbol": "KO",
+      "side": "buy",
+      "quantity": 1.4566786606421214,
+      "priceUSD": 97.10853,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 128.7542316039246,
+      "feeEUR": 0.06434494333029761,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-20T14:30:58.314Z-PYPL-buy",
+      "at": "2026-11-20T14:30:58.314Z",
+      "symbol": "PYPL",
+      "side": "buy",
+      "quantity": 2.6201858932899245,
+      "priceUSD": 53.986979999999996,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 128.7542316039246,
+      "feeEUR": 0.06434494333029761,
+      "pnlEUR": null,
+      "reason": "Ranking · medium"
+    },
+    {
+      "id": "2026-11-20T14:30:58.314Z-AMD-buy",
+      "at": "2026-11-20T14:30:58.314Z",
+      "symbol": "AMD",
+      "side": "buy",
+      "quantity": 0.13812924816419783,
+      "priceUSD": 465.49262999999996,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 58.52465072905663,
+      "feeEUR": 0.029247701513767765,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
+    },
+    {
+      "id": "2026-11-20T14:30:58.314Z-INTC-buy",
+      "at": "2026-11-20T14:30:58.314Z",
+      "symbol": "INTC",
+      "side": "buy",
+      "quantity": 1.1327924262271614,
+      "priceUSD": 53.816894999999995,
+      "usdPerEUR": 1.0992,
+      "amountEUR": 55.48931290446863,
+      "feeEUR": 0.027730791056704618,
+      "pnlEUR": null,
+      "reason": "Ranking · high"
     }
   ],
   "decisions": [
@@ -1166,6 +1301,44 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-20T14:30:58.314Z",
+      "selection": [
+        {
+          "symbol": "AAPL",
+          "bucket": "medium",
+          "score": 4.115547617670584,
+          "volatility": 0.01696365270557886
+        },
+        {
+          "symbol": "KO",
+          "bucket": "medium",
+          "score": 3.8307764948690077,
+          "volatility": 0.0123124423979549
+        },
+        {
+          "symbol": "PYPL",
+          "bucket": "medium",
+          "score": -3.2135082993305693,
+          "volatility": 0.018514774989965985
+        },
+        {
+          "symbol": "AMD",
+          "bucket": "high",
+          "score": -0.05269358940783493,
+          "volatility": 0.0756323724405314
+        },
+        {
+          "symbol": "INTC",
+          "bucket": "high",
+          "score": -4.616077348285808,
+          "volatility": 0.07814855521391306
+        }
+      ],
+      "reason": "Freie Depotplätze nach Momentum-Ranking besetzt.",
+      "stocksReady": true,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -1648,6 +1821,11 @@
       "at": "2026-11-20T14:15:35.123Z",
       "equity": 934.0782287398167,
       "cash": 593.9160996117897
+    },
+    {
+      "at": "2026-11-20T14:30:58.314Z",
+      "equity": 934.4994235377336,
+      "cash": 93.63944116649061
     }
   ],
   "lastRebalance": null,
@@ -1667,8 +1845,8 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-20T14:15:35.123Z",
-  "updatedAt": "2026-11-20T14:15:35.123Z",
+  "lastEntryCheck": "2026-11-20T14:30:58.314Z",
+  "updatedAt": "2026-11-20T14:30:58.314Z",
   "experimentId": "2026-11-19-cadence-v1",
   "resetAt": "2026-11-19T09:30:51.937Z"
 }
