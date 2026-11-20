@@ -5,7 +5,7 @@
   "endsAt": "2026-12-03T14:30:53.853Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 593.9160996117897,
-  "equityEUR": 937.081035515984,
+  "equityEUR": 936.4618036328411,
   "peakEUR": 1000,
   "positions": [
     {
@@ -47,8 +47,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 128.8903038209607,
-      "markAt": "2026-11-20T04:15:38.900Z"
+      "markEUR": 128.30014675218342,
+      "markAt": "2026-11-20T04:30:55.019Z"
     },
     {
       "symbol": "NIGHT/USD",
@@ -61,8 +61,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 0.040893345196506545,
-      "markAt": "2026-11-20T04:15:38.900Z"
+      "markEUR": 0.040557409634279486,
+      "markAt": "2026-11-20T04:30:55.019Z"
     },
     {
       "symbol": "MA",
@@ -886,6 +886,13 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": false,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-20T04:30:53.720Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": false,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -1168,6 +1175,11 @@
       "at": "2026-11-20T04:15:38.033Z",
       "equity": 937.081035515984,
       "cash": 593.9160996117897
+    },
+    {
+      "at": "2026-11-20T04:30:53.720Z",
+      "equity": 936.4618036328411,
+      "cash": 593.9160996117897
     }
   ],
   "lastRebalance": null,
@@ -1187,8 +1199,8 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-20T04:15:38.033Z",
-  "updatedAt": "2026-11-20T04:15:38.033Z",
+  "lastEntryCheck": "2026-11-20T04:30:53.720Z",
+  "updatedAt": "2026-11-20T04:30:53.720Z",
   "experimentId": "2026-11-19-cadence-v1",
   "resetAt": "2026-11-19T09:30:51.937Z"
 }
