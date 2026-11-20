@@ -13,7 +13,7 @@
     "endsAt": "2026-12-03T14:30:53.853Z",
     "initialCapitalEUR": 1000,
     "cashEUR": 600.5860826750663,
-    "equityEUR": 967.6451693046682,
+    "equityEUR": 966.332645936275,
     "peakEUR": 1000,
     "positions": [
       {
@@ -41,8 +41,8 @@
         "stopPercent": 0.15,
         "costEUR": 50,
         "openedAt": "2026-11-19T14:45:37.836Z",
-        "markEUR": 0.03914103266921398,
-        "markAt": "2026-11-20T07:30:50.449Z"
+        "markEUR": 0.03917735002729258,
+        "markAt": "2026-11-20T07:45:46.664Z"
       },
       {
         "symbol": "PIEVERSE/USD",
@@ -55,8 +55,8 @@
         "stopPercent": 0.15,
         "costEUR": 50,
         "openedAt": "2026-11-19T14:45:37.836Z",
-        "markEUR": 2.705733970251092,
-        "markAt": "2026-11-20T07:30:50.449Z"
+        "markEUR": 2.6336440144650655,
+        "markAt": "2026-11-20T07:45:46.664Z"
       },
       {
         "symbol": "PG",
@@ -825,6 +825,13 @@
         "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
         "stocksReady": false,
         "cooldownSymbols": []
+      },
+      {
+        "at": "2026-11-20T07:45:45.972Z",
+        "selection": [],
+        "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+        "stocksReady": false,
+        "cooldownSymbols": []
       }
     ],
     "history": [
@@ -1172,6 +1179,11 @@
         "at": "2026-11-20T07:30:49.707Z",
         "equity": 967.6451693046682,
         "cash": 600.5860826750663
+      },
+      {
+        "at": "2026-11-20T07:45:45.972Z",
+        "equity": 966.332645936275,
+        "cash": 600.5860826750663
       }
     ],
     "lastRebalance": null,
@@ -1189,353 +1201,353 @@
       }
     ],
     "strategyVersion": 2,
-    "lastEntryCheck": "2026-11-20T07:30:49.707Z",
-    "updatedAt": "2026-11-20T07:30:49.707Z"
+    "lastEntryCheck": "2026-11-20T07:45:45.972Z",
+    "updatedAt": "2026-11-20T07:45:45.972Z"
   },
   "confirmations": {
     "BTC/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.447Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.662Z"
     },
     "ETH/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.447Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.662Z"
     },
     "ZEC/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.447Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.662Z"
     },
     "XRP/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.447Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.662Z"
     },
     "SOL/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.447Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.662Z"
     },
     "HYPE/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.447Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.662Z"
     },
     "XMR/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.447Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.662Z"
     },
     "NEAR/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.447Z"
-    },
-    "TAO/USD": {
-      "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.447Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "ADA/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
+    },
+    "TAO/USD": {
+      "count": 0,
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "XLM/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "SUI/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "VVV/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
-    },
-    "LINK/USD": {
-      "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "LTC/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
+    },
+    "LINK/USD": {
+      "count": 0,
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "PEARL/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "SKY/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "XDG/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "UNI/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "INJ/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "ENA/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "FARTCOIN/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "QNT/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "BNB/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "AVAX/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "USELESS/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "PEPE/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.448Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "TRX/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "PUMP/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "HBAR/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.663Z"
     },
     "ALEO/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.664Z"
     },
     "NIGHT/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.664Z"
     },
     "AAVE/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.664Z"
     },
     "AKE/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.664Z"
     },
     "ZRO/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.664Z"
     },
     "ICNT/USD": {
       "count": 2,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.664Z"
     },
     "CRV/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.664Z"
     },
     "ONDO/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.664Z"
     },
     "PIEVERSE/USD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
-      "quoteAt": "2026-11-20T07:30:50.449Z"
+      "at": "2026-11-20T07:45:45.972Z",
+      "quoteAt": "2026-11-20T07:45:46.664Z"
     },
     "AAPL": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.000792412Z"
     },
     "MSFT": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:03.533824624Z"
     },
     "GOOGL": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.010852162Z"
     },
     "AMZN": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:02.750188085Z"
     },
     "META": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.001263565Z"
     },
     "NVDA": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:32:58.254998069Z"
     },
     "TSLA": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.007740019Z"
     },
     "AMD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.00078422Z"
     },
     "AVGO": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.010726446Z"
     },
     "NFLX": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:02.914838519Z"
     },
     "JPM": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.004009555Z"
     },
     "V": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:05.135176904Z"
     },
     "MA": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.001957927Z"
     },
     "COST": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.005252379Z"
     },
     "WMT": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.039220404Z"
     },
     "KO": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.153866512Z"
     },
     "PEP": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.188466848Z"
     },
     "PG": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:02.215159427Z"
     },
     "JNJ": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.00347326Z"
     },
     "UNH": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.003628139Z"
     },
     "XOM": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:03.013331716Z"
     },
     "HD": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:01.199158836Z"
     },
     "CRM": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.002545808Z"
     },
     "ADBE": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.001231846Z"
     },
     "ORCL": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:05.476341069Z"
     },
     "INTC": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.008078685Z"
     },
     "QCOM": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.002989614Z"
     },
     "DIS": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.002746404Z"
     },
     "PYPL": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.21137744Z"
     },
     "UBER": {
       "count": 0,
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "quoteAt": "2026-11-19T21:00:00.620873816Z"
     }
   },
@@ -1884,6 +1896,11 @@
       "at": "2026-11-20T07:30:49.707Z",
       "baseline": 935.705760226811,
       "filtered": 967.6451693046682
+    },
+    {
+      "at": "2026-11-20T07:45:45.972Z",
+      "baseline": 935.8915430617515,
+      "filtered": 966.332645936275
     }
   ],
   "qualityHistory": [
@@ -12370,6 +12387,197 @@
           "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
         }
       ]
+    },
+    {
+      "at": "2026-11-20T07:45:45.972Z",
+      "events": [
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "PEARL/USD",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "AAPL",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "MSFT",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "GOOGL",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "AMZN",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "META",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "NVDA",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "TSLA",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "AMD",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "AVGO",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "NFLX",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "JPM",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "V",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "MA",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "COST",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "WMT",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "KO",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "PEP",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "PG",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "JNJ",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "UNH",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "XOM",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "HD",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "CRM",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "ADBE",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "ORCL",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "INTC",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "QCOM",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "DIS",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "PYPL",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        },
+        {
+          "at": "2026-11-20T07:45:45.972Z",
+          "symbol": "UBER",
+          "type": "unavailable",
+          "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
+        }
+      ]
     }
   ],
   "rules": {
@@ -12430,13 +12638,13 @@
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "TAO/USD",
+      "symbol": "ADA/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "ADA/USD",
+      "symbol": "TAO/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
@@ -12460,13 +12668,13 @@
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "LINK/USD",
+      "symbol": "LTC/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
     },
     {
-      "symbol": "LTC/USD",
+      "symbol": "LINK/USD",
       "count": 0,
       "eligible": false,
       "reason": "Positiver 20-Tage-Trend und Kurs über SMA20 fehlen"
@@ -12798,187 +13006,187 @@
   ],
   "latestQuality": [
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "PEARL/USD",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "AAPL",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "MSFT",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "GOOGL",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "AMZN",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "META",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "NVDA",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "TSLA",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "AMD",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "AVGO",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "NFLX",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "JPM",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "V",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "MA",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "COST",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "WMT",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "KO",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "PEP",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "PG",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "JNJ",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "UNH",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "XOM",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "HD",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "CRM",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "ADBE",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "ORCL",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "INTC",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "QCOM",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "DIS",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "PYPL",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
     },
     {
-      "at": "2026-11-20T07:30:49.707Z",
+      "at": "2026-11-20T07:45:45.972Z",
       "symbol": "UBER",
       "type": "unavailable",
       "message": "Kurs fehlt, ist veraltet oder nicht verwendbar."
@@ -12986,22 +13194,22 @@
   ],
   "baselineStats": {
     "status": "running",
-    "equityEUR": 935.705760226811,
+    "equityEUR": 935.8915430617515,
     "cashEUR": 593.9160996117897,
-    "returnPct": -0.06429423977318904,
+    "returnPct": -0.06410845693824851,
     "trades": 17,
     "feesEUR": 0.8047687365823348,
     "maxDrawdown": 0.06468105518079914
   },
   "filteredStats": {
     "status": "running",
-    "equityEUR": 967.6451693046682,
+    "equityEUR": 966.332645936275,
     "cashEUR": 600.5860826750663,
-    "returnPct": -0.03235483069533174,
+    "returnPct": -0.03366735406372501,
     "trades": 12,
     "feesEUR": 0.6234423248567895,
     "maxDrawdown": 0.03370095473524648
   },
-  "updatedAt": "2026-11-20T07:30:49.707Z",
+  "updatedAt": "2026-11-20T07:45:45.972Z",
   "status": "running"
 }
