@@ -5,7 +5,7 @@
   "endsAt": "2026-12-03T14:30:53.853Z",
   "initialCapitalEUR": 1000,
   "cashEUR": 93.63944116649061,
-  "equityEUR": 930.0937311764092,
+  "equityEUR": 926.6767024128782,
   "peakEUR": 1000,
   "positions": [
     {
@@ -19,8 +19,8 @@
       "stopPercent": 0.061163065677738424,
       "costEUR": 137.5,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 53.04973120109191,
-      "markAt": "2026-11-20T15:45:36.149314714Z"
+      "markEUR": 52.695217918562335,
+      "markAt": "2026-11-20T16:00:58.216988873Z"
     },
     {
       "symbol": "MSFT",
@@ -33,8 +33,8 @@
       "stopPercent": 0.07,
       "costEUR": 62.5,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 448.3047709690628,
-      "markAt": "2026-11-20T15:45:36.218312661Z"
+      "markEUR": 448.2138701273886,
+      "markAt": "2026-11-20T16:00:58.226979731Z"
     },
     {
       "symbol": "QNT/USD",
@@ -47,8 +47,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 122.99295308462239,
-      "markAt": "2026-11-20T15:45:35.775Z"
+      "markEUR": 124.2188869790719,
+      "markAt": "2026-11-20T16:00:57.395Z"
     },
     {
       "symbol": "NIGHT/USD",
@@ -61,8 +61,8 @@
       "stopPercent": 0.15,
       "costEUR": 50,
       "openedAt": "2026-11-19T14:30:53.853Z",
-      "markEUR": 0.036687206915377614,
-      "markAt": "2026-11-20T15:45:35.774Z"
+      "markEUR": 0.0369777986533212,
+      "markAt": "2026-11-20T16:00:57.395Z"
     },
     {
       "symbol": "MA",
@@ -75,8 +75,8 @@
       "stopPercent": 0.07,
       "costEUR": 57.98693163429776,
       "openedAt": "2026-11-19T16:01:00.333Z",
-      "markEUR": 576.4113271405824,
-      "markAt": "2026-11-20T15:45:35.297485485Z"
+      "markEUR": 544.2415192720656,
+      "markAt": "2026-11-20T16:00:54.163132284Z"
     },
     {
       "symbol": "AAPL",
@@ -89,8 +89,8 @@
       "stopPercent": 0.051289186628717086,
       "costEUR": 128.7542316039246,
       "openedAt": "2026-11-20T14:30:58.314Z",
-      "markEUR": 316.91669441310285,
-      "markAt": "2026-11-20T15:45:36.24436393Z"
+      "markEUR": 315.1713982529573,
+      "markAt": "2026-11-20T16:00:58.226344082Z"
     },
     {
       "symbol": "KO",
@@ -103,8 +103,8 @@
       "stopPercent": 0.04,
       "costEUR": 128.7542316039246,
       "openedAt": "2026-11-20T14:30:58.314Z",
-      "markEUR": 88.60105037989082,
-      "markAt": "2026-11-20T15:45:36.30405147Z"
+      "markEUR": 88.56469004322112,
+      "markAt": "2026-11-20T16:00:58.238853648Z"
     },
     {
       "symbol": "PYPL",
@@ -117,8 +117,8 @@
       "stopPercent": 0.05573151573506306,
       "costEUR": 128.7542316039246,
       "openedAt": "2026-11-20T14:30:58.314Z",
-      "markEUR": 50.040913341674255,
-      "markAt": "2026-11-20T15:45:36.260063735Z"
+      "markEUR": 50.00455300500455,
+      "markAt": "2026-11-20T16:00:58.046966223Z"
     },
     {
       "symbol": "AMD",
@@ -131,8 +131,8 @@
       "stopPercent": 0.12,
       "costEUR": 58.52465072905663,
       "openedAt": "2026-11-20T14:30:58.314Z",
-      "markEUR": 403.02706173111926,
-      "markAt": "2026-11-20T15:45:36.153255289Z"
+      "markEUR": 403.00888156278444,
+      "markAt": "2026-11-20T16:00:58.016223228Z"
     },
     {
       "symbol": "INTC",
@@ -145,8 +145,8 @@
       "stopPercent": 0.12,
       "costEUR": 55.48931290446863,
       "openedAt": "2026-11-20T14:30:58.314Z",
-      "markEUR": 48.8501123157416,
-      "markAt": "2026-11-20T15:45:36.302133326Z"
+      "markEUR": 49.54095871246589,
+      "markAt": "2026-11-20T16:00:58.282995848Z"
     }
   ],
   "trades": [
@@ -1374,6 +1374,13 @@
       "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
       "stocksReady": true,
       "cooldownSymbols": []
+    },
+    {
+      "at": "2026-11-20T16:00:56.332Z",
+      "selection": [],
+      "reason": "Ersatz geprüft: kein freier Platz oder kein geeigneter finanzierbarer Kandidat.",
+      "stocksReady": true,
+      "cooldownSymbols": []
     }
   ],
   "history": [
@@ -1886,6 +1893,11 @@
       "at": "2026-11-20T15:45:34.950Z",
       "equity": 930.0937311764092,
       "cash": 93.63944116649061
+    },
+    {
+      "at": "2026-11-20T16:00:56.332Z",
+      "equity": 926.6767024128782,
+      "cash": 93.63944116649061
     }
   ],
   "lastRebalance": null,
@@ -1905,8 +1917,8 @@
     }
   ],
   "strategyVersion": 2,
-  "lastEntryCheck": "2026-11-20T15:45:34.950Z",
-  "updatedAt": "2026-11-20T15:45:34.950Z",
+  "lastEntryCheck": "2026-11-20T16:00:56.332Z",
+  "updatedAt": "2026-11-20T16:00:56.332Z",
   "experimentId": "2026-11-19-cadence-v1",
   "resetAt": "2026-11-19T09:30:51.937Z"
 }
