@@ -6136,18 +6136,30 @@
       "outcome": "success",
       "processed": true,
       "observationAt": "2026-11-24T16:15:35.495Z"
+    },
+    {
+      "slot": 1995042,
+      "startedAt": "2026-11-24T16:30:47.911Z",
+      "finishedAt": "2026-11-24T16:30:49.291Z",
+      "source": "github-schedule",
+      "event": "schedule",
+      "runId": "45437959643",
+      "delaySeconds": 47.911,
+      "outcome": "success",
+      "processed": true,
+      "observationAt": "2026-11-24T16:30:48.003Z"
     }
   ],
-  "lastAttemptAt": "2026-11-24T16:15:35.389Z",
-  "lastProcessedSlot": 1995041,
+  "lastAttemptAt": "2026-11-24T16:30:47.911Z",
+  "lastProcessedSlot": 1995042,
   "summary": {
     "intervalMinutes": 15,
-    "lastAttemptAt": "2026-11-24T16:15:35.389Z",
-    "lastObservationAt": "2026-11-24T16:15:35.495Z",
+    "lastAttemptAt": "2026-11-24T16:30:47.911Z",
+    "lastObservationAt": "2026-11-24T16:30:48.003Z",
     "lastOutcome": "success",
-    "observations": 508,
+    "observations": 509,
     "missedSlots": 0,
     "schedulerVerified": true,
-    "checkedAt": "2026-11-24T16:15:35.389Z"
+    "checkedAt": "2026-11-24T16:30:47.911Z"
   }
 }
